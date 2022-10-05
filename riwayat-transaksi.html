@@ -19,6 +19,7 @@
 
     <!-- Custom styles for this template-->
     <link href="css/sb-admin-2.min.css" rel="stylesheet">
+    <link href="css/riwayat-transaksi.css" rel="stylesheet">
 
 </head>
 
@@ -78,7 +79,7 @@
             <li class="nav-item">
             <a class="nav-link collapsed" href="contract.html">
                 <i class="fas fa-fw fas fa-file-contract"></i>
-                <span>Contract</span>
+                <span>Kontrak</span>
             </a>
             </li>
 
@@ -91,14 +92,8 @@
                 </a>
                 <div id="collapsePages" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
-                        <h6 class="collapse-header">Login Screens:</h6>
-                        <a class="collapse-item" href="login.html">Login</a>
-                        <a class="collapse-item" href="register.html">Register</a>
-                        <a class="collapse-item" href="forgot-password.html">Forgot Password</a>
-                        <div class="collapse-divider"></div>
-                        <h6 class="collapse-header">Other Pages:</h6>
                         <a class="collapse-item" href="404.html">Pengaturan User</a>
-                        <a class="collapse-item" href="blank.html">Daftar Alamat</a>
+                        <a class="collapse-item" href="daftar-alamat.html">Daftar Alamat</a>
                     </div>
                 </div>
             </li>
@@ -284,17 +279,13 @@
                             <!-- Dropdown - User Information -->
                             <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in"
                                 aria-labelledby="userDropdown">
-                                <a class="dropdown-item" href="#">
+                                <a class="dropdown-item" href="profil.html">
                                     <i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>
                                     Profile
                                 </a>
-                                <a class="dropdown-item" href="#">
+                                <a class="dropdown-item" href="change-password.html">
                                     <i class="fas fa-cogs fa-sm fa-fw mr-2 text-gray-400"></i>
-                                    Settings
-                                </a>
-                                <a class="dropdown-item" href="#">
-                                    <i class="fas fa-list fa-sm fa-fw mr-2 text-gray-400"></i>
-                                    Activity Log
+                                    Change Password
                                 </a>
                                 <div class="dropdown-divider"></div>
                                 <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal">
@@ -316,6 +307,99 @@
                     <div class="d-sm-flex align-items-center justify-content-between mb-4">
                         <h1 class="h3 mb-0 text-gray-800">Riwayat Transaksi</h1>
                     </div>
+
+                     <!-- TAGIHAN BELUM DIBAYAR -->
+                     <div class="row">
+                     <div class="col-xl-3 col-md-6 mb-4">
+                        <div class="card border-left-primary shadow h-100 py-2">
+                            <div class="card-body">
+                                <div class="row no-gutters align-items-center">
+                                    <div class="col mr-2">
+                                        <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">
+                                            Tagihan yang belum terbayarkan</div>
+                                        <div class="h5 mb-0 font-weight-bold text-gray-800">Rp. 12.000.000</div>
+                                    </div>
+                                    <div class="col-auto">
+                                        <i class="fas fas fa-history fa-2x text-gray-300"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-md-6 mb-4">
+                        <div class="card border-left-primary shadow h-100 py-2">
+                            <div class="card-body">
+                                    <div class="col mr-2">
+                                        <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">
+                                            Durasi Pembayaran:</div>
+                                        <div class="h5 mb-0 font-weight-bold text-gray-800">0 hari</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                 
+                    <table class="col-xl-12 content-table">
+                        <thead>
+                          <tr>
+                            <th>No</th>
+                            <th>No Tracking</th>
+                            <th>Tanggal</th>
+                            <th>Harga</th>
+                            <th>Jumlah</th>
+                            <th>Status Pembayaran</th>
+                            <th>Aksi</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>1</td>
+                            <td>XPDC2022786</td>
+                            <td>03 Oktober 2022</td>
+                            <td>Rp. 12.000.000</td>
+                            <td>Rp. 12.000.000</td>
+                            <td style="color: red;">
+                                Sudah lewat 7 hari
+                            </td>
+                            <td>
+                                <button style="border: none;outline:none;background: #0000A0;color: white;border-radius: 5px;">
+                                    <i class="fas fa-print text-white-400"></i>
+                                </button>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>2</td>
+                            <td>XPDC2022784</td>
+                            <td>25 Oktober 2022</td>
+                            <td>Rp. 2.000.000</td>
+                            <td>Rp. 2.000.000</td>
+                            <td style="color: red;">
+                                Sudah lewat 14 hari
+                            </td>
+                            <td>
+                                <button style="border: none;outline:none;background: #0000A0;color: white;border-radius: 5px;">
+                                    <i class="fas fa-print text-white-400"></i>
+                                </button>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>3</td>
+                            <td>XPDC2022785</td>
+                            <td>02 Oktober 2022</td>
+                            <td>Rp. 12.000.000</td>
+                            <td>Rp. 12.000.000</td>
+                            <td style="color: rgb(0, 255, 0);">
+                                Dibayar
+                            </td>
+                            <td>
+                                <button style="border: none;outline:none;background: #0000A0;color: white;border-radius: 5px;">
+                                    <i class="fas fa-print text-white-400"></i>
+                                </button>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                      </div>
 
                   
 
@@ -346,7 +430,7 @@
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
+                    <h5 class="modal-title" id="exampleModalLabel">Are you sure to log out?</h5>
                     <button class="close" type="button" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">×</span>
                     </button>

@@ -1,0 +1,29 @@
+
+html {
+  font-family: sans-serif;
+}
+
+.faq-item{
+    margin-bottom: 15px;
+    margin-top: 15px;
+  }
+  .faq-body{
+    display: none;
+    margin-top: 15px;
+  }
+  .faq-wrapper{
+    width: 75%;
+    margin: 0 auto;
+  }
+  .faq-inner{
+    padding: 10px;
+  }
+  .faq-plus{
+    float: right;
+    font-size: 16px;
+    line-height: 1em;
+    cursor: pointer;
+  }
+  hr{
+    background-color: #9b9b9b;
+  }

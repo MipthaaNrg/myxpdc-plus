@@ -65,13 +65,12 @@
                   <span>Riwayat Transaksi</span>
               </a>
           </li>
-
           
         <!-- Nav Item - Contract Collapse Menu -->
         <li class="nav-item">
         <a class="nav-link collapsed" href="contract.html">
             <i class="fas fa-fw fas fa-file-contract"></i>
-            <span>Contract</span>
+            <span>Kontrak</span>
         </a>
         </li>
 
@@ -84,14 +83,8 @@
               </a>
               <div id="collapsePages" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
                   <div class="bg-white py-2 collapse-inner rounded">
-                      <h6 class="collapse-header">Login Screens:</h6>
-                      <a class="collapse-item" href="login.html">Login</a>
-                      <a class="collapse-item" href="register.html">Register</a>
-                      <a class="collapse-item" href="forgot-password.html">Forgot Password</a>
-                      <div class="collapse-divider"></div>
-                      <h6 class="collapse-header">Other Pages:</h6>
                       <a class="collapse-item" href="404.html">Pengaturan User</a>
-                      <a class="collapse-item" href="blank.html">Daftar Alamat</a>
+                      <a class="collapse-item" href="daftar-alamat.html">Daftar Alamat</a>
                   </div>
               </div>
           </li>
@@ -277,17 +270,13 @@
                           <!-- Dropdown - User Information -->
                           <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in"
                               aria-labelledby="userDropdown">
-                              <a class="dropdown-item" href="#">
+                              <a class="dropdown-item" href="profil.html">
                                   <i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>
                                   Profile
                               </a>
-                              <a class="dropdown-item" href="#">
+                              <a class="dropdown-item" href="change-password.html">
                                   <i class="fas fa-cogs fa-sm fa-fw mr-2 text-gray-400"></i>
-                                  Settings
-                              </a>
-                              <a class="dropdown-item" href="#">
-                                  <i class="fas fa-list fa-sm fa-fw mr-2 text-gray-400"></i>
-                                  Activity Log
+                                  Change Password
                               </a>
                               <div class="dropdown-divider"></div>
                               <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal">
@@ -309,7 +298,7 @@
                     <form action="#" class="form">
                         <div class="progressbar">
                           <div class="progress" id="progress"></div>
-                          <div class="progress-step progress-step-active" data-title="Informasi Pengirim"></div>
+                          <div class="progress-step progress-step-active" data-title="Informasi Pengiriman" ></div>
                           <div class="progress-step" data-title="Informasi Barang"></div>
                           <div class="progress-step" data-title="Detail Paket"></div>
                           <div class="progress-step" data-title="Catatan Pengiriman"></div>
@@ -330,10 +319,9 @@
                                                     <i class="fas fas far fa-address-book text-white-300"></i>
                                                 </button>
                                             </a>
-                                          </div>
+                                        </div>
                                     </div>
                                 </div>
-                            
                                   <label for="namapengirim">Nama Pengirim</label>
                                   <input type="text" name="namapengirim" id="namapengirim" placeholder="Nama Instansi/PT/CV/Tbk">
                                   <label for="teleponpengirim">Telepon Pengirim</label>
@@ -350,12 +338,12 @@
                                   <label for="picpengirim">PIC Pengirim (Optional)</label>
                                   <input type="text" name="picpengirim" id="picpengirim" placeholder="Nama Bpk/Ibu Pengirim">
                                   <label for="emailpengirim">Email Pengirim (Optional)</label>
-                                  <input type="email" name="emailpengirim" id="emailpengirim" placeholder="Alamat email pengirim">
+                                  <input type="email" name="emailpengirim" id="emailpengirim" placeholder="Alamat email Pengirim">
                               </div>
                               <div class="column" style="padding: 20px;width: 50%;">
                                 <div class="row">
                                     <div class="column" style="padding-left: 10px;">  
-                                        <h1 class="h3 mb-0 text-gray-800" style="font-size: 20px;">Data Pengirim</h1>
+                                        <h1 class="h3 mb-0 text-gray-800" style="font-size: 20px;">Data Penerima</h1>
                                     </div>
                                     <div class="column" style="padding-left: 45px;">  
                                         <div>
@@ -484,12 +472,13 @@
                                     </button>
                                 </div>
                               </div>
+                              
                                <div class="row" style="width: 100%;">
                                 <div class="column" style="padding: 20px;width: 30%;">
-                                    <label for="namabarang">Berat Aktual:</label>
+                                    <label for="berat">Berat Aktual:</label>
                                 </div>
                                 <div class="column" style="padding: 20px;width: 30%;">
-                                    <label for="hargabarang">Berat Volume:</label>
+                                    <label for="volume">Berat Volume:</label>
                                 </div>
                                 </div>
                             </div>
@@ -503,8 +492,8 @@
                           <div class="input-group">
                             <div class="row" style="width: 100%;">
                                 <div class="column" style="padding: 20px;width: 50%;">
-                                <h1 class="h3 mb-0 text-gray-800" style="font-size: 20px;margin-bottom: 5px;">Catatan Pengiriman</h1>
-                                    <textarea name="namapengirim" id="namapengirim" style="border: none;outline: none;padding: 10px; width: 100%;height: 100%;"></textarea>
+                                <h1 class="h3 mb-0 text-gray-800" style="font-size: 20px;">Catatan Pengiriman</h1>
+                                    <textarea name="namapengirim" id="namapengirim" style="width: 100%;border: none;outline: none;height: 100%;" ></textarea>
                                </div>
                                </div>
                             </div>
@@ -537,13 +526,13 @@
             <i class="fas fa-angle-up"></i>
             </a>
 
-            <!-- Logout Modal-->
+           <!-- Logout Modal-->
             <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
             aria-hidden="true">
             <div class="modal-dialog" role="document">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
+                        <h5 class="modal-title" id="exampleModalLabel">Are you sure to log out?</h5>
                         <button class="close" type="button" data-dismiss="modal" aria-label="Close">
                             <span aria-hidden="true">×</span>
                         </button>
@@ -555,11 +544,11 @@
                     </div>
                 </div>
             </div>
-            </div>
+        </div>
 
             <!-- Bootstrap core JavaScript-->
             
-            <script src="js/reguler.js"></script>
+            <script src="js/express.js"></script>
             <script src="vendor/jquery/jquery.min.js"></script>
             <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
@@ -568,6 +557,8 @@
 
             <!-- Custom scripts for all pages-->
             <script src="js/sb-admin-2.min.js"></script>
+            
+            <script src="js/reguler.js"></script>
 
             <!-- Page level plugins -->
             <script src="vendor/chart.js/Chart.min.js"></script>

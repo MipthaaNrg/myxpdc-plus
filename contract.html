@@ -19,6 +19,7 @@
 
     <!-- Custom styles-->
     <link href="css/sb-admin-2.min.css" rel="stylesheet">
+    <link href="css/daftar-pengiriman.css" rel="stylesheet">
 
 </head>
 
@@ -77,7 +78,7 @@
               <li class="nav-item">
                 <a class="nav-link collapsed" href="contract.html">
                     <i class="fas fa-fw fas fa-file-contract"></i>
-                    <span>Contract</span>
+                    <span>Kontrak</span>
                 </a>
             </li>
 
@@ -90,14 +91,8 @@
                 </a>
                 <div id="collapsePages" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
-                        <h6 class="collapse-header">Login Screens:</h6>
-                        <a class="collapse-item" href="login.html">Login</a>
-                        <a class="collapse-item" href="register.html">Register</a>
-                        <a class="collapse-item" href="forgot-password.html">Forgot Password</a>
-                        <div class="collapse-divider"></div>
-                        <h6 class="collapse-header">Other Pages:</h6>
                         <a class="collapse-item" href="404.html">Pengaturan User</a>
-                        <a class="collapse-item" href="blank.html">Daftar Alamat</a>
+                        <a class="collapse-item" href="daftar-alamat.html">Daftar Alamat</a>
                     </div>
                 </div>
             </li>
@@ -283,17 +278,13 @@
                             <!-- Dropdown - User Information -->
                             <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in"
                                 aria-labelledby="userDropdown">
-                                <a class="dropdown-item" href="#">
+                                <a class="dropdown-item" href="profil.html">
                                     <i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>
                                     Profile
                                 </a>
-                                <a class="dropdown-item" href="#">
+                                <a class="dropdown-item" href="change-password.html">
                                     <i class="fas fa-cogs fa-sm fa-fw mr-2 text-gray-400"></i>
-                                    Settings
-                                </a>
-                                <a class="dropdown-item" href="#">
-                                    <i class="fas fa-list fa-sm fa-fw mr-2 text-gray-400"></i>
-                                    Activity Log
+                                    Change Password
                                 </a>
                                 <div class="dropdown-divider"></div>
                                 <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal">
@@ -313,8 +304,96 @@
 
                     <!-- Page Heading -->
                     <div class="d-sm-flex align-items-center justify-content-between mb-4">
-                        <h1 class="h3 mb-0 text-gray-800">Contract</h1>
+                        <h1 class="h3 mb-0 text-gray-800">Kontrak</h1>
                     </div>
+                    <div class="row">
+                        <form
+                        class="d-none d-sm-inline-block form-inline mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search">
+                        <div class="input-group">
+                            <input type="text" class="form-control bg-light border-0 small" placeholder="Search for..."
+                                aria-label="Search" aria-describedby="basic-addon2">
+                            <div class="input-group-append">
+                                <button class="btn btn-primary" type="button">
+                                    <i class="fas fa-search fa-sm"></i>
+                                </button>
+                            </div>
+                        </div>
+                        </form>
+                    </div>
+                    <table class="col-xl-12 content-table">
+                        <thead>
+                          <tr>
+                            <th>No</th>
+                            <th>No Kontrak</th>
+                            <th>Tanggal Kontrak</th>
+                            <th>Deskripsi Kontrak</th>
+                            <th>Asal</th>
+                            <th>Tujuan</th>
+                            <th>Syarat dan Ketentuan</th>
+                            <th>Masa Berlaku</th>
+                            <th>Status</th>
+                            <th>Aksi</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>1</td>
+                            <td>KONTRAK145</td>
+                            <td>Kontrak potongan biaya pengiriman 10%</td>
+                            <td>
+                                30 November 2022
+                            </td>
+                            <td>
+                               Batam
+                            </td>
+                            <td>
+                                Tangerang
+                             </td>
+                             <td>
+                                Kontrak ini berlaku jika berat barang yang dikirim lebih dari 150kg
+                             </td>
+                            <td>03 Oktober 2022</td>
+                            <td>
+                                <a href="shipment_history.html">
+                                    <button style="border: none;outline:none;background: #5ae717;color: white;border-radius: 5px;padding: 5px;">Aktif</button>
+                                </a>
+                            </td>
+                            <td>
+                                <button style="border: none;outline:none;background: #0000A0;color: white;border-radius: 5px;">
+                                    <i class="fas fa-print text-white-400"></i>
+                                </button>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>2</td>
+                            <td>KONTRAK14</td>
+                            <td>Kontrak potongan biaya pengiriman 15%</td>
+                            <td>
+                                30 Desember 2022
+                            </td>
+                            <td>
+                               Palembang
+                            </td>
+                            <td>
+                                Tangerang
+                             </td>
+                             <td>
+                                Kontrak ini berlaku jika berat barang yang dikirim lebih dari 150kg
+                             </td>
+                            <td>03 Oktober 2022</td>
+                            <td>
+                                <a href="shipment_history.html">
+                                    <button style="border: none;outline:none;background: red;color: white;border-radius: 5px;">Tidak Aktif</button>
+                                </a>
+                            </td>
+                            <td>
+                                <button style="border: none;outline:none;background: #0000A0;color: white;border-radius: 5px;">
+                                    <i class="fas fa-print text-white-400"></i>
+                                </button>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
 
                        <!-- Footer -->
             <footer class="sticky-footer bg-white">
@@ -337,25 +416,25 @@
         <i class="fas fa-angle-up"></i>
     </a>
 
-    <!-- Logout Modal-->
-    <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-        aria-hidden="true">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
-                    <button class="close" type="button" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">×</span>
-                    </button>
-                </div>
-                <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
-                <div class="modal-footer">
-                    <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
-                    <a class="btn btn-primary" href="login.html">Logout</a>
-                </div>
-            </div>
-        </div>
-    </div>
+   <!-- Logout Modal-->
+   <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+   aria-hidden="true">
+   <div class="modal-dialog" role="document">
+       <div class="modal-content">
+           <div class="modal-header">
+               <h5 class="modal-title" id="exampleModalLabel">Are you sure to log out?</h5>
+               <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                   <span aria-hidden="true">×</span>
+               </button>
+           </div>
+           <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
+           <div class="modal-footer">
+               <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
+               <a class="btn btn-primary" href="login.html">Logout</a>
+           </div>
+       </div>
+   </div>
+</div>
 
     <!-- Bootstrap core JavaScript-->
     <script src="vendor/jquery/jquery.min.js"></script>

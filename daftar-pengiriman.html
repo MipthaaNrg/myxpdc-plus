@@ -78,7 +78,7 @@
               <li class="nav-item">
                 <a class="nav-link collapsed" href="contract.html">
                     <i class="fas fa-fw fas fa-file-contract"></i>
-                    <span>Contract</span>
+                    <span>Kontrak</span>
                 </a>
             </li>
 
@@ -91,14 +91,8 @@
                 </a>
                 <div id="collapsePages" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
-                        <h6 class="collapse-header">Login Screens:</h6>
-                        <a class="collapse-item" href="login.html">Login</a>
-                        <a class="collapse-item" href="register.html">Register</a>
-                        <a class="collapse-item" href="forgot-password.html">Forgot Password</a>
-                        <div class="collapse-divider"></div>
-                        <h6 class="collapse-header">Other Pages:</h6>
                         <a class="collapse-item" href="404.html">Pengaturan User</a>
-                        <a class="collapse-item" href="blank.html">Daftar Alamat</a>
+                        <a class="collapse-item" href="daftar-alamat.html">Daftar Alamat</a>
                     </div>
                 </div>
             </li>
@@ -284,17 +278,13 @@
                             <!-- Dropdown - User Information -->
                             <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in"
                                 aria-labelledby="userDropdown">
-                                <a class="dropdown-item" href="#">
+                                <a class="dropdown-item" href="profil.html">
                                     <i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>
                                     Profile
                                 </a>
-                                <a class="dropdown-item" href="#">
+                                <a class="dropdown-item" href="change-password.html">
                                     <i class="fas fa-cogs fa-sm fa-fw mr-2 text-gray-400"></i>
-                                    Settings
-                                </a>
-                                <a class="dropdown-item" href="#">
-                                    <i class="fas fa-list fa-sm fa-fw mr-2 text-gray-400"></i>
-                                    Activity Log
+                                    Change Password
                                 </a>
                                 <div class="dropdown-divider"></div>
                                 <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal">
@@ -317,18 +307,40 @@
                         <h1 class="h3 mb-0 text-gray-800">Daftar Pengiriman</h1>
                     </div>
 
-                    <form
-                    class="d-none d-sm-inline-block form-inline mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search">
-                    <div class="input-group">
-                        <input type="text" class="form-control bg-light border-0 small" placeholder="Search for..."
-                            aria-label="Search" aria-describedby="basic-addon2">
-                        <div class="input-group-append">
-                            <button class="btn btn-primary" type="button">
-                                <i class="fas fa-search fa-sm"></i>
-                            </button>
+                     <!-- Page Heading -->
+                     <div class="d-sm-flex align-items-center justify-content-between mb-4">
+                        <div class="left">
+                            <div class="row">
+                                <div class="column" style="padding: 10px;">
+                                    Show
+                                </div>
+                                <div class="column" style="padding: 10px;">
+                                    <select style="width: 100%; border-radius: 5px; outline: none;border: none;background: #DEDEDE;padding: 5px;color: #797979;">
+                                        <option>10</option>
+                                        <option>25</option>
+                                        <option>50</option>
+                                        <option>100</option>
+                                    </select>
+                                </div>
+                                <div class="column" style="padding: 10px;">entries</div>
+                            </div>
                         </div>
+                            <div class="right">
+                                <form
+                                class="d-none d-sm-inline-block form-inline mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search" style="text-align: right;">
+                                <div class="input-group" style="text-align: right;">
+                                    <input type="text" class="form-control bg-light border-0 small" placeholder="Search for..."
+                                        aria-label="Search" aria-describedby="basic-addon2" style="text-align: right;">
+                                    <div class="input-group-append">
+                                        <button class="btn btn-primary" type="button" style="text-align: right;">
+                                            <i class="fas fa-search fa-sm"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                                </form>
+                            </div>
                     </div>
-                    </form>
+                   
                     <table class="col-xl-12 content-table">
                         <thead>
                           <tr>
@@ -342,34 +354,92 @@
                           </tr>
                         </thead>
                         <tbody>
-                          <tr>
-                            <td>1</td>
-                            <td>XPDC2022786</td>
-                            <td>John</td>
-                            <td>Pantau</td>
-                            <td>
-                                <button style="border: none;outline:none;background: #007bff;color: white;border-radius: 5px;padding: 5px;">Menunggu Diproses</button>
-                            </td>
-                            <td>
-                                <button style="border: none;outline:none;background: #f5365c;color: white;border-radius: 5px;padding: 5px;">Belum dibayar</button>
-                            </td>
-                            <td>
-                                <button style="border: none;outline:none;background: grey;color: white;border-radius: 5px;padding: 5px;">Aksi</button>
-                            </td>
-                          </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>XPDC2022786</td>
+                                    <td>John</td>
+                                    <td>Pantau</td>
+                                    <td>
+                                        <a href="shipment_history.html">
+                                        <button style="border: none;outline:none;background: #007bff;color: white;border-radius: 5px;padding: 5px;" href="shipment_history.html">Menunggu Diproses</button>
+                                        </a>
+                                    </td>
+                                    <td>
+                                        <button style="border: none;outline:none;background: #f5365c;color: white;border-radius: 5px;padding: 5px;">Belum dibayar</button>
+                                    </td>
+                                    <td>
+                                    <!-- Dropdown - Aksi -->
+                                        <!-- Nav Item - User Information -->
+                                        <button class="nav-item dropdown no-arrow" style="text-decoration: none;border: none;outline: none;background: #E2E2E2;padding: 0;margin:0;border-radius: 5px;">
+                                            <a class="nav-link dropdown-toggle" href="#" id="aksi" role="button"
+                                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                <span class="mr-2 d-none d-lg-inline text-white-600 small">Aksi</span>
+                                            </a>
+                                            <!-- Dropdown - User Information -->
+                                            <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in"
+                                                aria-labelledby="aksi">
+                                                <a class="dropdown-item" href="#">
+                                                    Cetak Resi
+                                                </a>
+                                                <a class="dropdown-item" href="#">
+                                                    Cetak Tagihan
+                                                </a>
+                                                <a class="dropdown-item" href="#" >
+                                                    Cetak Bukti Pengambilan
+                                                </a>
+                                                <a class="dropdown-item" href="#" >
+                                                    Cetak Bukti Pengiriman
+                                                </a>
+                                                <a class="dropdown-item" href="#" style="color: red;">
+                                                    Batalkan Pengiriman
+                                                </a>
+                                            </div>
+                                        </button>
+                                    </td>
+                                  </tr>
+                         
+                        
                           <tr>
                             <td>2</td>
                             <td>XPDC2022786</td>
                             <td>John</td>
                             <td>Pantau</td>
                             <td>
+                                <a href="shipment_history.html">
                                 <button style="border: none;outline:none;background: #007bff;color: white;border-radius: 5px;padding: 5px;">Dalam Pengiriman</button>
+                                </a>
                             </td>
                             <td>
                                 <button style="border: none;outline:none;background: #007bff;color: white;border-radius: 5px;padding: 5px;">Telah Dibayar</button>
                             </td>
                             <td>
-                                <button style="border: none;outline:none;background: grey;color: white;border-radius: 5px;padding: 5px;">Aksi</button>
+                               <!-- Dropdown - Aksi -->
+                                <!-- Nav Item - User Information -->
+                                <button class="nav-item dropdown no-arrow" style="text-decoration: none;border: none;outline: none;background: #E2E2E2;padding: 0;margin:0;border-radius: 5px;">
+                                    <a class="nav-link dropdown-toggle" href="#" id="aksi" role="button"
+                                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <span class="mr-2 d-none d-lg-inline text-white-600 small">Aksi</span>
+                                    </a>
+                                    <!-- Dropdown - User Information -->
+                                    <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in"
+                                        aria-labelledby="aksi">
+                                        <a class="dropdown-item" href="#">
+                                            Cetak Resi
+                                        </a>
+                                        <a class="dropdown-item" href="#">
+                                            Cetak Tagihan
+                                        </a>
+                                        <a class="dropdown-item" href="#" >
+                                            Cetak Bukti Pengambilan
+                                        </a>
+                                        <a class="dropdown-item" href="#" >
+                                            Cetak Bukti Pengiriman
+                                        </a>
+                                        <a class="dropdown-item" href="#" style="color: red;">
+                                            Batalkan Pengiriman
+                                        </a>
+                                    </div>
+                                </button>
                             </td>
                           </tr>
                           <tr>
@@ -378,13 +448,41 @@
                             <td>John</td>
                             <td>Pantau</td>
                             <td>
+                                <a href="shipment_history.html">
                                 <button style="border: none;outline:none;background: #007bff;color: white;border-radius: 5px;padding: 5px;">Diterima</button>
+                                </a>
                             </td>
                             <td>
                                 <button style="border: none;outline:none;background: #007bff;color: white;border-radius: 5px;padding: 5px;">Telah Dibayar</button>
                             </td>
                             <td>
-                                <button style="border: none;outline:none;background: grey;color: white;border-radius: 5px;padding: 5px;">Aksi</button>
+                                <!-- Dropdown - Aksi -->
+                                <!-- Nav Item - User Information -->
+                                <button class="nav-item dropdown no-arrow" style="text-decoration: none;border: none;outline: none;background: #E2E2E2;padding: 0;margin:0;border-radius: 5px;">
+                                    <a class="nav-link dropdown-toggle" href="#" id="aksi" role="button"
+                                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <span class="mr-2 d-none d-lg-inline text-white-600 small">Aksi</span>
+                                    </a>
+                                    <!-- Dropdown - User Information -->
+                                    <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in"
+                                        aria-labelledby="aksi">
+                                        <a class="dropdown-item" href="#">
+                                            Cetak Resi
+                                        </a>
+                                        <a class="dropdown-item" href="#">
+                                            Cetak Tagihan
+                                        </a>
+                                        <a class="dropdown-item" href="#" >
+                                            Cetak Bukti Pengambilan
+                                        </a>
+                                        <a class="dropdown-item" href="#" >
+                                            Cetak Bukti Pengiriman
+                                        </a>
+                                        <a class="dropdown-item" href="#" style="color: red;">
+                                            Batalkan Pengiriman
+                                        </a>
+                                    </div>
+                                </button>
                             </td>
                           </tr>
                         </tbody>
@@ -417,7 +515,7 @@
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
+                    <h5 class="modal-title" id="exampleModalLabel">Are you sure to log out?</h5>
                     <button class="close" type="button" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">×</span>
                     </button>
@@ -431,6 +529,7 @@
         </div>
     </div>
 
+
     <!-- Bootstrap core JavaScript-->
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -440,6 +539,7 @@
 
     <!-- Custom scripts for all pages-->
     <script src="js/sb-admin-2.min.js"></script>
+    <script src="js/daftar-pengiriman.js"></script>
 
     <!-- Page level plugins -->
     <script src="vendor/chart.js/Chart.min.js"></script>
