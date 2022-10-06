@@ -19,7 +19,7 @@
 
     <!-- Custom styles for this template-->
     <link href="css/sb-admin-2.min.css" rel="stylesheet">
-    <link href="css/index.css" rel="stylesheet">
+    <link href="css/profil.css" rel="stylesheet">
 
 </head>
 
@@ -331,7 +331,7 @@
                             <div
                                 class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
                                 <h6 class="m-0 font-weight-bold text-primary">Pengaturan Profil</h6>
-                                <a href="#" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm">Edit</a>
+                                <a href="#openModal-editprofil" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm">Edit</a>
                             </div>
                             <!-- Card Body -->
                             <form>
@@ -358,17 +358,44 @@
                         </div>
                     </div>
                 </div>
+
+                 <!--modals tambah alamat-->
+                 <div id="openModal-editprofil" class="modalDialog">
+                    <div>
+                        <a href="#close" title="Close" class="close">X</a>
+                        <h1 class="h5 mb-0 text-gray-800" style="border-bottom: 2px solid #DEDEDE;">Edit Profil</h1>
+                        <label for="nama1">Nama</label>
+                        <input type="text" id="nama1" name="nama1" style="margin: 0;border: none;background: #e8eeef;border-radius: 5px;">
+                        <label for="telepon1">Telepon</label>
+                        <input type="number" id="telepon1" name="telepon1" style="margin: 0;border: none;background: #e8eeef;border-radius: 5px;">
+                        <label for="alamat1">Alamat</label>
+                        <input type="text" id="alamat1" name="alamat1" style="margin:0;border: none;background: #e8eeef;border-radius: 5px;">
+                        <label for="lokasi">Lokasi</label>
+                            <select style="width: 100%; border-radius: 5px; outline: none;border: none;background: #e8eeef;padding: 10px;color: #797979;">
+                                <option>--Pilih Lokasi--</option>
+                                <option>Jakarta</option>
+                                <option>Tangerang</option>
+                                <option>Bekasi</option>
+                            </select>
+                        <label for="email">Email</label>
+                        <input type="text" id="email" name="email" style="margin: 0;border: none;background: #e8eeef;border-radius: 5px;">
+                        <div class="btns-group" style="margin-top: 10px;">
+                            <a href="#" class="btn btn-next">Simpan</a>
+                            <a href="#" class="btn btn-next">Batal</a>
+                          </div>
+                      </div>
+                  </div>
                           
 
-            <!-- Footer -->
-            <footer class="sticky-footer bg-white">
-                <div class="container my-auto">
-                    <div class="copyright text-center my-auto">
-                        <span>Copyright &copy; xpdcargo.id</span>
+                <!-- Footer -->
+                <footer class="sticky-footer bg-white">
+                    <div class="container my-auto">
+                        <div class="copyright text-center my-auto">
+                            <span>Copyright &copy; xpdcargo.id</span>
+                        </div>
                     </div>
-                </div>
-            </footer>
-            <!-- End of Footer -->
+                </footer>
+                <!-- End of Footer -->
 
         </div>
         <!-- End of Content Wrapper -->
@@ -410,7 +437,7 @@
 
     <!-- Custom scripts for all pages-->
     <script src="js/sb-admin-2.min.js"></script>
-    <script src="js/bantuan.js"></script>
+    <script src="js/profil.js"></script>
 
     <!-- Page level plugins -->
     <script src="vendor/chart.js/Chart.min.js"></script>

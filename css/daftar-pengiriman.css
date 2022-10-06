@@ -4,6 +4,7 @@
     -moz-box-sizing: border-box;
     box-sizing: border-box;
 }
+
 .modalDialog {
     position: fixed;
     top: 0;
@@ -33,7 +34,7 @@
 }
 .close {
     font-family: Arial, Helvetica, sans-serif;
-    background: #f26d7d;
+    background: #0000A0;
     color: #fff;
     line-height: 25px;
     position: absolute;
@@ -53,10 +54,9 @@
     padding-top: 5px;
 }
 .close:hover {
-    background: #fa3f6f;
+    background: #4e73df;
 }
 
-  
   .content-table {
     border-collapse: collapse;
     margin: 25px 0;

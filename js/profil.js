@@ -1,4 +1,3 @@
-
 $.fn.extend({
     popoverClosable: function(options) {
       var defaults = {
@@ -27,4 +26,3 @@ $.fn.extend({
   $(function() {
     $('[data-toggle="popover"]').popoverClosable();
   });
-
