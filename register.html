@@ -19,68 +19,140 @@
 
     <!-- Custom styles for this template-->
     <link href="css/sb-admin-2.min.css" rel="stylesheet">
+    <link href="css/register.css" rel="stylesheet">
+
+
+    <style>
+      body, html {
+         height: 100%;
+         margin: 0;
+      }
+      .background {
+         background-image: url("img/bg-baru.png");
+         height: 145%;
+         background-position: center;
+         background-repeat: repeat;
+         background-size: cover;
+      }
+      </style>
 
 </head>
 
-<body class="bg-gradient-primary">
-
+<body class="background">
     <div class="container">
 
+      <!-- 
         <div class="card o-hidden border-0 shadow-lg my-5">
-            <div class="card-body p-0">
+            <div class="card-body p-0"> -->
                 <!-- Nested Row within Card Body -->
                 <div class="row">
-                    <div class="col-lg-6 d-none d-lg-block">
-                        <img class="img-fluid px-3 px-sm-4 mt-3 mb-4" style="margin: 15px;padding: 45px;" src="img/cargo.jpg"></img>
-                    </div>
-                    <div class="col-lg-6">
+                    <div class="col-lg-12">
                         <div class="p-5">
-                            <div class="text-center">
-                                <h1 class="h4 text-gray-900 mb-4">Register</h1>
-                            </div>
-                            <form class="user" >
-                                <div class="form-group row" style="padding: 5px;">
-                                    <div class="col-sm-6 mb-3 mb-sm-0">
-                                        <input type="text" class="form-control form-control-user" id="nama"
-                                            placeholder="Name">
-                                    </div>
-                                    <div class="col-sm-6">
-                                        <input type="text" class="form-control form-control-user" id="telepon"
-                                            placeholder="Telepon">
-                                    </div>
+                            <form action="#" class="form" id="forms" onsubmit="event.preventDefault()">
+                                
+                                  <!-- Page Heading -->
+                                  <div class="d-sm-flex align-items-center justify-content-between mb-4">
+                                    <img src="img/logo.png" style="width: 20%;">
+                                    <div class="text-center" style="color: #0000A0;">
+                                      <h5  >Register</h5>
+                                      <h6  >Welcome to join us!</h6>
+                                  </div>
                                 </div>
-                                <div class="form-group" style="padding: 5px;">
-                                    <input type="email" class="form-control form-control-user" id="email"
-                                        placeholder="Email Address">
+                                
+                                <div class="progressbar">
+                                  <div class="progress" id="progress"></div>
+                                  
+                                  <div
+                                    class="progress-step progress-step-active"
+                                    data-title="Businner Information"
+                                  ></div>
+                                  <div class="progress-step" data-title="Uploaded Document"></div>
                                 </div>
-                                <div class="form-group row" style="padding: 5px;">
-                                    <div class="col-sm-6 mb-3 mb-sm-0">
-                                        <input type="password" class="form-control form-control-user"
-                                            id="password" placeholder="Password">
-                                    </div>
-                                    <div class="col-sm-6">
-                                        <input type="password" class="form-control form-control-user"
-                                            id="password2" placeholder="Confirm Password">
-                                    </div>
+                                <div class="step-forms step-forms-active">
+                                  <div class="group-inputs">
+                                    <label for="namaperusahaan">Nama Perusahaan</label>
+                                    <input type="text" name="namaperusahaan" id="namaperusahaan"/>
+                                  </div>
+                                  <div class="group-inputs">
+                                    <label for="alamatperusahaan">Masukan Alamat Perusahaan</label>
+                                    <textarea type="text" name="alamatperusahaan" id="alamatperusahaan" style="width: 100%;border: 2px solid #DEDEDE;border-radius: 5px;"></textarea>
+                                  </div>
+                                  <div class="group-inputs">
+                                    <label for="lokasi">Lokasi</label>
+                                    <select style="width: 100%; border-radius: 5px; outline: none;padding: 5px;color: #797979;border: 2px solid #DEDEDE;">
+                                        <option>--Pilih Lokasi--</option>
+                                        <option>Jakarta</option>
+                                        <option>Tangerang</option>
+                                        <option>Bekasi</option>
+                                    </select>
+                                  </div>
+                                  <div class="group-inputs">
+                                    <label for="phone">Phone</label>
+                                    <input type="text" name="phone" id="phone" />
+                                  </div>
+                                  <div class="group-inputs">
+                                    <label for="email">Email</label>
+                                    <input type="text" name="email" id="email" />
+                                  </div>
+                                  <div class="group-inputs">
+                                    <label for="password">Password</label>
+                                    <input type="text" name="password" id="password" />
+                                  </div>
+                                  <div class="group-inputs">
+                                    <label for="password1">Konfirmasi Password</label>
+                                    <input type="text" name="password1" id="password1" />
+                                  </div>
+                                  <div class="">
+                                    <a href="#" class="btn btn-next width-50 ml-auto">Next</a>
+                                  </div>
                                 </div>
-                                <a href="login.html" class="btn btn-primary btn-user btn-block">
-                                    Register Account
-                                </a>
-                            </form>
-                            <hr>
-                            <div class="text-center">
-                                <a class="small" href="forgot-password.html">Forgot Password?</a>
-                            </div>
-                            <div class="text-center">
-                                <a class="small" href="login.html">Don't have an account? Login</a>
-                            </div>
+                                <div class="step-forms">
+                                  <div class="group-inputs">
+                                    <label for="license" style="margin: 0;padding:0;">Company License (NIB/SIUP)</label>
+                                    <div class="file-upload" style="padding-top: 10px;">
+                                        <div class="file-select">
+                                          <div class="file-select-button" id="fileName">Choose File</div>
+                                          <div class="file-select-name" id="noFile">No file chosen...</div> 
+                                          <input type="file" name="chooseFile" id="chooseFile">
+                                        </div>
+                                      </div>
+                                  </div>
+                                  <div class="group-inputs">
+                                    <label for="tax" style="margin: 0;padding:0;">Tax No (NPWP)</label>
+                                    <div class="file-upload" style="padding-top: 10px;">
+                                        <div class="file-select">
+                                          <div class="file-select-button" id="fileName">Choose File</div>
+                                          <div class="file-select-name" id="noFile">No file chosen...</div> 
+                                          <input type="file" name="chooseFile" id="chooseFile">
+                                        </div>
+                                      </div>
+                                  </div>
+                                  <div class="btns-group">
+                                    <a href="#" class="btn btn-prev">Previous</a>
+                                    <input type="submit" value="Register" id="submit-form" class="btn"/>
+                                  </div>
+                                </div>
+                                <hr>
+                                <div class="text-center">
+                                    <a class="small" href="login.html">Have an account? Login</a>
+                                </div>
+                                <div class="text-center">
+                                    <a href="#" class="d-none d-sm-inline-block" style="background: white;margin-top: 10px;">
+                                        <i class="fas fas fa-map-marker-alt fa-sm text-black-200"> Warehouse Aeropolis Technopark ASW F.21, Neglasari, Kota Tangerang, Banten, Indonesia. 15129</i> </a>
+                                </div>
+                               
+                              </form>
+                              
                         </div>
                     </div>
-                </div>
-            </div>
+                <!-- </div>
+            </div> -->
         </div>
-
+        
     </div>
+
+        
+ 
 
     <!-- Bootstrap core JavaScript-->
     <script src="vendor/jquery/jquery.min.js"></script>
@@ -91,6 +163,7 @@
 
     <!-- Custom scripts for all pages-->
     <script src="js/sb-admin-2.min.js"></script>
+    <script src="js/register.js"></script>
 
 </body>
 
