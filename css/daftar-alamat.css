@@ -62,7 +62,6 @@
   font-size: 0.9em;
   min-width: 400px;
   border-radius: 5px 5px 0 0;
-  overflow: auto;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
 }
 
@@ -71,34 +70,28 @@
   color: #ffffff;
   text-align: left;
   font-weight: bold;
-  overflow: auto;
 }
 
 .content-table th,
 .content-table td {
   padding: 12px 15px;
-  overflow: auto;
 }
 
 .content-table tbody tr {
   border-bottom: 1px solid #dddddd;
-  overflow: auto;
 }
 
 .content-table tbody tr:nth-of-type(even) {
   background-color: #f3f3f3;
-  overflow: auto;
 }
 
 .content-table tbody tr:last-of-type {
   border-bottom: 2px solid #4e73df;
-  overflow: auto;
 }
 
 .content-table tbody tr.active-row {
   font-weight: bold;
   color: #4e73df;
-  overflow: auto;
 }
 
 @media screen and (max-width: 520px) {
@@ -121,6 +114,7 @@
       content: attr(data-header);
   }
 }
+
 
 input[type="text"],
 input[type="password"],

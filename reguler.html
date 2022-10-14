@@ -11,7 +11,7 @@
 
   <!-- Custom styles for this template-->
   <link href="css/sb-admin-2.min.css" rel="stylesheet">
-  <link href="css/express.css" rel="stylesheet">
+  <link href="css/reguler.css" rel="stylesheet">
 
 </head>
 
@@ -272,16 +272,16 @@
                               aria-labelledby="userDropdown">
                               <a class="dropdown-item" href="profil.html">
                                   <i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>
-                                  Profile
+                                  Profil
                               </a>
                               <a class="dropdown-item" href="change-password.html">
                                   <i class="fas fa-cogs fa-sm fa-fw mr-2 text-gray-400"></i>
-                                  Change Password
+                                  Ubah Password
                               </a>
                               <div class="dropdown-divider"></div>
                               <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal">
                                   <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
-                                  Logout
+                                  Keluar
                               </a>
                           </div>
                       </li>
@@ -294,8 +294,10 @@
               <!-- End of Topbar -->
                     <div class="container">
                         <header>Tambah Shipment Reguler</header>
+                        
                            <!-- progress bar -->
                     <form action="#" class="form">
+                        <div style="margin: 15px;">
                         <div class="progressbar">
                           <div class="progress" id="progress"></div>
                           <div class="progress-step progress-step-active" data-title="Informasi Pengiriman" ></div>
@@ -307,268 +309,427 @@
                       <div class="form-step form-step-active">
                         <div class="input-group" >
                           <div class="row" style="width: 100%;">
-                              <div class="column" style="padding: 20px;width: 50%;">
+                            <div class="column" style="padding: 20px;width: 50%;">
                                 <div class="row">
                                     <div class="column" style="padding-left: 10px;">  
                                         <h1 class="h3 mb-0 text-gray-800" style="font-size: 20px;">Data Pengirim</h1>
                                     </div>
-                                    <div class="column" style="padding-left: 45px;right: 0;">  
-                                        <div>
-                                            <a href="#">
-                                                <button style="padding: 5px; background: #0000A0;color: white;outline: none; border: none;width: 50px; border-radius: 10px;">
-                                                    <i class="fas fas far fa-address-book text-white-300"></i>
-                                                </button>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                                  <label for="namapengirim">Nama Pengirim</label>
-                                  <input type="text" name="namapengirim" id="namapengirim" placeholder="Nama Instansi/PT/CV/Tbk">
-                                  <label for="teleponpengirim">Telepon Pengirim</label>
-                                  <input type="number" name="teleponpengirim" id="teleponpengirim" placeholder="Nomor Telepon Pengirim">
-                                  <label for="alamatpengirim">Alamat Pengirim</label>
-                                  <input type="text" name="alamatpengirim" id="alamatpengirim">
-                                  <label for="lokasipengirim">Lokasi Pengirim</label>
-                                  <select style="width: 100%; border-radius: 5px; outline: none;border: none;background: #DEDEDE;padding: 5px;color: #797979;">
-                                      <option>--Pilih Lokasi--</option>
-                                      <option>Jakarta</option>
-                                      <option>Tangerang</option>
-                                      <option>Bekasi</option>
-                                  </select>
-                                  <label for="picpengirim">PIC Pengirim (Optional)</label>
-                                  <input type="text" name="picpengirim" id="picpengirim" placeholder="Nama Bpk/Ibu Pengirim">
-                                  <label for="emailpengirim">Email Pengirim (Optional)</label>
-                                  <input type="email" name="emailpengirim" id="emailpengirim" placeholder="Alamat email Pengirim">
-                              </div>
-                              <div class="column" style="padding: 20px;width: 50%;">
-                                <div class="row">
-                                    <div class="column" style="padding-left: 10px;">  
-                                        <h1 class="h3 mb-0 text-gray-800" style="font-size: 20px;">Data Penerima</h1>
-                                    </div>
-                                    <div class="column" style="padding-left: 45px;">  
-                                        <div>
-                                            <a href="#">
-                                                <button style="padding: 5px; background: #0000A0;color: white;outline: none; border: none;width: 50px; border-radius: 10px;">
-                                                    <i class="fas fas far fa-address-book text-white-300"></i>
-                                                </button>
-                                            </a>
-                                          </div>
-                                    </div>
-                                </div>
-                                  <label for="namapenerima">Nama Penerima</label>
-                                  <input type="text" name="namapenerima" id="namapenerima" placeholder="Nama Instansi/PT/CV/Tbk">
-                                  <label for="teleponpenerima">Telepon Penerima</label>
-                                  <input type="number" name="teleponpenerima" id="teleponpenerima" placeholder="Nomor Telepon Penerima">
-                                  <label for="alamatpenerima">Alamat Penerima</label>
-                                  <input type="text" name="alamatpenerima" id="alamatpenerima">
-                                  <label for="lokasipenerima">Lokasi Penerima</label>
-                                    <select style="width: 100%; border-radius: 5px; outline: none;border: none;background: #DEDEDE;padding: 5px;color: #797979;">
-                                        <option>--Pilih Lokasi--</option>
-                                        <option>Jakarta</option>
-                                        <option>Tangerang</option>
-                                        <option>Bekasi</option>
-                                    </select>
-                                    <label for="picpenerima">PIC Penerima (Optional)</label>
-                                    <input type="text" name="picpenerima" id="picpenerima" placeholder="Nama Bpk/Ibu Penerima">
-                                    <label for="emailpenerima">Email Penerima (Optional)</label>
-                                    <input type="email" name="emailpenerima" id="emailpenerima" placeholder="Alamat email penerima">
-                              </div>
-                             </div>
-                          </div>
-                          <div class="btns-group">
-                              <a href="#" class="btn btn-next">Next</a>
-                            </div>
-                      </div>
-                      <div class="form-step">
-                          <div class="input-group">
-                          
-                            <div class="row" style="width: 100%;">
-                                <div class="column" style="padding: 20px;width: 50%;">
-                                    <h1 class="h3 mb-0 text-gray-800" style="font-size: 20px;">Informasi Detail Barang</h1>
-                                    <label for="namabarang">Nama Barang</label>
-                                    <input type="text" name="namabarang" id="namabarang">
-                                    <label for="asuransi">Asuransi</label>
-                                    <select style="width: 100%; border-radius: 5px; outline: none;border: none;background: #DEDEDE;padding: 5px;color: #797979;">
-                                        <option>--Pilih Asuransi--</option>
-                                        <option>Ya</option>
-                                        <option>Tidak</option>
-                                    </select>
-                                    <label for="nomorreferensi">No Referensi (Optional)</label>
-                                    <input type="text" name="nomorreferensi" id="nomorreferensi">
-                                </div>
-                                <div class="column" style="padding: 45px;width: 50%;">
-                                    <label for="hargabarang">Harga Barang</label>
-                                    <input type="number" name="hargabarang" id="hargabarang">
-                                    <label for="upload">Upload Dokumen</label>
-                                    <div class="file-upload">
-                                        <div class="file-select">
-                                          <div class="file-select-button" id="fileName">Choose File</div>
-                                          <div class="file-select-name" id="noFile">No file chosen...</div> 
-                                          <input type="file" name="chooseFile" id="chooseFile">
-                                        </div>
-                                      </div>
-                                    <label for="syarat">Syarat dan Ketentuan</label>
-                                    <div>
-                                        <a href="#">
-                                            <button style="padding: 5px; background: #0000A0;color: white;outline: none; border: none;width: 50px; border-radius: 10px;">
-                                                <i class="fas fas fa-file-alt text-white-300"></i>
-                                            </button>
-                                        </a>
-                                      </div>
-                                </div>
-                               </div>
-                            </div>
-                            <div class="btns-group">
-                              <a href="#" class="btn btn-prev">Previous</a>
-                              <a href="#" class="btn btn-next">Next</a>
-                            </div>
-                        </div>
-                  
-                        <div class="form-step">
-                            <div class="input-group">
-                              <div class="row" style="width: 100%;">
-                                  <div class="column" style="padding: 20px;width: 50%;margin: 0;padding-top: 0;">
-                                      <label for="jumlahbox">Jumlah Per-Box</label>
-                                      <input type="number" name="jumlahbox" id="jumlahbox" placeholder="Jumlah Per-Box" >
-                                  </div>
-                                  <div class="column" style="padding: 20px;width: 50%;margin: 0;padding-top: 0;">
-                                      <label for="berat">Berat</label>
-                                      <input type="number" name="berat" id="berat" placeholder="Berat (Kg)">
-                                  </div>
-                                  <div class="column" style="padding: 20px;width: 30%;margin: 0;padding-top: 0;">
-                                      <label for="panjang">Panjang</label>
-                                      <input type="number" name="panjang" id="panjang" placeholder="Panjang (cm)" >
-                                  </div>
-                                  <div class="column" style="padding: 20px;width: 30%;margin: 0;padding-top: 0;">
-                                      <label for="lebar">Lebar</label>
-                                      <input type="number" name="lebar" id="lebar" placeholder="Lebar (cm)">
-                                  </div>
-                                  <div class="column" style="padding: 20px;width: 30%;margin: 0;padding-top: 0;">
-                                      <label for="tinggi">Tinggi</label>
-                                      <input type="number" name="tinggi" id="tinggi" placeholder="Tinggi (cm)" >
-                                  </div>
-                                  <div class="column" style="padding: 20px;width: 10%;margin: 0;padding-top: 0;">
-                                      <label for="hargabarang">Aksi:</label>
-                                      <button style="padding: 10px; background: #0000A0;color: white;outline: none; border: none;width: 50px; border-radius: 5px;">
-                                          <i class="fas fas fas fas fa-plus text-white-300"></i>
-                                      </button>
-                                  </div>
-                                  <div class="column" style="padding: 20px;width: 30%;margin: 0;padding-top: 0;">
-                                    <label for="panjang">Panjang</label>
-                                    <input type="number" name="panjang" id="panjang" placeholder="Panjang (cm)" >
-                                </div>
-                                <div class="column" style="padding: 20px;width: 30%;margin: 0;padding-top: 0;">
-                                    <label for="lebar">Lebar</label>
-                                    <input type="number" name="lebar" id="lebar" placeholder="Lebar (cm)">
-                                </div>
-                                <div class="column" style="padding: 20px;width: 30%;margin: 0;padding-top: 0;">
-                                    <label for="tinggi">Tinggi</label>
-                                    <input type="number" name="tinggi" id="tinggi" placeholder="Tinggi (cm)" >
-                                </div>
-                                <div class="column" style="padding: 20px;width: 10%;margin: 0;padding-top: 0;">
-                                    <label for="hargabarang">Aksi:</label>
-                                    <button style="padding: 10px; background: #0000A0;color: white;outline: none; border: none;width: 50px; border-radius: 5px;">
-                                        <i class="fas fas fas fas fa-trash-alt text-white-300"></i>
+                                    <div class="column" style="padding-left: 45px;right: 0;margin:0;" >  
+                                        <!-- Button trigger modal -->
+                                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+                                        <i class="fas fas far fa-address-book text-white-300"></i>
                                     </button>
+                                    
+                                    <!-- Modal -->
+                                    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog" role="document">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                          <!-- Modals Heading -->
+                                            <div class="d-sm-flex align-items-center justify-content-between mb-1">
+                                                <h1 class="h5 mb-0 text-gray-800">Alamat</h1>
+                                                <a href="#" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm" style="margin-left: 65px;">Tambah Alamat</a>
+                                            </div>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                            </div>
+                                           
+                                            <div class="modal-body">
+                                                <div class="input-group mb-3">
+                                                    <input type="text" class="form-control" placeholder="Cari Nama Pengirim" aria-label="Cari Nama Pengirim" aria-describedby="button-addon2" style="height: 100%;">
+                                                    <div class="input-group-append">
+                                                      <button class="btn btn-outline-secondary" type="button" id="button-addon2">
+                                                        <i class="fas fas far fas fa-search text-white-300"></i>
+                                                      </button>
+                                                    </div>
+                                                </div>
+                                                <div id="d-nama-pengirim" style="max-height:52vh; overflow-y:scroll;">
+                                                    <button class="btn btn-sm btn-outline-info w-100 h-100 text-left p-2 my-1 data-pengirim-select" id="56" style="flex-wrap:wrap;">PT. PRISLED LIGHTING
+                                                        <p>
+                                                        +62 813-6527-9355<br>
+                                                        KOMPLEK UNION BLOK A NO  9 &amp; 10<br>
+                                                        Kepulauan Riau, Kota Batam, Batu Ampar, Batu Merah, 29452
+                                                        </p>
+                                                    </button>
+                                                    <button class="btn btn-sm btn-outline-info w-100 h-100 text-left p-2 my-1 data-pengirim-select" id="56" style="flex-wrap:wrap;">PT. PRISLED LIGHTING
+                                                        <p>
+                                                        +62 813-6527-9355<br>
+                                                        KOMPLEK UNION BLOK A NO  9 &amp; 10<br>
+                                                        Kepulauan Riau, Kota Batam, Batu Ampar, Batu Merah, 29452
+                                                        </p>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                            <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
-                              </div>
-                              
-                               <div class="row" style="width: 100%;">
-                                <div class="column" style="padding: 20px;width: 30%;">
-                                    <label for="berat">Berat Aktual:</label>
-                                </div>
-                                <div class="column" style="padding: 20px;width: 30%;">
-                                    <label for="volume">Berat Volume:</label>
-                                </div>
-                                </div>
-                            </div>
-                            <div class="btns-group">
-                              <a href="#" class="btn btn-prev">Previous</a>
-                              <a href="#" class="btn btn-next">Next</a>
                             </div>
                         </div>
-                  
-                        <div class="form-step">
-                          <div class="input-group">
-                            <div class="row" style="width: 100%;">
-                                <div class="column" style="padding: 20px;width: 50%;">
-                                <h1 class="h3 mb-0 text-gray-800" style="font-size: 20px;">Catatan Pengiriman</h1>
-                                    <textarea name="namapengirim" id="namapengirim" style="width: 100%;border: none;outline: none;height: 100%;" ></textarea>
-                               </div>
-                               </div>
+                        <label for="namapengirim">Nama Pengirim</label>
+                        <input type="text" name="namapengirim" id="namapengirim" placeholder="Nama Instansi/PT/CV/Tbk">
+                        <label for="teleponpengirim">Telepon Pengirim</label>
+                        <input type="number" name="teleponpengirim" id="teleponpengirim" placeholder="Nomor Telepon Pengirim">
+                        <label for="alamatpengirim">Alamat Pengirim</label>
+                        <input type="text" name="alamatpengirim" id="alamatpengirim">
+                        <label for="lokasipengirim">Lokasi Pengirim</label>
+                        <select style="width: 100%; border-radius: 5px; outline: none;border: none;background: #DEDEDE;padding: 5px;color: #797979;">
+                            <option>--Pilih Lokasi--</option>
+                            <option>Jakarta</option>
+                            <option>Tangerang</option>
+                            <option>Bekasi</option>
+                        </select>
+                        <label for="picpengirim">PIC Pengirim (Optional)</label>
+                        <input type="text" name="picpengirim" id="picpengirim" placeholder="Nama Bpk/Ibu Pengirim">
+                        <label for="emailpengirim">Email Pengirim (Optional)</label>
+                        <input type="email" name="emailpengirim" id="emailpengirim" placeholder="Alamat email Pengirim">
+                    </div>
+                        <div class="column" style="padding: 20px;width: 50%;">
+                        <div class="row">
+                            <div class="column" style="padding-left: 10px;">  
+                                <h1 class="h3 mb-0 text-gray-800" style="font-size: 20px;">Data Penerima</h1>
                             </div>
-                            <div class="btns-group">
-                              <a href="#" class="btn btn-prev">Previous</a>
-                              <input type="submit" value="Submit" class="btn"/>
+                            <div class="column" style="padding-left: 45px;">  
+                            <!-- Button trigger modal -->
+                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal1">
+                                <i class="fas fas far fa-address-book text-white-300"></i>
+                            </button>
+                            
+                            <!-- Modal -->
+                            <div class="modal fade" id="exampleModal1" tabindex="-1" role="dialog" aria-labelledby="exampleModal1Label" aria-hidden="true">
+                                <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                    <!-- Modals Heading -->
+                                    <div class="d-sm-flex align-items-center justify-content-between mb-1">
+                                        <h1 class="h5 mb-0 text-gray-800">Alamat</h1>
+                                        <a href="#" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm" style="margin-left: 65px;">Tambah Alamat</a>
+                                    </div>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                    </div>
+                                    
+                                    <div class="modal-body">
+                                        <div class="input-group mb-3">
+                                            <input type="text" class="form-control" placeholder="Cari Nama Penerima" aria-label="Cari Nama Penerima" aria-describedby="button-addon2" style="height: 100%;">
+                                            <div class="input-group-append">
+                                                <button class="btn btn-outline-secondary" type="button" id="button-addon2">
+                                                <i class="fas fas far fas fa-search text-white-300"></i>
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <div id="d-nama-pengirim" style="max-height:52vh; overflow-y:scroll;">
+                                            <button class="btn btn-sm btn-outline-info w-100 h-100 text-left p-2 my-1 data-pengirim-select" id="56" style="flex-wrap:wrap;">PT. PRISLED LIGHTING
+                                                <p>
+                                                +62 813-6527-9355<br>
+                                                KOMPLEK UNION BLOK A NO  9 &amp; 10<br>
+                                                Kepulauan Riau, Kota Batam, Batu Ampar, Batu Merah, 29452
+                                                </p>
+                                            </button>
+                                            <button class="btn btn-sm btn-outline-info w-100 h-100 text-left p-2 my-1 data-pengirim-select" id="56" style="flex-wrap:wrap;">PT. PRISLED LIGHTING
+                                                <p>
+                                                +62 813-6527-9355<br>
+                                                KOMPLEK UNION BLOK A NO  9 &amp; 10<br>
+                                                Kepulauan Riau, Kota Batam, Batu Ampar, Batu Merah, 29452
+                                                </p>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                    </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                    </form>
                     </div>
-                    <script src="script.js"></script>
-                </body>   
-                
-                <!-- Footer -->
-                <footer class="sticky-footer bg-white">
-                    <div class="container my-auto">
-                        <div class="copyright text-center my-auto">
-                            <span>Copyright &copy; xpdcargo.id</span>
+                            <label for="namapenerima">Nama Penerima</label>
+                            <input type="text" name="namapenerima" id="namapenerima" placeholder="Nama Instansi/PT/CV/Tbk">
+                            <label for="teleponpenerima">Telepon Penerima</label>
+                            <input type="number" name="teleponpenerima" id="teleponpenerima" placeholder="Nomor Telepon Penerima">
+                            <label for="alamatpenerima">Alamat Penerima</label>
+                            <input type="text" name="alamatpenerima" id="alamatpenerima">
+                            <label for="lokasipenerima">Lokasi Penerima</label>
+                            <select style="width: 100%; border-radius: 5px; outline: none;border: none;background: #DEDEDE;padding: 5px;color: #797979;">
+                                <option>--Pilih Lokasi--</option>
+                                <option>Jakarta</option>
+                                <option>Tangerang</option>
+                                <option>Bekasi</option>
+                            </select>
+                            <label for="picpenerima">PIC Penerima (Optional)</label>
+                            <input type="text" name="picpenerima" id="picpenerima" placeholder="Nama Bpk/Ibu Penerima">
+                            <label for="emailpenerima">Email Penerima (Optional)</label>
+                            <input type="email" name="emailpenerima" id="emailpenerima" placeholder="Alamat email penerima">
+                        </div>
                         </div>
                     </div>
-                </footer>
-                <!-- End of Footer -->
-
-            </div>
-            <!-- End of Content Wrapper -->
-
-            </div>
-            <!-- End of Page Wrapper -->
-
-            <!-- Scroll to Top Button-->
-            <a class="scroll-to-top rounded" href="#page-top">
-            <i class="fas fa-angle-up"></i>
-            </a>
-
-           <!-- Logout Modal-->
-            <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-            aria-hidden="true">
-            <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">Are you sure to log out?</h5>
-                        <button class="close" type="button" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">×</span>
-                        </button>
-                    </div>
-                    <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
-                    <div class="modal-footer">
-                        <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
-                        <a class="btn btn-primary" href="login.html">Logout</a>
+                    <div class="btns-group">
+                        <a href="#" class="btn btn-next">Next</a>
                     </div>
                 </div>
+
+                <div class="form-step">
+                    <div class="input-group">
+                    
+                    <div class="row" style="width: 100%;">
+                        <div class="column" style="padding: 20px;width: 50%;">
+                            <h1 class="h3 mb-0 text-gray-800" style="font-size: 20px;">Informasi Detail Barang</h1>
+                            <label for="namabarang">Nama Barang</label>
+                            <input type="text" name="namabarang" id="namabarang">
+                            <label for="asuransi">Asuransi</label>
+                            <select style="width: 100%; border-radius: 5px; outline: none;border: none;background: #DEDEDE;padding: 5px;color: #797979;">
+                                <option>--Pilih Asuransi--</option>
+                                <option>Ya</option>
+                                <option>Tidak</option>
+                            </select>
+                            <label for="nomorreferensi">No Referensi (Optional)</label>
+                            <input type="text" name="nomorreferensi" id="nomorreferensi">
+                        </div>
+                        <div class="column" style="padding: 45px;width: 50%;">
+                            <label for="hargabarang">Harga Barang</label>
+                            <input type="number" name="hargabarang" id="hargabarang">
+                            <label for="upload">Upload Dokumen</label>
+                            <div class="file-upload">
+                                <div class="file-select">
+                                    <div class="file-select-button" id="fileName">Choose File</div>
+                                    <div class="file-select-name" id="noFile">No file chosen...</div> 
+                                    <input type="file" name="chooseFile" id="chooseFile">
+                                </div>
+                                </div>
+                            <label for="syarat">Syarat dan Ketentuan</label>
+                            <br>
+                        
+                            <!-- Button trigger modal -->
+                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalLong">
+                                <i class="fas fas far far fa-file-alt text-white-500" style="font-size: 25px;"></i>
+                            </button>
+                            
+                            <!--Modal syarat ketentuan-->
+                            <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-scrollable" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLongTitle">Syarat dan Ketentuan</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <ol style="padding: 10px;text-align: justify;">
+                                            <li>Semua harga dan peraturan dianggap sah dan disepakati oleh PELANGGAN, apabila PELANGGAN sudah menyetujui syarat dan ketentuan pengiriman setelah melakukan pemesanan JASA PENGIRIMAN.</li>
+                                            <li>PELANGGAN wajib memberitahukan dengan jelas dan benar isi dan nilai BARANG KIRIMAN. Keterangan yang tidak benar mengenai hal tersebut sepenuhnya menjadi tanggung jawab PELANGGAN. XPDC tidak bertanggung jawab atas kerugian/kejadian yang timbul akibat kesalahan informasi yang diberikan.</li>
+                                            <li>
+                                                PENGIRIM wajib mengemas BARANG KIRIMAN nya dengan baik untuk melindungi isi BARANG KIRIMAN nya selama pengangkutan. Apabila timbul suatu kerugian yang disebabkan karena pengemasan yang kurang sempurna, maka kerugian tersebut bukan menjadi tanggung jawab XPDC.
+                                            </li>
+                                            <li>
+                                                Biaya JASA PENGIRIMAN XPDC dihitung menggunakan dengan metode perhitungan yang mana akan digunakan salah satu yang terbesar antara berat aktual atau berat dimensi dan setiap BARANG KIRIMAN dapat ditimbang dan diukur ulang kembali oleh XPDC. Apabila terdapat penambahan berat yang diakibatkan oleh adanya proses pengemasan tambahan yang dilakukan oleh XPDC, maka yang digunakan sebagai acuan dalam penagihan adalah berat setelah dikemas ulang.
+                                            </li>
+                                            <li>
+                                                PELANGGAN bertanggung jawab untuk melindungi BARANG KIRIMAN dengan asuransi yang memadai dan menanggung biaya premi yang berlaku. Ganti rugi untuk barang yang diasuransikan adalah sesuai dengan ketentuan asuransi yang berlaku di XPDC. Apabila PELANGGAN tidak membeli asuransi, maka penggantian atas BARANG KIRIMAN yang hilang atau rusak, akan diberikan sesuai dengan syarat dan ketentuan yang berlaku.
+                                            </li>
+                                            <li>
+                                                Apabila tidak ada ada keluhan dari PENERIMA pada saat BARANG KIRIMAN diserahkan, maka BARANG KIRIMAN dianggap telah diterima dengan baik dan benar.
+                                            </li>
+                                            <li>
+                                                XPDC berhak namun tidak wajib untuk membuka dan memeriksa BARANG KIRIMAN disertai dokumentasi tanpa pemberitahuan ke PELANGGAN/PENGIRIM/PENERIMA terlebih dahulu dengan alasan keselamatan, keamanan atau alasan sesuai regulasi lainnya.
+                                            </li>
+                                        <li>
+                                                XPDC tidak bertanggung jawab atas kerugian yang timbul dari keadaan di luar kendali atau Force Majeure termasuk kehilangan dan kerusakan atas ISI BARANG KIRIMAN baik dari segi jenis atau jumlah dan kerugian lainnya yang secara materi atau non-materi yang terkait dengan keterlambatan proses JASA PENGIRIMAN.
+                                        </li>
+                                        <li>
+                                                Dalam hal BARANG KIRIMAN hilang akibat dari kelalaian XPDC, PELANGGAN berhak mengajukan klaim paling lambat 3 (tiga) hari setelah XPDC menyatakan bahwa benar BARANG KIRIMAN tidak dapat ditemukan. Apabila PELANGGAN tidak mengajukan klaim atas kehilangan BARANG KIRIMAN dalam waktu yang sudah ditentukan, maka hak untuk mengajukan klaim dinyatakan tidak berlaku.
+                                        </li>
+                                        <li>
+                                                Pengajuan klaim dilakukan oleh PELANGGAN dengan mengirimkan pernyataan tertulis dengan melampirkan dokumen pendukung sebagai syarat klaim berupa :
+                                                <ol type="a">
+                                                    <li>ldentitas PELANGGAN yang masih berlaku.</li>
+                                                    <li>NOMOR PELACAKAN BARANG KIRIMAN.</li>
+                                                    <li>Detail isi BARANG KIRIMAN</li>
+                                                    <li>Foto Kemasan dan Foto isi BARANG KIRIMAN</li>
+                                                    <li>Apabila diasuransikan harus disertakan dengan Premi Asuransi Pengiriman Barang.</li>
+                                                </ol>
+                                        </li>
+                                        <li>Dan dikirim ke kantor pusat XPDC yang beralamat di : 
+                                            <ul>
+                                                PT. XENTRA PLATFORM DIGITAL CARGO Warehouse Aeropolis Technopark ASW F.21 <em>Jl. Marsekal Suryadharma, Neglasari, Kota Tangerang, Banten, Indonesia</em>
+                                            </ul>
+                                            </li>
+                                        <li>
+                                            Selain perjanjian atau syarat dan ketentuan yang tertulis pada NOMOR PELACAKAN ini, XPDC tidak dapat dituntut dan dibebani dengan perjanjian atau dasar hukum lainnya kecuali dengan perjanjian tertulis yang disetujui oleh penanggung jawab XPDC yang berwenang.
+                                        </li>
+                                        <li>Pembatalan JASA PENGIRIMAN dibagi menjadi 2 (dua)</li>
+                                        <ol type="a">
+                                            <li>Pembatalan JASA PENGIRIMAN pada saat BARANG KIRIMAN dijemput, maka akan dikenakan biaya pembatalan (cancelation fee) minimum sebesar 30% (Tiga Puluh Persen) dari total biaya JASA PENGIRIMAN.</li>
+                                            <li>Pembatalan JASA PENGIRIMAN yang sudah dibayarkan tidak dapat dikembalikan apabila BARANG KIRIMAN telah diproses di Service Centre. Dengan ini pihak PELANGGAN menyatakan bahwa dapat menerima dan menyetujui syarat-syarat dan ketentuan tersebut.</li>
+                                        </ol>
+                                        <li>Saat menyerahkan barang kepada XPDC, PELANGGAN dianggap telah membaca dan menyetujui semua syarat dan ketentuan pengiriman yang tertera pada NOMOR PELACAKAN ini tanpa adanya paksaan dari pihak manapun, serta membebaskan XPDC dari segala tuntutan atau bentuk ganti rugi.</li>
+                                        </ol>
+                                    </div>
+                                    <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                                </div>
+                            </div>
+                            
+                            </div>
+                            </div>
+                    </div>
+                    <div class="btns-group">
+                        <a href="#" class="btn btn-prev">Previous</a>
+                        <a href="#" class="btn btn-next">Next</a>
+                    </div>
+                </div>
+                  
+                <div class="form-step">
+                    <div class="input-group">
+                        <div class="row" style="width: 100%;">
+                            <div class="column" style="padding: 20px;width: 50%;margin: 0;padding-top: 0;">
+                                <label for="jumlahbox">Jumlah Per-Box</label>
+                                <input type="number" name="jumlahbox" id="jumlahbox" placeholder="Jumlah Per-Box" >
+                            </div>
+                            <div class="column" style="padding: 20px;width: 50%;margin: 0;padding-top: 0;">
+                                <label for="berat">Berat</label>
+                                <input type="number" name="berat" id="berat" placeholder="Berat (Kg)">
+                            </div>
+                            <div class="column" style="padding: 20px;width: 30%;margin: 0;padding-top: 0;">
+                                <label for="panjang">Panjang</label>
+                                <input type="number" name="panjang" id="panjang" placeholder="Panjang (cm)" >
+                            </div>
+                            <div class="column" style="padding: 20px;width: 30%;margin: 0;padding-top: 0;">
+                                <label for="lebar">Lebar</label>
+                                <input type="number" name="lebar" id="lebar" placeholder="Lebar (cm)">
+                            </div>
+                            <div class="column" style="padding: 20px;width: 30%;margin: 0;padding-top: 0;">
+                                <label for="tinggi">Tinggi</label>
+                                <input type="number" name="tinggi" id="tinggi" placeholder="Tinggi (cm)" >
+                            </div>
+                            <div class="column" style="padding: 20px;width: 10%;margin: 0;padding-top: 0;">
+                                <label for="hargabarang">Aksi:</label>
+                                <button style="padding: 10px; background: #0000A0;color: white;outline: none; border: none;width: 50px; border-radius: 5px;">
+                                    <i class="fas fas fas fas fa-plus text-white-300"></i>
+                                </button>
+                            </div>
+                            <!-- <div class="column" style="padding: 20px;width: 30%;margin: 0;padding-top: 0;">
+                            <label for="panjang">Panjang</label>
+                            <input type="number" name="panjang" id="panjang" placeholder="Panjang (cm)" >
+                        </div>
+                        <div class="column" style="padding: 20px;width: 30%;margin: 0;padding-top: 0;">
+                            <label for="lebar">Lebar</label>
+                            <input type="number" name="lebar" id="lebar" placeholder="Lebar (cm)">
+                        </div>
+                        <div class="column" style="padding: 20px;width: 30%;margin: 0;padding-top: 0;">
+                            <label for="tinggi">Tinggi</label>
+                            <input type="number" name="tinggi" id="tinggi" placeholder="Tinggi (cm)" >
+                        </div>
+                        <div class="column" style="padding: 20px;width: 10%;margin: 0;padding-top: 0;">
+                            <label for="hargabarang">Aksi:</label>
+                            <button style="padding: 10px; background: #0000A0;color: white;outline: none; border: none;width: 50px; border-radius: 5px;">
+                                <i class="fas fas fas fas fa-trash-alt text-white-300"></i>
+                            </button>
+                        </div>
+                        </div>
+                         -->
+                        <div class="row" style="width: 100%;">
+                        <div class="column" style="padding: 20px;width: 30%;">
+                            <label for="berat">Berat Aktual:</label>
+                        </div>
+                        <div class="column" style="padding: 20px;width: 30%;">
+                            <label for="volume">Berat Volume:</label>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="btns-group">
+                        <a href="#" class="btn btn-prev">Previous</a>
+                        <a href="#" class="btn btn-next">Next</a>
+                    </div>
+                </div>
+            
+                <div class="form-step">
+                    <div class="input-group">
+                    <div class="row" style="width: 100%;">
+                        <div class="column" style="padding: 20px;width: 50%;">
+                        <h1 class="h3 mb-0 text-gray-800" style="font-size: 20px;">Catatan Pengiriman</h1>
+                            <textarea name="namapengirim" id="namapengirim" style="width: 100%;border: none;outline: none;height: 100%;" ></textarea>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="btns-group">
+                        <a href="#" class="btn btn-prev">Previous</a>
+                        <input type="submit" value="Submit" class="btn"/>
+                    </div>
+                </div>
+                </div>
+            </form>
+            </div>
+            <script src="script.js"></script>
+        </body>   
+                
+        <!-- Footer -->
+        <footer class="sticky-footer bg-white">
+            <div class="container my-auto">
+                <div class="copyright text-center my-auto">
+                    <span>Copyright &copy; xpdcargo.id</span>
+                </div>
+            </div>
+        </footer>
+        <!-- End of Footer -->
+
+    </div>
+    <!-- End of Content Wrapper -->
+
+    </div>
+    <!-- End of Page Wrapper -->
+
+    <!-- Scroll to Top Button-->
+    <a class="scroll-to-top rounded" href="#page-top">
+    <i class="fas fa-angle-up"></i>
+    </a>
+
+    <!-- Logout Modal-->
+    <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Anda yakin ingin keluar?</h5>
+                <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">×</span>
+                </button>
+            </div>
+            <div class="modal-body">Pilih "Keluar" di bawah jika Anda siap untuk mengakhiri sesi Anda saat ini.</div>
+            <div class="modal-footer">
+                <button class="btn btn-secondary" type="button" data-dismiss="modal">Batal</button>
+                <a class="btn btn-primary" href="login.html">Keluar</a>
             </div>
         </div>
+    </div>
+</div>
 
-            <!-- Bootstrap core JavaScript-->
-            
-            <script src="js/express.js"></script>
-            <script src="vendor/jquery/jquery.min.js"></script>
-            <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- Bootstrap core JavaScript-->
+    
+    <script src="js/express.js"></script>
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
-            <!-- Core plugin JavaScript-->
-            <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+    <!-- Core plugin JavaScript-->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
 
-            <!-- Custom scripts for all pages-->
-            <script src="js/sb-admin-2.min.js"></script>
-            
-            <script src="js/reguler.js"></script>
+    <!-- Custom scripts for all pages-->
+    <script src="js/sb-admin-2.min.js"></script>
+    
+    <script src="js/reguler.js"></script>
 
-            <!-- Page level plugins -->
-            <script src="vendor/chart.js/Chart.min.js"></script>
+    <!-- Page level plugins -->
+    <script src="vendor/chart.js/Chart.min.js"></script>
 
-            <!-- Page level custom scripts -->
-            <script src="js/demo/chart-area-demo.js"></script>
-            <script src="js/demo/chart-pie-demo.js"></script>
+    <!-- Page level custom scripts -->
+    <script src="js/demo/chart-area-demo.js"></script>
+    <script src="js/demo/chart-pie-demo.js"></script>
 
-            </body>
-
+</body>
 </html>
