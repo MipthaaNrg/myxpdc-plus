@@ -1,270 +1,271 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
-
-    <title>XPDC</title>
-
-    <!-- Custom fonts for this template-->
-    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
-    <link
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>XPDC - Riwayat Transaksi</title>
+        <link href="https://cdn.jsdelivr.net/npm/simple-datatables@latest/dist/style.css" rel="stylesheet" />
+        <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+        <link
         href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
         rel="stylesheet">
 
-    <!-- Custom styles for this template-->
-    <link href="css/riwayat-transaksi.css" rel="stylesheet">
+    <!-- Custom styles-->
+    
+    <link href="img/ic_launcher.png" rel='shortcut icon'>
     <link href="css/sb-admin-2.min.css" rel="stylesheet">
+    <link href="css/daftar-alamat.css" rel="stylesheet">
+    <link href="css/daftar-pengiriman.css" rel="stylesheet">
+        <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
+    </head>
+    <body id="page-top">
 
-</head>
-
-<body id="page-top">
-
-    <!-- Page Wrapper -->
-    <div id="wrapper">
-
-        <!-- Sidebar -->
-        <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
-
-            <!-- Sidebar - Brand -->
-            <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
-                <div class="sidebar-brand-icon rotate-n-15">
-                    <!-- <i class="fas fa-laugh-wink"></i> -->
-                    <img src="img/ic_launcher.png">
-                </div>
-                <div class="sidebar-brand-text mx-3">XPDC <sup>Operational</sup></div>
-            </a>
-
-            <!-- Divider -->
-            <hr class="sidebar-divider my-0">
-
-            <!-- Nav Item - Dashboard -->
-            <li class="nav-item active">
-                <a class="nav-link" href="index.html">
-                    <i class="fas fa-fw fa-tachometer-alt"></i>
-                    <span>Dashboard</span></a>
-            </li>
-
-            <!-- Nav Item - Pages Collapse Menu -->
-            <li class="nav-item">
-                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapsePengiriman"
-                    aria-expanded="true" aria-controls="collapsePengiriman">
-                    <i class="fas fa-fw fa-truck"></i>
-                    <span>Pengiriman</span>
+        <!-- Page Wrapper -->
+        <div id="wrapper">
+    
+            <!-- Sidebar -->
+            <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
+    
+                <!-- Sidebar - Brand -->
+                <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
+                    <div class="sidebar-brand-icon rotate-n-15">
+                        <!-- <i class="fas fa-laugh-wink"></i> -->
+                        <img src="img/ic_launcher.png">
+                    </div>
+                    <div class="sidebar-brand-text mx-3">XPDC <sup>Operational</sup></div>
                 </a>
-                <div id="collapsePengiriman" class="collapse" aria-labelledby="headingPengiriman"
-                data-parent="#accordionSidebar">
-                <div class="bg-white py-2 collapse-inner rounded">
-                    <a class="collapse-item" href="pengiriman.html">Buat Pengiriman</a>
-                    <a class="collapse-item" href="daftar-pengiriman.html">Daftar Pengiriman</a>
-                </div>
-            </div>
-            </li>
-
-            <!-- Nav Item - Utilities Collapse Menu -->
-            <li class="nav-item">
-                <a class="nav-link collapsed" href="riwayat-transaksi.html">
-                    <i class="fas fa-fw fas fa-history"></i>
-                    <span>Riwayat Transaksi</span>
-                </a>
-            </li>
-
-            
-            <!-- Nav Item - Contract Collapse Menu -->
-            <li class="nav-item">
-            <a class="nav-link collapsed" href="contract.html">
-                <i class="fas fa-fw fas fa-file-contract"></i>
-                <span>Kontrak</span>
-            </a>
-            </li>
-
-            <!-- Nav Item - Pages Collapse Menu -->
-            <li class="nav-item">
-                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapsePages"
-                    aria-expanded="true" aria-controls="collapsePages">
-                    <i class="fas fa-fw fa-wrench"></i>
-                    <span>Pengaturan</span>
-                </a>
-                <div id="collapsePages" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
+    
+                <!-- Divider -->
+                <hr class="sidebar-divider my-0">
+    
+                <!-- Nav Item - Dashboard -->
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">
+                        <i class="fas fa-fw fa-tachometer-alt"></i>
+                        <span>Dashboard</span></a>
+                </li>
+    
+                <!-- Nav Item - Pages Collapse Menu -->
+                <li class="nav-item">
+                    <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapsePengiriman"
+                        aria-expanded="true" aria-controls="collapsePengiriman">
+                        <i class="fas fa-fw fa-truck"></i>
+                        <span>Pengiriman</span>
+                    </a>
+                    <div id="collapsePengiriman" class="collapse" aria-labelledby="headingPengiriman"
+                    data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
-                        <a class="collapse-item" href="404.html">Pengaturan User</a>
-                        <a class="collapse-item" href="daftar-alamat.html">Daftar Alamat</a>
+                        <a class="collapse-item" href="pengiriman.html">Buat Pengiriman</a>
+                        <a class="collapse-item" href="daftar-pengiriman.html">Daftar Pengiriman</a>
                     </div>
                 </div>
-            </li>
-
-          <!-- Nav Item - Bantuan-->
-          <li class="nav-item">
-            <a class="nav-link" href="bantuan.html">
-                <i class="fas fa-fw fas fa-headphones-alt"></i>
-                <span>Bantuan</span></a>
-          </li>
-
-            <!-- Divider -->
-            <hr class="sidebar-divider d-none d-md-block">
-
-            <!-- Sidebar Toggler (Sidebar) -->
-            <div class="text-center d-none d-md-inline">
-                <button class="rounded-circle border-0" id="sidebarToggle"></button>
-            </div>
-
-        </ul>
-        <!-- End of Sidebar -->
-
-        <!-- Content Wrapper -->
-        <div id="content-wrapper" class="d-flex flex-column">
-
-            <!-- Main Content -->
-            <div id="content">
-
-                <!-- Topbar -->
-                <nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
-
-                    <!-- Sidebar Toggle (Topbar) -->
-                    <button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3">
-                        <i class="fa fa-bars"></i>
-                    </button>
-
-                    <!-- Topbar Search -->
-                    <form
-                        class="d-none d-sm-inline-block form-inline mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search">
-                        <div class="input-group">
-                            <input type="text" class="form-control bg-light border-0 small" placeholder="Search for..."
-                                aria-label="Search" aria-describedby="basic-addon2">
-                            <div class="input-group-append">
-                                <button class="btn btn-primary" type="button">
-                                    <i class="fas fa-search fa-sm"></i>
-                                </button>
-                            </div>
+                </li>
+    
+                <!-- Nav Item - Utilities Collapse Menu -->
+                <li class="nav-item">
+                    <a class="nav-link collapsed" href="riwayat-transaksi.html">
+                        <i class="fas fa-fw fas fa-history"></i>
+                        <span>Riwayat Transaksi</span>
+                    </a>
+                </li>
+    
+                <!-- Nav Item - Contract Collapse Menu -->
+                <li class="nav-item">
+                    <a class="nav-link collapsed" href="contract.html">
+                        <i class="fas fa-fw fas fa-file-contract"></i>
+                        <span>Kontrak</span>
+                    </a>
+                </li>
+    
+                <!-- Nav Item - Pages Collapse Menu -->
+                <li class="nav-item">
+                    <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapsePages"
+                        aria-expanded="true" aria-controls="collapsePages">
+                        <i class="fas fa-fw fa-wrench"></i>
+                        <span>Pengaturan</span>
+                    </a>
+                    <div id="collapsePages" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
+                        <div class="bg-white py-2 collapse-inner rounded">
+                            <!-- <h6 class="collapse-header">Login Screens:</h6>
+                            <a class="collapse-item" href="login.html">Login</a>
+                            <a class="collapse-item" href="register.html">Register</a>
+                            <a class="collapse-item" href="forgot-password.html">Forgot Password</a>
+                            <div class="collapse-divider"></div>
+                            <h6 class="collapse-header">Other Pages:</h6> -->
+                            <a class="collapse-item" href="404.html">Pengaturan User</a>
+                            <a class="collapse-item" href="daftar-alamat.html">Daftar Alamat</a>
                         </div>
-                    </form>
-
-                    <!-- Topbar Navbar -->
-                    <ul class="navbar-nav ml-auto">
-
-                        <!-- Nav Item - Search Dropdown (Visible Only XS) -->
-                        <li class="nav-item dropdown no-arrow d-sm-none">
-                            <a class="nav-link dropdown-toggle" href="#" id="searchDropdown" role="button"
+                    </div>
+                </li>
+    
+                <!-- Nav Item - Bantuan-->
+                <li class="nav-item">
+                    <a class="nav-link" href="bantuan.html">
+                        <i class="fas fa-fw fas fa-headphones-alt"></i>
+                        <span>Bantuan</span></a>
+                </li>
+    
+                <!-- Divider -->
+                <hr class="sidebar-divider d-none d-md-block">
+    
+                <!-- Sidebar Toggler (Sidebar) -->
+                <div class="text-center d-none d-md-inline">
+                    <button class="rounded-circle border-0" id="sidebarToggle"></button>
+                </div>
+    
+            </ul>
+            <!-- End of Sidebar -->
+    
+            <!-- Content Wrapper -->
+            <div id="content-wrapper" class="d-flex flex-column">
+    
+                <!-- Main Content -->
+                <div id="content">
+    
+                    <!-- Topbar -->
+                    <nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
+    
+                        <!-- Sidebar Toggle (Topbar) -->
+                        <button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3">
+                            <i class="fa fa-bars"></i>
+                        </button>
+    
+                        <!-- Topbar Search -->
+                        <form
+                            class="d-none d-sm-inline-block form-inline mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search">
+                            <div class="input-group">
+                                <input type="text" class="form-control bg-light border-0 small" placeholder="Search for..."
+                                    aria-label="Search" aria-describedby="basic-addon2">
+                                <div class="input-group-append">
+                                    <button class="btn btn-primary" type="button">
+                                        <i class="fas fa-search fa-sm"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+    
+                        <!-- Topbar Navbar -->
+                        <ul class="navbar-nav ml-auto">
+    
+                            <!-- Nav Item - Search Dropdown (Visible Only XS) -->
+                            <li class="nav-item dropdown no-arrow d-sm-none">
+                                <a class="nav-link dropdown-toggle" href="#" id="searchDropdown" role="button"
+                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <i class="fas fa-search fa-fw"></i>
+                                </a>
+                                <!-- Dropdown - Messages -->
+                                <div class="dropdown-menu dropdown-menu-right p-3 shadow animated--grow-in"
+                                    aria-labelledby="searchDropdown">
+                                    <form class="form-inline mr-auto w-100 navbar-search">
+                                        <div class="input-group">
+                                            <input type="text" class="form-control bg-light border-0 small"
+                                                placeholder="Search for..." aria-label="Search"
+                                                aria-describedby="basic-addon2">
+                                            <div class="input-group-append">
+                                                <button class="btn btn-primary" type="button">
+                                                    <i class="fas fa-search fa-sm"></i>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </li>
+    
+                           <!-- Nav Item - Alerts -->
+                        <li class="nav-item dropdown no-arrow mx-1">
+                            <a class="nav-link dropdown-toggle" href="#" id="alertsDropdown" role="button"
                                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                <i class="fas fa-search fa-fw"></i>
+                                <i class="fas fa-bell fa-fw"></i>
+                                <!-- Counter - Alerts -->
+                                <span class="badge badge-danger badge-counter">5+</span>
                             </a>
-                            <!-- Dropdown - Messages -->
-                            <div class="dropdown-menu dropdown-menu-right p-3 shadow animated--grow-in"
-                                aria-labelledby="searchDropdown">
-                                <form class="form-inline mr-auto w-100 navbar-search">
-                                    <div class="input-group">
-                                        <input type="text" class="form-control bg-light border-0 small"
-                                            placeholder="Search for..." aria-label="Search"
-                                            aria-describedby="basic-addon2">
-                                        <div class="input-group-append">
-                                            <button class="btn btn-primary" type="button">
-                                                <i class="fas fa-search fa-sm"></i>
-                                            </button>
+                            <!-- Dropdown - Alerts -->
+                            <div class="dropdown-list dropdown-menu dropdown-menu-right shadow animated--grow-in"
+                                aria-labelledby="alertsDropdown">
+                                <h6 class="dropdown-header">
+                                    Notifikasi
+                                </h6>
+                                <a class="dropdown-item d-flex align-items-center" href="#">
+                                    <div class="mr-3">
+                                        <div class="icon-circle bg-primary">
+                                            <i class="fas fa-file-alt text-white"></i>
                                         </div>
                                     </div>
-                                </form>
+                                    <div>
+                                        <div class="small text-gray-500">Oktober 12, 2022</div>
+                                        <span class="font-weight-bold">Tagihan atas pesanan dengan nomor tracking XPDC202208984</span>
+                                    </div>
+                                </a>
+                                <a class="dropdown-item d-flex align-items-center" href="#">
+                                    <div class="mr-3">
+                                        <div class="icon-circle bg-success">
+                                            <i class="fas fa-donate text-white"></i>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="small text-gray-500">Oktober 17, 2022</div>
+                                        Pembayaran dengan nomor tracking XPDC20228193
+                                        <p>telah berhasil</p>
+                                    </div>
+                                </a>
+                                <a class="dropdown-item text-center small text-gray-500" href="#">Tampilkan Semua Notifikasi</a>
                             </div>
                         </li>
 
-                     <!-- Nav Item - Alerts -->
-                     <li class="nav-item dropdown no-arrow mx-1">
-                        <a class="nav-link dropdown-toggle" href="#" id="alertsDropdown" role="button"
-                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            <i class="fas fa-bell fa-fw"></i>
-                            <!-- Counter - Alerts -->
-                            <span class="badge badge-danger badge-counter">5+</span>
-                        </a>
-                        <!-- Dropdown - Alerts -->
-                        <div class="dropdown-list dropdown-menu dropdown-menu-right shadow animated--grow-in"
-                            aria-labelledby="alertsDropdown">
-                            <h6 class="dropdown-header">
-                                Alerts Center
-                            </h6>
-                            <a class="dropdown-item d-flex align-items-center" href="#">
-                                <div class="mr-3">
-                                    <div class="icon-circle bg-primary">
-                                        <i class="fas fa-file-alt text-white"></i>
+                        <!-- Nav Item - Messages -->
+                        <li class="nav-item dropdown no-arrow mx-1">
+                            <a class="nav-link dropdown-toggle" href="#" id="messagesDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="fas fa-envelope fa-fw"></i>
+                                <!-- Counter - Messages -->
+                                <span class="badge badge-danger badge-counter">7</span>
+                            </a>
+                            <!-- Dropdown - Messages -->
+                            <div class="dropdown-list dropdown-menu dropdown-menu-right shadow animated--grow-in"
+                                aria-labelledby="messagesDropdown">
+                                <h6 class="dropdown-header">
+                                    Pusat Pesan
+                                </h6>
+                                <a class="dropdown-item d-flex align-items-center" href="#">
+                                    <div class="dropdown-list-image mr-3">
+                                        <img class="rounded-circle" src="img/undraw_profile_1.svg"
+                                            alt="...">
+                                        <div class="status-indicator bg-success"></div>
                                     </div>
-                                </div>
-                                <div>
-                                    <div class="small text-gray-500">December 12, 2019</div>
-                                    <span class="font-weight-bold">A new monthly report is ready to download!</span>
-                                </div>
-                            </a>
-                            <a class="dropdown-item d-flex align-items-center" href="#">
-                                <div class="mr-3">
-                                    <div class="icon-circle bg-success">
-                                        <i class="fas fa-donate text-white"></i>
+                                    <div class="font-weight-bold">
+                                        <div class="text-truncate">Kontrak telah disetujui</div>
+                                        <div class="small text-gray-500">XPDC · 58m</div>
                                     </div>
-                                </div>
-                                <div>
-                                    <div class="small text-gray-500">December 7, 2019</div>
-                                    Invitation accepted
-                                    <p>Your have been Invited</p>
-                                </div>
-                            </a>
-                            <a class="dropdown-item text-center small text-gray-500" href="#">Show All Alerts</a>
-                        </div>
-                    </li>
-
-                    <!-- Nav Item - Messages -->
-                    <li class="nav-item dropdown no-arrow mx-1">
-                        <a class="nav-link dropdown-toggle" href="#" id="messagesDropdown" role="button"
-                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            <i class="fas fa-envelope fa-fw"></i>
-                            <!-- Counter - Messages -->
-                            <span class="badge badge-danger badge-counter">7</span>
-                        </a>
-                        <!-- Dropdown - Messages -->
-                        <div class="dropdown-list dropdown-menu dropdown-menu-right shadow animated--grow-in"
-                            aria-labelledby="messagesDropdown">
-                            <h6 class="dropdown-header">
-                                Message Center
-                            </h6>
-                            <a class="dropdown-item d-flex align-items-center" href="#">
-                                <div class="dropdown-list-image mr-3">
-                                    <img class="rounded-circle" src="img/undraw_profile_1.svg"
-                                        alt="...">
-                                    <div class="status-indicator bg-success"></div>
-                                </div>
-                                <div class="font-weight-bold">
-                                    <div class="text-truncate">Hi there! I am wondering if you can help me with a
-                                        problem I've been having.</div>
-                                    <div class="small text-gray-500">Emily Fowler · 58m</div>
-                                </div>
-                            </a>
-                            <a class="dropdown-item d-flex align-items-center" href="#">
-                                <div class="dropdown-list-image mr-3">
-                                    <img class="rounded-circle" src="img/undraw_profile_2.svg"
-                                        alt="...">
-                                    <div class="status-indicator"></div>
-                                </div>
-                                <div>
-                                    <div class="text-truncate">I have the photos that you ordered last month, how
-                                        would you like them sent to you?</div>
-                                    <div class="small text-gray-500">Jae Chun · 1d</div>
-                                </div>
-                            </a>
-                            <a class="dropdown-item d-flex align-items-center" href="#">
-                                <div class="dropdown-list-image mr-3">
-                                    <img class="rounded-circle" src="img/undraw_profile_3.svg"
-                                        alt="...">
-                                    <div class="status-indicator bg-warning"></div>
-                                </div>
-                                <div>
-                                    <div class="text-truncate">Last month's report looks great, I am very happy with
-                                        the progress so far, keep up the good work!</div>
-                                    <div class="small text-gray-500">Morgan Alvarez · 2d</div>
-                                </div>
-                            </a>
-                            <a class="dropdown-item text-center small text-gray-500" href="#">Read More Messages</a>
-                        </div>
-                    </li>
+                                </a>
+                                <a class="dropdown-item d-flex align-items-center" href="#">
+                                    <div class="dropdown-list-image mr-3">
+                                        <img class="rounded-circle" src="img/undraw_profile_2.svg"
+                                            alt="...">
+                                        <div class="status-indicator"></div>
+                                    </div>
+                                    <div>
+                                        <div class="text-truncate">Pembaruan syarat dan ketentuan pengiriman</div>
+                                        <div class="small text-gray-500">XPDC · 1d</div>
+                                    </div>
+                                </a>
+                                <!-- <a class="dropdown-item d-flex align-items-center" href="#">
+                                    <div class="dropdown-list-image mr-3">
+                                        <img class="rounded-circle" src="img/undraw_profile_3.svg"
+                                            alt="...">
+                                        <div class="status-indicator bg-warning"></div>
+                                    </div>
+                                    <div>
+                                        <div class="text-truncate">Last month's report looks great, I am very happy with
+                                            the progress so far, keep up the good work!</div>
+                                        <div class="small text-gray-500">Morgan Alvarez · 2d</div>
+                                    </div>
+                                </a> -->
+                                <a class="dropdown-item text-center small text-gray-500" href="#">Baca lebih banyak pesan</a>
+                            </div>
+                        </li>
 
                         <div class="topbar-divider d-none d-sm-block"></div>
 
@@ -294,132 +295,286 @@
                                 </a>
                             </div>
                         </li>
-
                     </ul>
-
                 </nav>
                 <!-- End of Topbar -->
 
-                <!-- Begin Page Content -->
-                <div class="container-fluid">
+            <!-- End of Topbar -->
+            <div id="layoutSidenav_content ">
+                <main>
+                    <div class="container-fluid px-4">
+                        <h1 class="mt-4">Riwayat Transaksi</h1>
+                        <ol class="breadcrumb mb-4">
+                            <li class="breadcrumb-item"><a href="index.html">Dashboard</a></li>
+                            <li class="breadcrumb-item active">Riwayat Transaksi</li>
+                        </ol>
 
-                    <!-- Page Heading -->
-                    <div class="d-sm-flex align-items-center justify-content-between mb-4">
-                        <h1 class="h3 mb-0 text-gray-800">Riwayat Transaksi</h1>
-                    </div>
-
-                     <!-- TAGIHAN BELUM DIBAYAR -->
+                        <!-- TAGIHAN BELUM DIBAYAR -->
                      <div class="row">
-                     <div class="col-xl-3 col-md-6 mb-4">
-                        <div class="card border-left-primary shadow h-100 py-2">
-                            <div class="card-body">
-                                <div class="row no-gutters align-items-center">
-                                    <div class="col mr-2">
-                                        <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">
-                                            Tagihan yang belum terbayarkan</div>
-                                        <div class="h5 mb-0 font-weight-bold text-gray-800">Rp. 12.000.000</div>
-                                    </div>
-                                    <div class="col-auto">
-                                        <i class="fas fas fas fa-dollar-sign fa-2x text-gray-300"></i>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-3 col-md-6 mb-4">
-                        <div class="card border-left-primary shadow h-100 py-2">
-                            <div class="card-body">
-                                <div class="row no-gutters align-items-center">
-                                    <div class="col mr-2">
-                                        <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">
-                                            Durasi Pembayaran:</div>
-                                        <div class="h5 mb-0 font-weight-bold text-gray-800">0 hari</div>
-                                    </div>
-                                    <div class="col-auto">
-                                        <i class="fas fas fas fas fa-history fa-2x text-gray-300"></i>
-                                    </div>
-                                </div>
-                            </div>
-                            </div>
-                        </div>
-                    </div>
-                 
-                    <table class="col-xl-12 content-table">
-                        <thead>
-                          <tr>
-                            <th>No</th>
-                            <th>No Tracking</th>
-                            <th>Tanggal</th>
-                            <th>Harga</th>
-                            <th>Jumlah</th>
-                            <th>Status Pembayaran</th>
-                            <th>Aksi</th>
-                          </tr>
-                        </thead>
-                        <tbody>
-                          <tr>
-                            <td>1</td>
-                            <td>
-                                <a href="#openModal-lihatdetailpengiriman" style="text-decoration: none;color: #858796;">XPDC2024786</a>
-                            </td>
-                            <td>03 Oktober 2022</td>
-                            <td>Rp. 12.000.000</td>
-                            <td>Rp. 12.000.000</td>
-                            <td style="color: red;">
-                                Sudah lewat 7 hari
-                            </td>
-                            <td>
-                                <a href="https://xpdcargo.id/login/admin/order/print_invoice/" target="_blank">
-                                    <button style="border: none;outline:none;background: #0000A0;color: white;border-radius: 5px;">
-                                        <i class="fas fa-print text-white-400"></i>
-                                    </button>
-                                </a>
-                            </td>
-                          </tr>
-                          <tr>
-                            <td>2</td>
-                            <td>
-                                <a href="#openModal-lihatdetailpengiriman" style="text-decoration: none;color: #858796;">XPDC7522786</a>
-                            </td>
-                            <td>25 Oktober 2022</td>
-                            <td>Rp. 2.000.000</td>
-                            <td>Rp. 2.000.000</td>
-                            <td style="color: red;">
-                                Sudah lewat 14 hari
-                            </td>
-                            <td>
-                                <button style="border: none;outline:none;background: #0000A0;color: white;border-radius: 5px;">
-                                    <i class="fas fa-print text-white-400"></i>
-                                </button>
-                            </td>
-                          </tr>
-                          <tr>
-                            <td>3</td>
-                            <td>
-                                <a href="#openModal-lihatdetailpengiriman" style="text-decoration: none;color: #858796;">XPDC2662278</a>
-                            </td>
-                            <td>02 Oktober 2022</td>
-                            <td>Rp. 12.000.000</td>
-                            <td>Rp. 12.000.000</td>
-                            <td style="color: rgb(0, 255, 0);">
-                                Dibayar
-                            </td>
-                            <td>
-                                <button style="border: none;outline:none;background: #0000A0;color: white;border-radius: 5px;">
-                                    <i class="fas fa-print text-white-400"></i>
-                                </button>
-                            </td>
-                          </tr>
-                        </tbody>
-                      </table>
-                    </div>
+                        <div class="col-xl-3 col-md-6 mb-4">
+                           <div class="card border-left-primary shadow h-100 py-2">
+                               <div class="card-body">
+                                   <div class="row no-gutters align-items-center">
+                                       <div class="col mr-2">
+                                           <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">
+                                               Tagihan yang belum terbayarkan</div>
+                                           <div class="h5 mb-0 font-weight-bold text-gray-800">Rp. 12.000.000</div>
+                                       </div>
+                                       <div class="col-auto">
+                                           <i class="fas fas fas fa-dollar-sign fa-2x text-gray-300"></i>
+                                       </div>
+                                   </div>
+                               </div>
+                           </div>
+                       </div>
+                       <div class="col-xl-3 col-md-6 mb-4">
+                           <div class="card border-left-primary shadow h-100 py-2">
+                               <div class="card-body">
+                                   <div class="row no-gutters align-items-center">
+                                       <div class="col mr-2">
+                                           <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">
+                                               Durasi Pembayaran:</div>
+                                           <div class="h5 mb-0 font-weight-bold text-gray-800">0 hari</div>
+                                       </div>
+                                       <div class="col-auto">
+                                           <i class="fas fas fas fas fa-history fa-2x text-gray-300"></i>
+                                       </div>
+                                   </div>
+                               </div>
+                               </div>
+                           </div>
+                       </div>
 
-                    <!--modals lihat detail pegirim-->
+                        <div class="card mb-4 content-table">
+                            <div class="card-header">
+                                <i class="fas far far fa-file-alt me-1"></i>
+                                Riwayat Transaksi
+                            </div>
+
+                            <div style="margin: 10px;">
+                                <table id="datatablesSimple">
+                                    <thead>
+                                        <tr>
+                                            <th>No</th>
+                                            <th>Deskripsi</th>
+                                            <th>Tanggal</th>
+                                            <th>Harga</th>
+                                            <th>Jumlah</th>
+                                            <th>Status Pembayaran</th>
+                                            <th>Aksi</th>
+                                        </tr>
+                                    </thead>
+                                    <tfoot>
+                                        <tr>
+                                            <th>No</th>
+                                            <th>Deskripsi</th>
+                                            <th>Tanggal</th>
+                                            <th>Harga</th>
+                                            <th>Jumlah</th>
+                                            <th>Status Pembayaran</th>
+                                            <th>Aksi</th>
+                                        </tr>
+                                    </tfoot>
+                                    <tbody>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>
+                                                <a href="#openModal-lihatdetailpengiriman" style="text-decoration: none;color: #858796;">XPDC2024786</a>
+                                            </td>
+                                            <td>03 Oktober 2022</td>
+                                            <td>Rp. 12.000.000</td>
+                                            <td>Rp. 12.000.000</td>
+                                            <td style="color: red;">
+                                                Sudah lewat 7 hari
+                                            </td>
+                                            <td>
+                                                <a href="https://xpdcargo.id/login/admin/order/print_invoice/" target="_blank">
+                                                    <button style="border: none;outline:none;background: #0000A0;color: white;border-radius: 5px;">
+                                                        <i class="fas fa-print text-white-400"></i>
+                                                    </button>
+                                                </a>
+                                            </td>
+                                          </tr>
+                                          <tr>
+                                            <td>2</td>
+                                            <td>
+                                                <a href="#openModal-lihatdetailpengiriman" style="text-decoration: none;color: #858796;">XPDC7522786</a>
+                                            </td>
+                                            <td>25 Oktober 2022</td>
+                                            <td>Rp. 2.000.000</td>
+                                            <td>Rp. 2.000.000</td>
+                                            <td style="color: red;">
+                                                Sudah lewat 14 hari
+                                            </td>
+                                            <td>
+                                                <button style="border: none;outline:none;background: #0000A0;color: white;border-radius: 5px;">
+                                                    <i class="fas fa-print text-white-400"></i>
+                                                </button>
+                                            </td>
+                                          </tr>
+                                          <tr>
+                                            <td>3</td>
+                                            <td>
+                                                <a href="#openModal-lihatdetailpengiriman" style="text-decoration: none;color: #858796;">XPDC2662278</a>
+                                            </td>
+                                            <td>02 Oktober 2022</td>
+                                            <td>Rp. 12.000.000</td>
+                                            <td>Rp. 12.000.000</td>
+                                            <td style="color: rgb(0, 255, 0);">
+                                                Dibayar
+                                            </td>
+                                            <td>
+                                                <button style="border: none;outline:none;background: #0000A0;color: white;border-radius: 5px;">
+                                                    <i class="fas fa-print text-white-400"></i>
+                                                </button>
+                                            </td>
+                                          </tr>
+                                          <tr>
+                                            <td>4</td>
+                                            <td>
+                                                <a href="#openModal-lihatdetailpengiriman" style="text-decoration: none;color: #858796;">XPDC2662278</a>
+                                            </td>
+                                            <td>02 Oktober 2022</td>
+                                            <td>Rp. 12.000.000</td>
+                                            <td>Rp. 12.000.000</td>
+                                            <td style="color: rgb(0, 255, 0);">
+                                                Dibayar
+                                            </td>
+                                            <td>
+                                                <button style="border: none;outline:none;background: #0000A0;color: white;border-radius: 5px;">
+                                                    <i class="fas fa-print text-white-400"></i>
+                                                </button>
+                                            </td>
+                                          </tr>
+                                          <tr>
+                                            <td>5</td>
+                                            <td>
+                                                <a href="#openModal-lihatdetailpengiriman" style="text-decoration: none;color: #858796;">XPDC2662278</a>
+                                            </td>
+                                            <td>02 Oktober 2022</td>
+                                            <td>Rp. 12.000.000</td>
+                                            <td>Rp. 12.000.000</td>
+                                            <td style="color: rgb(0, 255, 0);">
+                                                Dibayar
+                                            </td>
+                                            <td>
+                                                <button style="border: none;outline:none;background: #0000A0;color: white;border-radius: 5px;">
+                                                    <i class="fas fa-print text-white-400"></i>
+                                                </button>
+                                            </td>
+                                          </tr>
+                                          <tr>
+                                            <td>6</td>
+                                            <td>
+                                                <a href="#openModal-lihatdetailpengiriman" style="text-decoration: none;color: #858796;">XPDC2662278</a>
+                                            </td>
+                                            <td>02 Oktober 2022</td>
+                                            <td>Rp. 12.000.000</td>
+                                            <td>Rp. 12.000.000</td>
+                                            <td style="color: rgb(0, 255, 0);">
+                                                Dibayar
+                                            </td>
+                                            <td>
+                                                <button style="border: none;outline:none;background: #0000A0;color: white;border-radius: 5px;">
+                                                    <i class="fas fa-print text-white-400"></i>
+                                                </button>
+                                            </td>
+                                          </tr>
+                                          <tr>
+                                            <td>7</td>
+                                            <td>
+                                                <a href="#openModal-lihatdetailpengiriman" style="text-decoration: none;color: #858796;">XPDC2662278</a>
+                                            </td>
+                                            <td>02 Oktober 2022</td>
+                                            <td>Rp. 12.000.000</td>
+                                            <td>Rp. 12.000.000</td>
+                                            <td style="color: rgb(0, 255, 0);">
+                                                Dibayar
+                                            </td>
+                                            <td>
+                                                <button style="border: none;outline:none;background: #0000A0;color: white;border-radius: 5px;">
+                                                    <i class="fas fa-print text-white-400"></i>
+                                                </button>
+                                            </td>
+                                          </tr>
+                                          <tr>
+                                            <td>8</td>
+                                            <td>
+                                                <a href="#openModal-lihatdetailpengiriman" style="text-decoration: none;color: #858796;">XPDC2662278</a>
+                                            </td>
+                                            <td>02 Oktober 2022</td>
+                                            <td>Rp. 12.000.000</td>
+                                            <td>Rp. 12.000.000</td>
+                                            <td style="color: rgb(0, 255, 0);">
+                                                Dibayar
+                                            </td>
+                                            <td>
+                                                <button style="border: none;outline:none;background: #0000A0;color: white;border-radius: 5px;">
+                                                    <i class="fas fa-print text-white-400"></i>
+                                                </button>
+                                            </td>
+                                          </tr>
+                                          <tr>
+                                            <td>9</td>
+                                            <td>
+                                                <a href="#openModal-lihatdetailpengiriman" style="text-decoration: none;color: #858796;">XPDC2662278</a>
+                                            </td>
+                                            <td>02 Oktober 2022</td>
+                                            <td>Rp. 12.000.000</td>
+                                            <td>Rp. 12.000.000</td>
+                                            <td style="color: rgb(0, 255, 0);">
+                                                Dibayar
+                                            </td>
+                                            <td>
+                                                <button style="border: none;outline:none;background: #0000A0;color: white;border-radius: 5px;">
+                                                    <i class="fas fa-print text-white-400"></i>
+                                                </button>
+                                            </td>
+                                          </tr>
+                                          <tr>
+                                            <td>10</td>
+                                            <td>
+                                                <a href="#openModal-lihatdetailpengiriman" style="text-decoration: none;color: #858796;">XPDC2662278</a>
+                                            </td>
+                                            <td>02 Oktober 2022</td>
+                                            <td>Rp. 12.000.000</td>
+                                            <td>Rp. 12.000.000</td>
+                                            <td style="color: rgb(0, 255, 0);">
+                                                Dibayar
+                                            </td>
+                                            <td>
+                                                <button style="border: none;outline:none;background: #0000A0;color: white;border-radius: 5px;">
+                                                    <i class="fas fa-print text-white-400"></i>
+                                                </button>
+                                            </td>
+                                          </tr>
+                                          <tr>
+                                            <td>11</td>
+                                            <td>
+                                                <a href="#openModal-lihatdetailpengiriman" style="text-decoration: none;color: #858796;">XPDC2662278</a>
+                                            </td>
+                                            <td>02 Oktober 2022</td>
+                                            <td>Rp. 12.000.000</td>
+                                            <td>Rp. 12.000.000</td>
+                                            <td style="color: rgb(0, 255, 0);">
+                                                Dibayar
+                                            </td>
+                                            <td>
+                                                <button style="border: none;outline:none;background: #0000A0;color: white;border-radius: 5px;">
+                                                    <i class="fas fa-print text-white-400"></i>
+                                                </button>
+                                            </td>
+                                          </tr>
+                                        </tbody>
+                                      </table>
+                                    </div>
+                
+                                     <!--modals lihat detail pegirim-->
                     <div id="openModal-lihatdetailpengiriman" class="modalDialog">
                         <div>
                         <a href="#close" title="Close" class="close">X</a>
                         <h1 class="h5 mb-0 text-gray-800" style="border-bottom: 2px solid #DEDEDE;">Detail Pengiriman</h1>
-                        <div class="input-group" style="margin-top: 0;">
+                        <div class="input-group" style="margin-top: 0;margin-bottom: 0;">
                             <div class="row" style="width: 100%;margin: 0;padding: 0;">
                                 <div class="column" style="padding: 20px;width: 50%;">
                                   <div class="row" >
@@ -428,15 +583,15 @@
                                       </div>
                                   </div>
                                     <label for="namapengirim">Nama Pengirim</label>
-                                    <input type="text" name="namapengirim" id="namapengirim" placeholder="Nama Instansi/PT/CV/Tbk" style="margin-top: 0;padding: 0;">
+                                    <input type="text" name="namapengirim" id="namapengirim" placeholder="Nama Instansi/PT/CV/Tbk" style="margin-bottom: 0;padding: 5px;">
                                     <label for="teleponpengirim">Telepon Pengirim</label>
-                                    <input type="number" name="teleponpengirim" id="teleponpengirim" placeholder="Nomor Telepon Pengirim" style="margin-top: 0;padding: 0;">
+                                    <input type="number" name="teleponpengirim" id="teleponpengirim" placeholder="Nomor Telepon Pengirim" style="margin-bottom: 0;padding: 5px;">
                                     <label for="alamatpengirim">Alamat Pengirim</label>
-                                    <input type="text" name="alamatpengirim" id="alamatpengirim" style="margin-top: 0;padding: 0;">
+                                    <input type="text" name="alamatpengirim" id="alamatpengirim" style="margin-bottom: 0;padding: 5px;">
                                     <label for="kotakabupaten">Kota/Kabupaten</label>
-                                    <input type="text" name="kotakabupaten" id="kotakabupaten" placeholder="Kota/Kabupaten" style="margin-top: 0;padding: 0;">
+                                    <input type="text" name="kotakabupaten" id="kotakabupaten" placeholder="Kota/Kabupaten" style="margin-bottom: 0;padding: 5px;">
                                     <label for="kodepos">Kodepos</label>
-                                    <input type="number" name="kodepos" id="kodepos" placeholder="Kodepos" style="margin-top: 0;padding: 0;">
+                                    <input type="number" name="kodepos" id="kodepos" placeholder="Kodepos" style="margin-bottom: 0;padding: 5px;">
                                 </div>
                                 <div class="column" style="padding: 20px;width: 50%;">
                                   <div class="row">
@@ -445,15 +600,15 @@
                                       </div>
                                   </div>
                                     <label for="namapenerima">Nama Penerima</label>
-                                    <input type="text" name="namapenerima" id="namapenerima" placeholder="Nama Instansi/PT/CV/Tbk" style="margin-top: 0;padding: 0;">
+                                    <input type="text" name="namapenerima" id="namapenerima" placeholder="Nama Instansi/PT/CV/Tbk" style="margin-bottom: 0;padding: 5px;">
                                     <label for="teleponpenerima">Telepon Penerima</label>
-                                    <input type="number" name="teleponpenerima" id="teleponpenerima" placeholder="Nomor Telepon Penerima" style="margin-top: 0;padding: 0;">
+                                    <input type="number" name="teleponpenerima" id="teleponpenerima" placeholder="Nomor Telepon Penerima" style="margin-bottom: 0;padding: 5px;">
                                     <label for="alamatpenerima">Alamat Penerima</label>
-                                    <input type="text" name="alamatpenerima" id="alamatpenerima" style="margin-top: 0;padding: 0;">
+                                    <input type="text" name="alamatpenerima" id="alamatpenerima" style="margin-bottom: 0;padding: 5px;">
                                     <label for="kotakabupaten1">Kota/Kabupaten</label>
-                                    <input type="text" name="kotakabupaten1" id="kotakabupaten1" placeholder="Kota/Kabupaten" style="margin-top: 0;padding: 0;"> 
+                                    <input type="text" name="kotakabupaten1" id="kotakabupaten1" placeholder="Kota/Kabupaten" style="margin-bottom: 0;padding: 5px;"> 
                                     <label for="kodepos1">Kodepos</label>
-                                    <input type="number" name="kodepos1" id="kodepos1" placeholder="Kodepos" style="margin-top: 0;padding: 0;">
+                                    <input type="number" name="kodepos1" id="kodepos1" placeholder="Kodepos" style="margin-bottom: 0;padding: 5px;">
                                 </div>
                                 <div class="row" style="margin-top: 0;padding: 0;margin-bottom: 0;">
                                     <div class="column" style="padding-left: 25px;">  
@@ -463,22 +618,22 @@
                                <div class="row" style="width: 100%;margin: 0;padding: 0;">
                                 <div class="column" style="padding: 20px;width: 50%;margin:0 ;margin-bottom: 0">
                                     <label for="nomortracking">Nomor Tracking</label>
-                                    <input type="text" name="nomortracking" id="nomortracking" placeholder="Nomor Tracking" style="margin-top: 0;padding: 0;">
+                                    <input type="text" name="nomortracking" id="nomortracking" placeholder="Nomor Tracking" style="margin-bottom: 0;padding: 5px;">
                                     <label for="namabarang">Nama Barang</label>
-                                    <input type="number" name="namabarang" id="namabarang" placeholder="Nama Barang" style="margin-top: 0;padding: 0;">
+                                    <input type="number" name="namabarang" id="namabarang" placeholder="Nama Barang" style="margin-bottom: 0;padding: 5px;">
                                     <label for="asuransi">Asuransi</label>
-                                    <input type="text" name="asuransi" id="asuransi" placeholder="Asuransi" style="margin-top: 0;padding: 0;">
+                                    <input type="text" name="asuransi" id="asuransi" placeholder="Asuransi" style="margin-bottom: 0;padding: 5px;">
                                 </div>
                                 <div class="column" style="padding: 20px;width: 50%;margin-bottom:0;margin: 0;">
                                     <label for="namapenerima">Tanggal Pengiriman</label>
-                                    <input type="text" name="namapenerima" id="namapenerima" placeholder="Nama Instansi/PT/CV/Tbk" style="margin-top: 0;padding: 0;">
+                                    <input type="text" name="namapenerima" id="namapenerima" placeholder="Nama Instansi/PT/CV/Tbk" style="margin-bottom: 0;padding: 5px;">
                                     <label for="hargabarang">Harga Barang</label>
-                                    <input type="number" name="hargabarang" id="hargabarang" placeholder="Harga Barang" style="margin-top: 0;padding: 0;">
+                                    <input type="number" name="hargabarang" id="hargabarang" placeholder="Harga Barang" style="margin-bottom: 0;padding: 5px;">
                                 </div>
                             </div>
                         </div>
                     </div>
-                            <div class="d-sm-flex align-items-center justify-content-between" style="padding-left: 20px;margin-top: 0;padding: 0;margin: 0;">
+                            <div class="d-sm-flex align-items-center justify-content-between" style="padding-left: 20px;margin-top: 0;padding: 0;margin: 0;padding-top: 0;">
                                 <h1 class="h3 mb-0 text-gray-800" style="font-size: 16px;margin-top: 0;padding: 0;">Jumlah Box(Reweight)</h1>
                                 <a href="#" class="d-none d-sm-inline-block" style="text-decoration: none;color:#858796"><i
                                 class="fas fa-download fa-sm text-white-50"></i> Total Berat: 105kg</a>
@@ -509,15 +664,25 @@
                             <textarea name="catatan" id="catatan" style="width: 100%;outline: none;height: 100%;border: 1px solid #0000A0;border-radius: 5px;" ></textarea>
                         </div>
                     </div>
-                    <!-- Footer -->
-                    <footer class="py-4 bg-light mt-auto" >
-                        <div class="container-fluid px-4" >
-                            <div class="d-flex align-items-center justify-content-between small" >
-                                <div class="text-muted" >Copyright &copy; xpdcargo.id 2022</div>
-                            </div>
+                </main>
+                
+                <footer class="py-4 bg-light mt-auto" >
+                    <div class="container-fluid px-4" >
+                        <div class="d-flex align-items-center justify-content-between small" >
+                            <div class="text-muted" >Copyright &copy; xpdcargo.id 2022</div>
                         </div>
-                    </footer>
-                    <!-- End of Footer -->
+                    </div>
+                </footer>
+                
+                 <!-- Footer -->
+            <footer class="sticky-footer bg-white">
+                <div class="container my-auto">
+                    <div class="copyright text-center my-auto">
+                        <span>Copyright &copy; xpdcargo.id</span>
+                    </div>
+                </div>
+            </footer>
+            <!-- End of Footer -->
 
         </div>
         <!-- End of Content Wrapper -->
@@ -530,43 +695,47 @@
         <i class="fas fa-angle-up"></i>
     </a>
 
-    <!-- Logout Modal-->
-    <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-        aria-hidden="true">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Anda yakin ingin keluar?</h5>
-                    <button class="close" type="button" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">×</span>
-                    </button>
-                </div>
-                <div class="modal-body">Pilih "Keluar" di bawah jika Anda siap untuk mengakhiri sesi Anda saat ini.</div>
-                <div class="modal-footer">
-                    <button class="btn btn-secondary" type="button" data-dismiss="modal">Batal</button>
-                    <a class="btn btn-primary" href="login.html">Keluar</a>
-                </div>
-            </div>
-        </div>
-    </div>
+   <!-- Logout Modal-->
+   <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+   aria-hidden="true">
+   <div class="modal-dialog" role="document">
+       <div class="modal-content">
+           <div class="modal-header">
+               <h5 class="modal-title" id="exampleModalLabel">Anda yakin ingin keluar?</h5>
+               <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                   <span aria-hidden="true">×</span>
+               </button>
+           </div>
+           <div class="modal-body">Pilih "Keluar" di bawah jika Anda siap untuk mengakhiri sesi Anda saat ini.</div>
+           <div class="modal-footer">
+               <button class="btn btn-secondary" type="button" data-dismiss="modal">Batal</button>
+               <a class="btn btn-primary" href="login.html">Keluar</a>
+           </div>
+       </div>
+   </div>
+</div>
 
-    <!-- Bootstrap core JavaScript-->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+        <script src="js/scripts.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/simple-datatables@latest" crossorigin="anonymous"></script>
+        <script src="js/datatables-simple-demo.js"></script>
 
-    <!-- Core plugin JavaScript-->
-    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+        <!-- Bootstrap core JavaScript-->
+        <script src="vendor/jquery/jquery.min.js"></script>
+        <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
-    <!-- Custom scripts for all pages-->
-    <script src="js/sb-admin-2.min.js"></script>
+        <!-- Core plugin JavaScript-->
+        <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
 
-    <!-- Page level plugins -->
-    <script src="vendor/chart.js/Chart.min.js"></script>
+        <!-- Custom scripts for all pages-->
+        <script src="js/sb-admin-2.min.js"></script>
 
-    <!-- Page level custom scripts -->
-    <script src="js/demo/chart-area-demo.js"></script>
-    <script src="js/demo/chart-pie-demo.js"></script>
+        <!-- Page level plugins -->
+        <script src="vendor/chart.js/Chart.min.js"></script>
 
-</body>
+        <!-- Page level custom scripts -->
+        <script src="js/demo/chart-area-demo.js"></script>
+        <script src="js/demo/chart-pie-demo.js"></script>
 
+    </body>
 </html>
