@@ -13,11 +13,11 @@
         href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
         rel="stylesheet">
 
-    <!-- Custom styles-->
-    <link href="img/ic_launcher.png" rel='shortcut icon'>
-    <link href="css/sb-admin-2.min.css" rel="stylesheet">
-    <link href="css/daftar-alamat.css" rel="stylesheet">
-    <link href="css/daftar-pengiriman.css" rel="stylesheet">
+        <!-- Custom styles-->
+        <link href="img/ic_launcher.png" rel='shortcut icon'>
+        <link href="css/sb-admin-2.min.css" rel="stylesheet">
+        <link href="css/daftar-alamat.css" rel="stylesheet">
+        <link href="css/daftar-pengiriman.css" rel="stylesheet">
         <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
     </head>
     <body id="page-top">
@@ -47,8 +47,8 @@
                         <span>Dashboard</span></a>
                 </li>
     
-                <!-- Nav Item - Pages Collapse Menu -->
-                <li class="nav-item">
+                <!-- Nav Item - Pengiriman Collapse Menu -->
+                <!-- <li class="nav-item">
                     <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapsePengiriman"
                         aria-expanded="true" aria-controls="collapsePengiriman">
                         <i class="fas fa-fw fa-truck"></i>
@@ -61,9 +61,15 @@
                         <a class="collapse-item" href="daftar-pengiriman.html">Daftar Pengiriman</a>
                     </div>
                 </div>
+                </li> -->
+                <li class="nav-item">
+                    <a class="nav-link collapsed" href="daftar-pengiriman.html">
+                        <i class="fas fa-fw fas fas fa-truck"></i>
+                        <span>Pengiriman</span>
+                    </a>
                 </li>
     
-                <!-- Nav Item - Utilities Collapse Menu -->
+                <!-- Nav Item - Riwayat Transaksi Collapse Menu -->
                 <li class="nav-item">
                     <a class="nav-link collapsed" href="riwayat-transaksi.html">
                         <i class="fas fa-fw fas fa-history"></i>
@@ -79,7 +85,7 @@
                     </a>
                 </li>
     
-                <!-- Nav Item - Pages Collapse Menu -->
+                <!-- Nav Item - Pengaturan Collapse Menu -->
                 <li class="nav-item">
                     <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapsePages"
                         aria-expanded="true" aria-controls="collapsePages">
@@ -88,12 +94,6 @@
                     </a>
                     <div id="collapsePages" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
                         <div class="bg-white py-2 collapse-inner rounded">
-                            <!-- <h6 class="collapse-header">Login Screens:</h6>
-                            <a class="collapse-item" href="login.html">Login</a>
-                            <a class="collapse-item" href="register.html">Register</a>
-                            <a class="collapse-item" href="forgot-password.html">Forgot Password</a>
-                            <div class="collapse-divider"></div>
-                            <h6 class="collapse-header">Other Pages:</h6> -->
                             <a class="collapse-item" href="404.html">Pengaturan User</a>
                             <a class="collapse-item" href="daftar-alamat.html">Daftar Alamat</a>
                         </div>
@@ -250,18 +250,6 @@
                                         <div class="small text-gray-500">XPDC · 1d</div>
                                     </div>
                                 </a>
-                                <!-- <a class="dropdown-item d-flex align-items-center" href="#">
-                                    <div class="dropdown-list-image mr-3">
-                                        <img class="rounded-circle" src="img/undraw_profile_3.svg"
-                                            alt="...">
-                                        <div class="status-indicator bg-warning"></div>
-                                    </div>
-                                    <div>
-                                        <div class="text-truncate">Last month's report looks great, I am very happy with
-                                            the progress so far, keep up the good work!</div>
-                                        <div class="small text-gray-500">Morgan Alvarez · 2d</div>
-                                    </div>
-                                </a> -->
                                 <a class="dropdown-item text-center small text-gray-500" href="#">Baca lebih banyak pesan</a>
                             </div>
                         </li>
@@ -321,9 +309,6 @@
                                             <th>No Kontrak</th>
                                             <th>Tanggal Kontrak</th>
                                             <th>Deskripsi Kontrak</th>
-                                            <th>Asal</th>
-                                            <th>Tujuan</th>
-                                            <th>Syarat dan Ketentuan</th>
                                             <th>Masa Berlaku</th>
                                             <th>Status</th>
                                             <th>Aksi</th>
@@ -335,9 +320,6 @@
                                             <th>No Kontrak</th>
                                             <th>Tanggal Kontrak</th>
                                             <th>Deskripsi Kontrak</th>
-                                            <th>Asal</th>
-                                            <th>Tujuan</th>
-                                            <th>Syarat dan Ketentuan</th>
                                             <th>Masa Berlaku</th>
                                             <th>Status</th>
                                             <th>Aksi</th>
@@ -347,20 +329,11 @@
                                         <tr>
                                             <td>1</td>
                                             <td>KONTRAK145</td>
-                                            <td>Kontrak potongan biaya pengiriman 10%</td>
                                             <td>
                                                 30 November 2022
                                             </td>
-                                            <td>
-                                               Batam
-                                            </td>
-                                            <td>
-                                                Tangerang
-                                             </td>
-                                             <td>
-                                                Kontrak ini berlaku jika berat barang yang dikirim lebih dari 150kg
-                                             </td>
-                                            <td>03 Oktober 2022</td>
+                                            <td>Kontrak potongan biaya pengiriman 15%</td>
+                                            <td>03 Oktober 2022 - 30 November</td>
                                             <td>
                                                 <a href="#">
                                                     <button style="border: none;outline:none;background: #5ae717;color: white;border-radius: 5px;padding: 5px;">Aktif</button>
@@ -375,20 +348,11 @@
                                           <tr>
                                             <td>2</td>
                                             <td>KONTRAK14</td>
+                                            <td>
+                                                30 November 2022
+                                            </td>
                                             <td>Kontrak potongan biaya pengiriman 15%</td>
-                                            <td>
-                                                30 Desember 2022
-                                            </td>
-                                            <td>
-                                               Palembang
-                                            </td>
-                                            <td>
-                                                Tangerang
-                                             </td>
-                                             <td>
-                                                Kontrak ini berlaku jika berat barang yang dikirim lebih dari 150kg
-                                             </td>
-                                            <td>03 Oktober 2022</td>
+                                            <td>03 Oktober 2022 - 30 November</td>
                                             <td>
                                                 <a href="#">
                                                     <button style="border: none;outline:none;background: red;color: white;border-radius: 5px;">Tidak Aktif</button>
@@ -403,20 +367,11 @@
                                         <tr>
                                             <td>3</td>
                                             <td>KONTRAK145</td>
-                                            <td>Kontrak potongan biaya pengiriman 10%</td>
                                             <td>
                                                 30 November 2022
                                             </td>
-                                            <td>
-                                               Batam
-                                            </td>
-                                            <td>
-                                                Tangerang
-                                             </td>
-                                             <td>
-                                                Kontrak ini berlaku jika berat barang yang dikirim lebih dari 150kg
-                                             </td>
-                                            <td>03 Oktober 2022</td>
+                                            <td>Kontrak potongan biaya pengiriman 15%</td>
+                                            <td>03 Oktober 2022 - 30 November</td>
                                             <td>
                                                 <a href="#">
                                                     <button style="border: none;outline:none;background: #5ae717;color: white;border-radius: 5px;padding: 5px;">Aktif</button>
@@ -431,20 +386,11 @@
                                           <tr>
                                             <td>4</td>
                                             <td>KONTRAK14</td>
+                                            <td>
+                                                30 November 2022
+                                            </td>
                                             <td>Kontrak potongan biaya pengiriman 15%</td>
-                                            <td>
-                                                30 Desember 2022
-                                            </td>
-                                            <td>
-                                               Palembang
-                                            </td>
-                                            <td>
-                                                Tangerang
-                                             </td>
-                                             <td>
-                                                Kontrak ini berlaku jika berat barang yang dikirim lebih dari 150kg
-                                             </td>
-                                            <td>03 Oktober 2022</td>
+                                            <td>03 Oktober 2022 - 30 November</td>
                                             <td>
                                                 <a href="#">
                                                     <button style="border: none;outline:none;background: red;color: white;border-radius: 5px;">Tidak Aktif</button>
@@ -459,20 +405,11 @@
                                         <tr>
                                             <td>5</td>
                                             <td>KONTRAK145</td>
-                                            <td>Kontrak potongan biaya pengiriman 10%</td>
                                             <td>
                                                 30 November 2022
                                             </td>
-                                            <td>
-                                               Batam
-                                            </td>
-                                            <td>
-                                                Tangerang
-                                             </td>
-                                             <td>
-                                                Kontrak ini berlaku jika berat barang yang dikirim lebih dari 150kg
-                                             </td>
-                                            <td>03 Oktober 2022</td>
+                                            <td>Kontrak potongan biaya pengiriman 15%</td>
+                                            <td>03 Oktober 2022 - 30 November</td>
                                             <td>
                                                 <a href="#">
                                                     <button style="border: none;outline:none;background: #5ae717;color: white;border-radius: 5px;padding: 5px;">Aktif</button>
@@ -487,20 +424,11 @@
                                           <tr>
                                             <td>6</td>
                                             <td>KONTRAK14</td>
+                                            <td>
+                                                30 November 2022
+                                            </td>
                                             <td>Kontrak potongan biaya pengiriman 15%</td>
-                                            <td>
-                                                30 Desember 2022
-                                            </td>
-                                            <td>
-                                               Palembang
-                                            </td>
-                                            <td>
-                                                Tangerang
-                                             </td>
-                                             <td>
-                                                Kontrak ini berlaku jika berat barang yang dikirim lebih dari 150kg
-                                             </td>
-                                            <td>03 Oktober 2022</td>
+                                            <td>03 Oktober 2022 - 30 November</td>
                                             <td>
                                                 <a href="#">
                                                     <button style="border: none;outline:none;background: red;color: white;border-radius: 5px;">Tidak Aktif</button>
@@ -515,20 +443,11 @@
                                         <tr>
                                             <td>7</td>
                                             <td>KONTRAK145</td>
-                                            <td>Kontrak potongan biaya pengiriman 10%</td>
                                             <td>
                                                 30 November 2022
                                             </td>
-                                            <td>
-                                               Batam
-                                            </td>
-                                            <td>
-                                                Tangerang
-                                             </td>
-                                             <td>
-                                                Kontrak ini berlaku jika berat barang yang dikirim lebih dari 150kg
-                                             </td>
-                                            <td>03 Oktober 2022</td>
+                                            <td>Kontrak potongan biaya pengiriman 15%</td>
+                                            <td>03 Oktober 2022 - 30 November</td>
                                             <td>
                                                 <a href="#">
                                                     <button style="border: none;outline:none;background: #5ae717;color: white;border-radius: 5px;padding: 5px;">Aktif</button>
@@ -543,20 +462,11 @@
                                           <tr>
                                             <td>8</td>
                                             <td>KONTRAK14</td>
+                                            <td>
+                                                30 November 2022
+                                            </td>
                                             <td>Kontrak potongan biaya pengiriman 15%</td>
-                                            <td>
-                                                30 Desember 2022
-                                            </td>
-                                            <td>
-                                               Palembang
-                                            </td>
-                                            <td>
-                                                Tangerang
-                                             </td>
-                                             <td>
-                                                Kontrak ini berlaku jika berat barang yang dikirim lebih dari 150kg
-                                             </td>
-                                            <td>03 Oktober 2022</td>
+                                            <td>03 Oktober 2022 - 30 November</td>
                                             <td>
                                                 <a href="#">
                                                     <button style="border: none;outline:none;background: red;color: white;border-radius: 5px;">Tidak Aktif</button>
@@ -571,20 +481,11 @@
                                         <tr>
                                             <td>9</td>
                                             <td>KONTRAK145</td>
-                                            <td>Kontrak potongan biaya pengiriman 10%</td>
                                             <td>
                                                 30 November 2022
                                             </td>
-                                            <td>
-                                               Batam
-                                            </td>
-                                            <td>
-                                                Tangerang
-                                             </td>
-                                             <td>
-                                                Kontrak ini berlaku jika berat barang yang dikirim lebih dari 150kg
-                                             </td>
-                                            <td>03 Oktober 2022</td>
+                                            <td>Kontrak potongan biaya pengiriman 15%</td>
+                                            <td>03 Oktober 2022 - 30 November</td>
                                             <td>
                                                 <a href="#">
                                                     <button style="border: none;outline:none;background: #5ae717;color: white;border-radius: 5px;padding: 5px;">Aktif</button>
@@ -599,20 +500,11 @@
                                           <tr>
                                             <td>10</td>
                                             <td>KONTRAK14</td>
-                                            <td>Kontrak potongan biaya pengiriman 15%</td>
                                             <td>
                                                 30 Desember 2022
                                             </td>
-                                            <td>
-                                               Palembang
-                                            </td>
-                                            <td>
-                                                Tangerang
-                                             </td>
-                                             <td>
-                                                Kontrak ini berlaku jika berat barang yang dikirim lebih dari 150kg
-                                             </td>
-                                            <td>03 Oktober 2022</td>
+                                            <td>Kontrak potongan biaya pengiriman 15%</td>
+                                            <td>03 Oktober 2022 - 30 November</td>
                                             <td>
                                                 <a href="#">
                                                     <button style="border: none;outline:none;background: red;color: white;border-radius: 5px;">Tidak Aktif</button>
@@ -627,20 +519,11 @@
                                         <tr>
                                             <td>11</td>
                                             <td>KONTRAK145</td>
-                                            <td>Kontrak potongan biaya pengiriman 10%</td>
                                             <td>
                                                 30 November 2022
                                             </td>
-                                            <td>
-                                               Batam
-                                            </td>
-                                            <td>
-                                                Tangerang
-                                             </td>
-                                             <td>
-                                                Kontrak ini berlaku jika berat barang yang dikirim lebih dari 150kg
-                                             </td>
-                                            <td>03 Oktober 2022</td>
+                                            <td>Kontrak potongan biaya pengiriman 15%</td>
+                                            <td>03 Oktober 2022 - 30 November</td>
                                             <td>
                                                 <a href="#">
                                                     <button style="border: none;outline:none;background: #5ae717;color: white;border-radius: 5px;padding: 5px;">Aktif</button>
@@ -655,20 +538,11 @@
                                           <tr>
                                             <td>12</td>
                                             <td>KONTRAK14</td>
+                                            <td>
+                                                30 November 2022
+                                            </td>
                                             <td>Kontrak potongan biaya pengiriman 15%</td>
-                                            <td>
-                                                30 Desember 2022
-                                            </td>
-                                            <td>
-                                               Palembang
-                                            </td>
-                                            <td>
-                                                Tangerang
-                                             </td>
-                                             <td>
-                                                Kontrak ini berlaku jika berat barang yang dikirim lebih dari 150kg
-                                             </td>
-                                            <td>03 Oktober 2022</td>
+                                            <td>03 Oktober 2022 - 30 November</td>
                                             <td>
                                                 <a href="#">
                                                     <button style="border: none;outline:none;background: red;color: white;border-radius: 5px;">Tidak Aktif</button>
@@ -683,20 +557,11 @@
                                         <tr>
                                             <td>13</td>
                                             <td>KONTRAK145</td>
-                                            <td>Kontrak potongan biaya pengiriman 10%</td>
                                             <td>
                                                 30 November 2022
                                             </td>
-                                            <td>
-                                               Batam
-                                            </td>
-                                            <td>
-                                                Tangerang
-                                             </td>
-                                             <td>
-                                                Kontrak ini berlaku jika berat barang yang dikirim lebih dari 150kg
-                                             </td>
-                                            <td>03 Oktober 2022</td>
+                                            <td>Kontrak potongan biaya pengiriman 15%</td>
+                                            <td>03 Oktober 2022 - 30 November</td>
                                             <td>
                                                 <a href="#">
                                                     <button style="border: none;outline:none;background: #5ae717;color: white;border-radius: 5px;padding: 5px;">Aktif</button>
@@ -711,20 +576,11 @@
                                         <tr>
                                             <td>14</td>
                                             <td>KONTRAK14</td>
+                                            <td>
+                                                30 November 2022
+                                            </td>
                                             <td>Kontrak potongan biaya pengiriman 15%</td>
-                                            <td>
-                                                30 Desember 2022
-                                            </td>
-                                            <td>
-                                               Palembang
-                                            </td>
-                                            <td>
-                                                Tangerang
-                                             </td>
-                                             <td>
-                                                Kontrak ini berlaku jika berat barang yang dikirim lebih dari 150kg
-                                             </td>
-                                            <td>03 Oktober 2022</td>
+                                            <td>03 Oktober 2022 - 30 November</td>
                                             <td>
                                                 <a href="#">
                                                     <button style="border: none;outline:none;background: red;color: white;border-radius: 5px;">Tidak Aktif</button>

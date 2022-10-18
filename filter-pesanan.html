@@ -6,19 +6,19 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="" />
         <meta name="author" content="" />
-        <title>XPDC - Pesanan [Customer- MYXPDC+]</title>
+        <title>XPDC - Pesanan </title>
         <link href="https://cdn.jsdelivr.net/npm/simple-datatables@latest/dist/style.css" rel="stylesheet" />
         <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
         <link
         href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
         rel="stylesheet">
-    <!--library alert --> 
-    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-    <!-- Custom styles-->
-    <link href="img/ic_launcher.png" rel='shortcut icon'>
-    <link href="css/sb-admin-2.min.css" rel="stylesheet">
-    <link href="css/daftar-alamat.css" rel="stylesheet">
-    <link href="css/daftar-pengiriman.css" rel="stylesheet">
+        <!--library alert --> 
+        <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+        <!-- Custom styles-->
+        <link href="img/ic_launcher.png" rel='shortcut icon'>
+        <link href="css/sb-admin-2.min.css" rel="stylesheet">
+        <link href="css/daftar-alamat.css" rel="stylesheet">
+        <link href="css/daftar-pengiriman.css" rel="stylesheet">
         <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
     </head>
     <body id="page-top">
@@ -48,8 +48,8 @@
                         <span>Dashboard</span></a>
                 </li>
     
-                <!-- Nav Item - Pages Collapse Menu -->
-                <li class="nav-item">
+                <!-- Nav Item - Pengiriman Collapse Menu -->
+                <!-- <li class="nav-item">
                     <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapsePengiriman"
                         aria-expanded="true" aria-controls="collapsePengiriman">
                         <i class="fas fa-fw fa-truck"></i>
@@ -62,9 +62,15 @@
                         <a class="collapse-item" href="daftar-pengiriman.html">Daftar Pengiriman</a>
                     </div>
                 </div>
+                </li> -->
+                <li class="nav-item">
+                    <a class="nav-link collapsed" href="daftar-pengiriman.html">
+                        <i class="fas fa-fw fas fas fa-truck"></i>
+                        <span>Pengiriman</span>
+                    </a>
                 </li>
     
-                <!-- Nav Item - Utilities Collapse Menu -->
+                <!-- Nav Item - Riwayat Transaksi Collapse Menu -->
                 <li class="nav-item">
                     <a class="nav-link collapsed" href="riwayat-transaksi.html">
                         <i class="fas fa-fw fas fa-history"></i>
@@ -80,7 +86,7 @@
                     </a>
                 </li>
     
-                <!-- Nav Item - Pages Collapse Menu -->
+                <!-- Nav Item - Pengaturan Collapse Menu -->
                 <li class="nav-item">
                     <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapsePages"
                         aria-expanded="true" aria-controls="collapsePages">
@@ -89,12 +95,6 @@
                     </a>
                     <div id="collapsePages" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
                         <div class="bg-white py-2 collapse-inner rounded">
-                            <!-- <h6 class="collapse-header">Login Screens:</h6>
-                            <a class="collapse-item" href="login.html">Login</a>
-                            <a class="collapse-item" href="register.html">Register</a>
-                            <a class="collapse-item" href="forgot-password.html">Forgot Password</a>
-                            <div class="collapse-divider"></div>
-                            <h6 class="collapse-header">Other Pages:</h6> -->
                             <a class="collapse-item" href="404.html">Pengaturan User</a>
                             <a class="collapse-item" href="daftar-alamat.html">Daftar Alamat</a>
                         </div>
@@ -251,18 +251,6 @@
                                         <div class="small text-gray-500">XPDC · 1d</div>
                                     </div>
                                 </a>
-                                <!-- <a class="dropdown-item d-flex align-items-center" href="#">
-                                    <div class="dropdown-list-image mr-3">
-                                        <img class="rounded-circle" src="img/undraw_profile_3.svg"
-                                            alt="...">
-                                        <div class="status-indicator bg-warning"></div>
-                                    </div>
-                                    <div>
-                                        <div class="text-truncate">Last month's report looks great, I am very happy with
-                                            the progress so far, keep up the good work!</div>
-                                        <div class="small text-gray-500">Morgan Alvarez · 2d</div>
-                                    </div>
-                                </a> -->
                                 <a class="dropdown-item text-center small text-gray-500" href="#">Baca lebih banyak pesan</a>
                             </div>
                         </li>
@@ -303,15 +291,15 @@
             <div id="layoutSidenav_content ">
                 <main>
                     <div class="container-fluid px-4">
-                        <h1 class="mt-4">Pesanan [Customer - MYXPDC+]</h1>
+                        <h1 class="mt-4">Pesanan </h1>
                         <ol class="breadcrumb mb-4">
                             <li class="breadcrumb-item"><a href="index.html">Dashboard</a></li>
-                            <li class="breadcrumb-item active">Pesanan [Customer - MYXPDC+]</li>
+                            <li class="breadcrumb-item active">Pesanan </li>
                         </ol>
                         <div class="card mb-4 content-table">
                             <div class="card-header">
                                 <i class="fas far far far fa-file-alt me-1"></i>
-                                Pesanan [Customer - MYXPDC+]
+                                Pesanan
                             </div>
 
                             <div style="margin: 10px;">
@@ -320,14 +308,14 @@
                                         <tr>
                                             <th>No</th>
                                             <th>No Tracking</th>
+                                            <th>No Referensi</th>
+                                            <th>Layanan</th>
                                             <th>Nama Pengirim</th>
                                             <th>Nama Penerima</th>
                                             <th>Nama Barang</th>
                                             <th>Total Berat</th>
                                             <th>Jumlah Koli</th>
                                             <th>Status Barang</th>
-                                            <th>Aging</th>
-                                            <th>Order By</th>
                                             <th>Aksi</th>
                                         </tr>
                                     </thead>
@@ -350,6 +338,8 @@
                                         <tr>
                                             <td>1</td>
                                             <td>XPDC2022786</td>
+                                            <td>Ref/1756</td>
+                                            <td>Reguler</td>
                                             <td>PT. EKAS EMESTA</td>
                                             <td>PT. EMESTA EKAS</td>
                                             <td>Furniture</td>
@@ -360,8 +350,6 @@
                                                     <button style="border: none;outline:none;background: #007bff;color: white;border-radius: 5px;">Dalam Pengiriman</button>
                                                 </a>
                                             </td>
-                                            <td>1 Days</td>
-                                            <td>XPDC</td>
                                             <td>
                                                 <!-- Nav Item -Button Aksi -->
                                                 <div class="nav-item dropdown no-arrow" style="margin: 0;padding:0">
@@ -383,9 +371,6 @@
                                                         </a>
                                                         <a class="dropdown-item" href="#" onclick="swal({title:'Oops',  text: 'Bukti pengiriman belum tersedia',  icon: 'error',  button: 'Tutup'})"> 
                                                             Cetak Bukti Pengiriman
-                                                        </a>
-                                                        <a class="dropdown-item" href="#">
-                                                            Batalkan Pengiriman
                                                         </a>
                                                     </div>
                                             </td>
@@ -393,6 +378,8 @@
                                           <tr>
                                             <td>2</td>
                                             <td>XPDC2022786</td>
+                                            <td>Ref/1756</td>
+                                            <td>Reguler</td>
                                             <td>PT. EKAS EMESTA</td>
                                             <td>PT. EMESTA EKAS</td>
                                             <td>Furniture</td>
@@ -400,11 +387,9 @@
                                             <td>16</td>
                                             <td>
                                                 <a href="shipment_history.html">
-                                                    <button style="border: none;outline:none;background: #2dce89;color: white;border-radius: 5px;">Diterima</button>
+                                                    <button style="border: none;outline:none;background: #007bff;color: white;border-radius: 5px;">Dalam Pengiriman</button>
                                                 </a>
                                             </td>
-                                            <td>3 Days</td>
-                                            <td>XPDC</td>
                                             <td>
                                                 <!-- Nav Item -Button Aksi -->
                                                 <div class="nav-item dropdown no-arrow" style="margin: 0;padding:0">
@@ -415,20 +400,17 @@
                                                     <!-- Dropdown -Menu Aksi -->
                                                     <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in"
                                                         aria-labelledby="userDropdown">
-                                                        <a class="dropdown-item" href="#">
+                                                        <a class="dropdown-item" href="#" onclick="swal({title:'Oops',  text: 'Dokumen Resi belum tersedia',  icon: 'error',  button: 'Tutup'})">
                                                             Cetak Resi
                                                         </a>
-                                                        <a class="dropdown-item" href="#" onclick="swal({title:'Oops',  text: 'Tagihan belum tersedia',  icon: 'error',  button: 'Tutup'})"> 
+                                                        <a class="dropdown-item" href="#">
                                                             Cetak Tagihan
                                                         </a>
                                                         <a class="dropdown-item" href="#">
                                                             Cetak Bukti Pengambilan
                                                         </a>
-                                                        <a class="dropdown-item" href="#">
+                                                        <a class="dropdown-item" href="#" onclick="swal({title:'Oops',  text: 'Bukti pengiriman belum tersedia',  icon: 'error',  button: 'Tutup'})"> 
                                                             Cetak Bukti Pengiriman
-                                                        </a>
-                                                        <a class="dropdown-item" href="#">
-                                                            Batalkan Pengiriman
                                                         </a>
                                                     </div>
                                             </td>
@@ -436,6 +418,8 @@
                                           <tr>
                                             <td>3</td>
                                             <td>XPDC2022786</td>
+                                            <td>Ref/1756</td>
+                                            <td>Express</td>
                                             <td>PT. EKAS EMESTA</td>
                                             <td>PT. EMESTA EKAS</td>
                                             <td>Furniture</td>
@@ -446,8 +430,6 @@
                                                     <button style="border: none;outline:none;background: #007bff;color: white;border-radius: 5px;">Dalam Pengiriman</button>
                                                 </a>
                                             </td>
-                                            <td>5 Days</td>
-                                            <td>XPDC</td>
                                             <td>
                                                 <!-- Nav Item -Button Aksi -->
                                                 <div class="nav-item dropdown no-arrow" style="margin: 0;padding:0">
@@ -464,14 +446,11 @@
                                                         <a class="dropdown-item" href="#">
                                                             Cetak Tagihan
                                                         </a>
-                                                        <a class="dropdown-item" href="#">
+                                                        <a class="dropdown-item" href="#" onclick="swal({title:'Oops',  text: 'Bukti Pengambilan belum tersedia',  icon: 'error',  button: 'Tutup'})"></a>>
                                                             Cetak Bukti Pengambilan
                                                         </a>
                                                         <a class="dropdown-item" href="#" onclick="swal({title:'Oops',  text: 'Bukti pengiriman belum tersedia',  icon: 'error',  button: 'Tutup'})"> 
                                                             Cetak Bukti Pengiriman
-                                                        </a>
-                                                        <a class="dropdown-item" href="#">
-                                                            Batalkan Pengiriman
                                                         </a>
                                                     </div>
                                             </td>
@@ -479,6 +458,8 @@
                                           <tr>
                                             <td>4</td>
                                             <td>XPDC2022786</td>
+                                            <td>Ref/1756</td>
+                                            <td>Reguler</td>
                                             <td>PT. EKAS EMESTA</td>
                                             <td>PT. EMESTA EKAS</td>
                                             <td>Furniture</td>
@@ -489,8 +470,6 @@
                                                     <button style="border: none;outline:none;background: #007bff;color: white;border-radius: 5px;">Dalam Pengiriman</button>
                                                 </a>
                                             </td>
-                                            <td>1 Days</td>
-                                            <td>XPDC</td>
                                             <td>
                                                 <!-- Nav Item -Button Aksi -->
                                                 <div class="nav-item dropdown no-arrow" style="margin: 0;padding:0">
@@ -507,14 +486,11 @@
                                                         <a class="dropdown-item" href="#">
                                                             Cetak Tagihan
                                                         </a>
-                                                        <a class="dropdown-item" href="#" onclick="swal({title:'Oops',  text: 'Bukti pengambilan belum tersedia',  icon: 'error',  button: 'Tutup'})"> 
+                                                        <a class="dropdown-item" href="#">
                                                             Cetak Bukti Pengambilan
                                                         </a>
-                                                        <a class="dropdown-item" href="#">
+                                                        <a class="dropdown-item" href="#" onclick="swal({title:'Oops',  text: 'Bukti pengiriman belum tersedia',  icon: 'error',  button: 'Tutup'})"> 
                                                             Cetak Bukti Pengiriman
-                                                        </a>
-                                                        <a class="dropdown-item" href="#">
-                                                            Batalkan Pengiriman
                                                         </a>
                                                     </div>
                                             </td>
@@ -522,6 +498,8 @@
                                           <tr>
                                             <td>5</td>
                                             <td>XPDC2022786</td>
+                                            <td>Ref/1756</td>
+                                            <td>Express</td>
                                             <td>PT. EKAS EMESTA</td>
                                             <td>PT. EMESTA EKAS</td>
                                             <td>Furniture</td>
@@ -529,11 +507,9 @@
                                             <td>16</td>
                                             <td>
                                                 <a href="shipment_history.html">
-                                                    <button style="border: none;outline:none;background: #2dce89;color: white;border-radius: 5px;">Diterima</button>
+                                                    <button style="border: none;outline:none;background: #007bff;color: white;border-radius: 5px;">Dalam Pengiriman</button>
                                                 </a>
                                             </td>
-                                            <td>3 Days</td>
-                                            <td>XPDC</td>
                                             <td>
                                                 <!-- Nav Item -Button Aksi -->
                                                 <div class="nav-item dropdown no-arrow" style="margin: 0;padding:0">
@@ -555,9 +531,6 @@
                                                         </a>
                                                         <a class="dropdown-item" href="#" onclick="swal({title:'Oops',  text: 'Bukti pengiriman belum tersedia',  icon: 'error',  button: 'Tutup'})"> 
                                                             Cetak Bukti Pengiriman
-                                                        </a>
-                                                        <a class="dropdown-item" href="#">
-                                                            Batalkan Pengiriman
                                                         </a>
                                                     </div>
                                             </td>
@@ -565,6 +538,8 @@
                                           <tr>
                                             <td>6</td>
                                             <td>XPDC2022786</td>
+                                            <td>Ref/1756</td>
+                                            <td>Reguler</td>
                                             <td>PT. EKAS EMESTA</td>
                                             <td>PT. EMESTA EKAS</td>
                                             <td>Furniture</td>
@@ -575,8 +550,6 @@
                                                     <button style="border: none;outline:none;background: #007bff;color: white;border-radius: 5px;">Dalam Pengiriman</button>
                                                 </a>
                                             </td>
-                                            <td>5 Days</td>
-                                            <td>XPDC</td>
                                             <td>
                                                 <!-- Nav Item -Button Aksi -->
                                                 <div class="nav-item dropdown no-arrow" style="margin: 0;padding:0">
@@ -590,17 +563,14 @@
                                                         <a class="dropdown-item" href="#">
                                                             Cetak Resi
                                                         </a>
-                                                        <a class="dropdown-item" href="#" onclick="swal({title:'Oops',  text: 'Tagihan belum tersedia',  icon: 'error',  button: 'Tutup'})"> 
+                                                        <a class="dropdown-item" href="#">
                                                             Cetak Tagihan
                                                         </a>
                                                         <a class="dropdown-item" href="#">
                                                             Cetak Bukti Pengambilan
                                                         </a>
-                                                        <a class="dropdown-item" href="#">
+                                                        <a class="dropdown-item" href="#" onclick="swal({title:'Oops',  text: 'Bukti pengiriman belum tersedia',  icon: 'error',  button: 'Tutup'})"> 
                                                             Cetak Bukti Pengiriman
-                                                        </a>
-                                                        <a class="dropdown-item" href="#">
-                                                            Batalkan Pengiriman
                                                         </a>
                                                     </div>
                                             </td>
@@ -608,6 +578,8 @@
                                           <tr>
                                             <td>7</td>
                                             <td>XPDC2022786</td>
+                                            <td>Ref/1756</td>
+                                            <td>Reguler</td>
                                             <td>PT. EKAS EMESTA</td>
                                             <td>PT. EMESTA EKAS</td>
                                             <td>Furniture</td>
@@ -618,8 +590,6 @@
                                                     <button style="border: none;outline:none;background: #007bff;color: white;border-radius: 5px;">Dalam Pengiriman</button>
                                                 </a>
                                             </td>
-                                            <td>1 Days</td>
-                                            <td>XPDC</td>
                                             <td>
                                                 <!-- Nav Item -Button Aksi -->
                                                 <div class="nav-item dropdown no-arrow" style="margin: 0;padding:0">
@@ -641,9 +611,6 @@
                                                         </a>
                                                         <a class="dropdown-item" href="#" onclick="swal({title:'Oops',  text: 'Bukti pengiriman belum tersedia',  icon: 'error',  button: 'Tutup'})"> 
                                                             Cetak Bukti Pengiriman
-                                                        </a>
-                                                        <a class="dropdown-item" href="#">
-                                                            Batalkan Pengiriman
                                                         </a>
                                                     </div>
                                             </td>
@@ -651,6 +618,8 @@
                                           <tr>
                                             <td>8</td>
                                             <td>XPDC2022786</td>
+                                            <td>Ref/1756</td>
+                                            <td>Express</td>
                                             <td>PT. EKAS EMESTA</td>
                                             <td>PT. EMESTA EKAS</td>
                                             <td>Furniture</td>
@@ -658,11 +627,9 @@
                                             <td>16</td>
                                             <td>
                                                 <a href="shipment_history.html">
-                                                    <button style="border: none;outline:none;background: #2dce89;color: white;border-radius: 5px;">Diterima</button>
+                                                    <button style="border: none;outline:none;background: #007bff;color: white;border-radius: 5px;">Dalam Pengiriman</button>
                                                 </a>
                                             </td>
-                                            <td>3 Days</td>
-                                            <td>XPDC</td>
                                             <td>
                                                 <!-- Nav Item -Button Aksi -->
                                                 <div class="nav-item dropdown no-arrow" style="margin: 0;padding:0">
@@ -679,14 +646,11 @@
                                                         <a class="dropdown-item" href="#">
                                                             Cetak Tagihan
                                                         </a>
-                                                        <a class="dropdown-item" href="#" onclick="swal({title:'Oops',  text: 'Bukti pengambilan belum tersedia',  icon: 'error',  button: 'Tutup'})"> 
+                                                        <a class="dropdown-item" href="#">
                                                             Cetak Bukti Pengambilan
                                                         </a>
-                                                        <a class="dropdown-item" href="#">
+                                                        <a class="dropdown-item" href="#" onclick="swal({title:'Oops',  text: 'Bukti pengiriman belum tersedia',  icon: 'error',  button: 'Tutup'})"> 
                                                             Cetak Bukti Pengiriman
-                                                        </a>
-                                                        <a class="dropdown-item" href="#">
-                                                            Batalkan Pengiriman
                                                         </a>
                                                     </div>
                                             </td>
@@ -694,6 +658,8 @@
                                           <tr>
                                             <td>9</td>
                                             <td>XPDC2022786</td>
+                                            <td>Ref/1756</td>
+                                            <td>Reguler</td>
                                             <td>PT. EKAS EMESTA</td>
                                             <td>PT. EMESTA EKAS</td>
                                             <td>Furniture</td>
@@ -704,8 +670,6 @@
                                                     <button style="border: none;outline:none;background: #007bff;color: white;border-radius: 5px;">Dalam Pengiriman</button>
                                                 </a>
                                             </td>
-                                            <td>5 Days</td>
-                                            <td>XPDC</td>
                                             <td>
                                                 <!-- Nav Item -Button Aksi -->
                                                 <div class="nav-item dropdown no-arrow" style="margin: 0;padding:0">
@@ -727,9 +691,6 @@
                                                         </a>
                                                         <a class="dropdown-item" href="#" onclick="swal({title:'Oops',  text: 'Bukti pengiriman belum tersedia',  icon: 'error',  button: 'Tutup'})"> 
                                                             Cetak Bukti Pengiriman
-                                                        </a>
-                                                        <a class="dropdown-item" href="#">
-                                                            Batalkan Pengiriman
                                                         </a>
                                                     </div>
                                             </td>
@@ -737,6 +698,8 @@
                                           <tr>
                                             <td>10</td>
                                             <td>XPDC2022786</td>
+                                            <td>Ref/1756</td>
+                                            <td>Reguler</td>
                                             <td>PT. EKAS EMESTA</td>
                                             <td>PT. EMESTA EKAS</td>
                                             <td>Furniture</td>
@@ -747,8 +710,6 @@
                                                     <button style="border: none;outline:none;background: #007bff;color: white;border-radius: 5px;">Dalam Pengiriman</button>
                                                 </a>
                                             </td>
-                                            <td>1 Days</td>
-                                            <td>XPDC</td>
                                             <td>
                                                 <!-- Nav Item -Button Aksi -->
                                                 <div class="nav-item dropdown no-arrow" style="margin: 0;padding:0">
@@ -765,14 +726,11 @@
                                                         <a class="dropdown-item" href="#">
                                                             Cetak Tagihan
                                                         </a>
-                                                        <a class="dropdown-item" href="#" onclick="swal({title:'Oops',  text: 'Bukti pengambilan belum tersedia',  icon: 'error',  button: 'Tutup'})"> 
+                                                        <a class="dropdown-item" href="#">
                                                             Cetak Bukti Pengambilan
                                                         </a>
-                                                        <a class="dropdown-item" href="#">
+                                                        <a class="dropdown-item" href="#" onclick="swal({title:'Oops',  text: 'Bukti pengiriman belum tersedia',  icon: 'error',  button: 'Tutup'})"> 
                                                             Cetak Bukti Pengiriman
-                                                        </a>
-                                                        <a class="dropdown-item" href="#">
-                                                            Batalkan Pengiriman
                                                         </a>
                                                     </div>
                                             </td>
@@ -780,6 +738,8 @@
                                           <tr>
                                             <td>11</td>
                                             <td>XPDC2022786</td>
+                                            <td>Ref/1756</td>
+                                            <td>Express</td>
                                             <td>PT. EKAS EMESTA</td>
                                             <td>PT. EMESTA EKAS</td>
                                             <td>Furniture</td>
@@ -787,11 +747,9 @@
                                             <td>16</td>
                                             <td>
                                                 <a href="shipment_history.html">
-                                                    <button style="border: none;outline:none;background: #2dce89;color: white;border-radius: 5px;">Diterima</button>
+                                                    <button style="border: none;outline:none;background: #007bff;color: white;border-radius: 5px;">Dalam Pengiriman</button>
                                                 </a>
                                             </td>
-                                            <td>3 Days</td>
-                                            <td>XPDC</td>
                                             <td>
                                                 <!-- Nav Item -Button Aksi -->
                                                 <div class="nav-item dropdown no-arrow" style="margin: 0;padding:0">
@@ -813,9 +771,6 @@
                                                         </a>
                                                         <a class="dropdown-item" href="#" onclick="swal({title:'Oops',  text: 'Bukti pengiriman belum tersedia',  icon: 'error',  button: 'Tutup'})"> 
                                                             Cetak Bukti Pengiriman
-                                                        </a>
-                                                        <a class="dropdown-item" href="#">
-                                                            Batalkan Pengiriman
                                                         </a>
                                                     </div>
                                             </td>
@@ -823,6 +778,8 @@
                                           <tr>
                                             <td>12</td>
                                             <td>XPDC2022786</td>
+                                            <td>Ref/1756</td>
+                                            <td>Reguler</td>
                                             <td>PT. EKAS EMESTA</td>
                                             <td>PT. EMESTA EKAS</td>
                                             <td>Furniture</td>
@@ -833,8 +790,6 @@
                                                     <button style="border: none;outline:none;background: #007bff;color: white;border-radius: 5px;">Dalam Pengiriman</button>
                                                 </a>
                                             </td>
-                                            <td>5 Days</td>
-                                            <td>XPDC</td>
                                             <td>
                                                 <!-- Nav Item -Button Aksi -->
                                                 <div class="nav-item dropdown no-arrow" style="margin: 0;padding:0">
@@ -857,15 +812,14 @@
                                                         <a class="dropdown-item" href="#" onclick="swal({title:'Oops',  text: 'Bukti pengiriman belum tersedia',  icon: 'error',  button: 'Tutup'})"> 
                                                             Cetak Bukti Pengiriman
                                                         </a>
-                                                        <a class="dropdown-item" href="#">
-                                                            Batalkan Pengiriman
-                                                        </a>
                                                     </div>
                                             </td>
                                           </tr>
                                           <tr>
                                             <td>13</td>
                                             <td>XPDC2022786</td>
+                                            <td>Ref/1756</td>
+                                            <td>Reguler</td>
                                             <td>PT. EKAS EMESTA</td>
                                             <td>PT. EMESTA EKAS</td>
                                             <td>Furniture</td>
@@ -876,8 +830,6 @@
                                                     <button style="border: none;outline:none;background: #007bff;color: white;border-radius: 5px;">Dalam Pengiriman</button>
                                                 </a>
                                             </td>
-                                            <td>1 Days</td>
-                                            <td>XPDC</td>
                                             <td>
                                                 <!-- Nav Item -Button Aksi -->
                                                 <div class="nav-item dropdown no-arrow" style="margin: 0;padding:0">
@@ -885,23 +837,20 @@
                                                         data-toggle="dropdown" style="margin: 0;padding:0">
                                                         <button style="border: none;outline:none;background: grey;color: white;border-radius: 5px;">Aksi</button>
                                                     </a>
-                                                    <!-- Dropdown - Menu Aksi -->
+                                                    <!-- Dropdown -Menu Aksi -->
                                                     <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in"
                                                         aria-labelledby="userDropdown">
                                                         <a class="dropdown-item" href="#">
                                                             Cetak Resi
                                                         </a>
-                                                        <a class="dropdown-item" href="#" onclick="swal({title:'Oops',  text: 'Bukti Tagihan belum tersedia',  icon: 'error',  button: 'Tutup'})"> 
+                                                        <a class="dropdown-item" href="#">
                                                             Cetak Tagihan
                                                         </a>
                                                         <a class="dropdown-item" href="#">
                                                             Cetak Bukti Pengambilan
                                                         </a>
-                                                        <a class="dropdown-item" href="#">
+                                                        <a class="dropdown-item" href="#" onclick="swal({title:'Oops',  text: 'Bukti pengiriman belum tersedia',  icon: 'error',  button: 'Tutup'})"> 
                                                             Cetak Bukti Pengiriman
-                                                        </a>
-                                                        <a class="dropdown-item" href="#">
-                                                            Batalkan Pengiriman
                                                         </a>
                                                     </div>
                                             </td>
@@ -909,51 +858,10 @@
                                           <tr>
                                             <td>14</td>
                                             <td>XPDC2022786</td>
+                                            <td>Ref/1756</td>
+                                            <td>Express</td>
                                             <td>PT. EKAS EMESTA</td>
                                             <td>PT. EMESTA EKAS</td>
-                                            <td>Furniture</td>
-                                            <td>382 Kg</td>
-                                            <td>16</td>
-                                            <td>
-                                                <a href="shipment_history.html">
-                                                    <button style="border: none;outline:none;background: #2dce89;color: white;border-radius: 5px;">Diterima</button>
-                                                </a>
-                                            </td>
-                                            <td>3 Days</td>
-                                            <td>XPDC</td>
-                                            <td>
-                                                <!-- Nav Item -button Aksi -->
-                                                <div class="nav-item dropdown no-arrow" style="margin: 0;padding:0">
-                                                    <a class="nav-link dropdown-toggle" href="#" 
-                                                        data-toggle="dropdown" style="margin: 0;padding:0">
-                                                        <button style="border: none;outline:none;background: grey;color: white;border-radius: 5px;">Aksi</button>
-                                                    </a>
-                                                    <!-- Dropdown - Menu Aksi -->
-                                                    <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in"
-                                                        aria-labelledby="userDropdown">
-                                                        <a class="dropdown-item" href="#">
-                                                            Cetak Resi
-                                                        </a>
-                                                        <a class="dropdown-item" href="#" onclick="swal({title:'Oops',  text: 'Tagihan belum tersedia',  icon: 'error',  button: 'Tutup'})"> 
-                                                            Cetak Tagihan
-                                                        </a>
-                                                        <a class="dropdown-item" href="#">
-                                                            Cetak Bukti Pengambilan
-                                                        </a>
-                                                        <a class="dropdown-item" href="#">
-                                                            Cetak Bukti Pengiriman
-                                                        </a>
-                                                        <a class="dropdown-item" href="#">
-                                                            Batalkan Pengiriman
-                                                        </a>
-                                                    </div>
-                                            </td>
-                                          </tr>
-                                          <tr>
-                                            <td>15</td>
-                                            <td>XPDC2022786</td>
-                                            <td>PT. MAJU JAYA OKE</td>
-                                            <td>PT. OKE BANGET</td>
                                             <td>Furniture</td>
                                             <td>382 Kg</td>
                                             <td>16</td>
@@ -962,33 +870,69 @@
                                                     <button style="border: none;outline:none;background: #007bff;color: white;border-radius: 5px;">Dalam Pengiriman</button>
                                                 </a>
                                             </td>
-                                            <td>5 Days</td>
-                                            <td>XPDC</td>
                                             <td>
-                                                <!-- Nav Item -button Aksi -->
+                                                <!-- Nav Item -Button Aksi -->
                                                 <div class="nav-item dropdown no-arrow" style="margin: 0;padding:0">
                                                     <a class="nav-link dropdown-toggle" href="#" 
                                                         data-toggle="dropdown" style="margin: 0;padding:0">
                                                         <button style="border: none;outline:none;background: grey;color: white;border-radius: 5px;">Aksi</button>
                                                     </a>
-                                                     <!-- Dropdown - menu aksi -->
-                                                <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="aksi">
-                                                     <a class="dropdown-item" href="#">
-                                                         Cetak Resi
-                                                     </a>
-                                                     <a class="dropdown-item" href="#">
-                                                         Cetak Tagihan
-                                                     </a>
-                                                     <a class="dropdown-item" href="#" >
-                                                         Cetak Bukti Pengambilan
-                                                     </a>
-                                                     <a class="dropdown-item" href="#" onclick="swal({title:'Oops',  text: 'Bukti pengiriman belum tersedia',  icon: 'error',  button: 'Tutup'})"> 
-                                                         Cetak Bukti Pengiriman
-                                                     </a>
-                                                     <a class="dropdown-item" href="#" style="color: red;">
-                                                         Batalkan Pengiriman
-                                                     </a>
-                                                 </div>
+                                                    <!-- Dropdown -Menu Aksi -->
+                                                    <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in"
+                                                        aria-labelledby="userDropdown">
+                                                        <a class="dropdown-item" href="#">
+                                                            Cetak Resi
+                                                        </a>
+                                                        <a class="dropdown-item" href="#">
+                                                            Cetak Tagihan
+                                                        </a>
+                                                        <a class="dropdown-item" href="#">
+                                                            Cetak Bukti Pengambilan
+                                                        </a>
+                                                        <a class="dropdown-item" href="#" onclick="swal({title:'Oops',  text: 'Bukti pengiriman belum tersedia',  icon: 'error',  button: 'Tutup'})"> 
+                                                            Cetak Bukti Pengiriman
+                                                        </a>
+                                                    </div>
+                                            </td>
+                                          </tr>
+                                          <tr>
+                                            <td>15</td>
+                                            <td>XPDC2022786</td>
+                                            <td>Ref/1756</td>
+                                            <td>Reguler</td>
+                                            <td>PT. EKAS EMESTA</td>
+                                            <td>PT. EMESTA EKAS</td>
+                                            <td>Furniture</td>
+                                            <td>382 Kg</td>
+                                            <td>16</td>
+                                            <td>
+                                                <a href="shipment_history.html">
+                                                    <button style="border: none;outline:none;background: #007bff;color: white;border-radius: 5px;">Dalam Pengiriman</button>
+                                                </a>
+                                            </td>
+                                            <td>
+                                                <!-- Nav Item -Button Aksi -->
+                                                <div class="nav-item dropdown no-arrow" style="margin: 0;padding:0">
+                                                    <a class="nav-link dropdown-toggle" href="#" 
+                                                        data-toggle="dropdown" style="margin: 0;padding:0">
+                                                        <button style="border: none;outline:none;background: grey;color: white;border-radius: 5px;">Aksi</button>
+                                                    </a>
+                                                    <!-- Dropdown -Menu Aksi -->
+                                                    <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in"
+                                                        aria-labelledby="userDropdown">
+                                                        <a class="dropdown-item" href="#">
+                                                            Cetak Resi
+                                                        </a>
+                                                        <a class="dropdown-item" href="#">
+                                                            Cetak Tagihan
+                                                        </a>
+                                                        <a class="dropdown-item" href="#">
+                                                            Cetak Bukti Pengambilan
+                                                        </a>
+                                                        <a class="dropdown-item" href="#" onclick="swal({title:'Oops',  text: 'Bukti pengiriman belum tersedia',  icon: 'error',  button: 'Tutup'})"> 
+                                                            Cetak Bukti Pengiriman
+                                                        </a>
+                                                    </div>
                                             </td>
                                           </tr>
                                     </tbody>

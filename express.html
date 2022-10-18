@@ -43,8 +43,8 @@
                   <span>Dashboard</span></a>
           </li>
 
-          <!-- Nav Item - Pages Collapse Menu -->
-          <li class="nav-item">
+          <!-- Nav Item - Pengiriman Collapse Menu -->
+          <!-- <li class="nav-item">
               <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapsePengiriman"
                   aria-expanded="true" aria-controls="collapsePengiriman">
                   <i class="fas fa-fw fa-truck"></i>
@@ -57,9 +57,15 @@
                   <a class="collapse-item" href="daftar-pengiriman.html">Daftar Pengiriman</a>
               </div>
           </div>
-          </li>
+          </li> -->
+          <li class="nav-item">
+            <a class="nav-link collapsed" href="daftar-pengiriman.html">
+                <i class="fas fa-fw fas fas fa-truck"></i>
+                <span>Pengiriman</span>
+            </a>
+        </li>
 
-          <!-- Nav Item - Utilities Collapse Menu -->
+          <!-- Nav Item - Riwayat Transaksi Collapse Menu -->
           <li class="nav-item">
               <a class="nav-link collapsed" href="riwayat-transaksi.html">
                   <i class="fas fa-fw fas fa-history"></i>
@@ -75,7 +81,7 @@
         </a>
         </li>
 
-          <!-- Nav Item - Pages Collapse Menu -->
+          <!-- Nav Item - Pengaturan Collapse Menu -->
           <li class="nav-item">
               <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapsePages"
                   aria-expanded="true" aria-controls="collapsePages">
@@ -239,18 +245,7 @@
                                     <div class="small text-gray-500">XPDC · 1d</div>
                                 </div>
                             </a>
-                            <!-- <a class="dropdown-item d-flex align-items-center" href="#">
-                                <div class="dropdown-list-image mr-3">
-                                    <img class="rounded-circle" src="img/undraw_profile_3.svg"
-                                        alt="...">
-                                    <div class="status-indicator bg-warning"></div>
-                                </div>
-                                <div>
-                                    <div class="text-truncate">Last month's report looks great, I am very happy with
-                                        the progress so far, keep up the good work!</div>
-                                    <div class="small text-gray-500">Morgan Alvarez · 2d</div>
-                                </div>
-                            </a> -->
+                           
                             <a class="dropdown-item text-center small text-gray-500" href="#">Baca lebih banyak pesan</a>
                         </div>
                     </li>
@@ -297,8 +292,7 @@
                         <div class="progress" id="progress" ></div>
                         <div class="progress-step progress-step-active" data-title="Informasi Pengiriman" ></div>
                         <div class="progress-step" data-title="Informasi Barang"></div>
-                        <div class="progress-step" data-title="Detail Paket"></div>
-                        <div class="progress-step" data-title="Catatan Pengiriman"></div>
+                        <div class="progress-step" data-title="Review"></div>
                     </div>
                     <!-- steps -->
                       <div class="form-step form-step-active">
@@ -379,8 +373,7 @@
                         </select>
                         <label for="picpengirim">PIC Pengirim (Optional)</label>
                         <input type="text" name="picpengirim" id="picpengirim" placeholder="Nama Bpk/Ibu Pengirim">
-                        <label for="emailpengirim">Email Pengirim (Optional)</label>
-                        <input type="email" name="emailpengirim" id="emailpengirim" placeholder="Alamat email Pengirim">
+                       
                     </div>
 
                     <div class="column" style="padding: 20px;width: 50%;">
@@ -458,8 +451,7 @@
                     </select>
                     <label for="picpenerima">PIC Penerima (Optional)</label>
                     <input type="text" name="picpenerima" id="picpenerima" placeholder="Nama Bpk/Ibu Penerima">
-                    <label for="emailpenerima">Email Penerima (Optional)</label>
-                    <input type="email" name="emailpenerima" id="emailpenerima" placeholder="Alamat email penerima">
+                   
                     </div>
                     </div>
                 </div>
@@ -571,42 +563,61 @@
                             </div>
                         </div>
                     </div>
+
+                    <div class="input-group">
+                        <div class="row" style="width: 100%;">
+                            <div class="column" style="padding: 20px;width: 50%;margin: 0;padding-top: 0;">
+                                <label for="jumlahbox">Jumlah Per-Box</label>
+                                <input type="number" name="jumlahbox" id="jumlahbox" placeholder="Jumlah Per-Box" >
+                            </div>
+                            <div class="column" style="padding: 20px;width: 50%;margin: 0;padding-top: 0;">
+                                <label for="berat">Berat</label>
+                                <input type="number" name="berat" id="berat" placeholder="Berat (Kg)">
+                            </div>
+                            <div class="column" style="padding: 20px;width: 30%;margin: 0;padding-top: 0;">
+                                <label for="panjang">Panjang</label>
+                                <input type="number" name="panjang" id="panjang" placeholder="Panjang (cm)" >
+                            </div>
+                            <div class="column" style="padding: 20px;width: 30%;margin: 0;padding-top: 0;">
+                                <label for="lebar">Lebar</label>
+                                <input type="number" name="lebar" id="lebar" placeholder="Lebar (cm)">
+                            </div>
+                            <div class="column" style="padding: 20px;width: 30%;margin: 0;padding-top: 0;">
+                                <label for="tinggi">Tinggi</label>
+                                <input type="number" name="tinggi" id="tinggi" placeholder="Tinggi (cm)" >
+                            </div>
+                            <div class="column" style="padding: 20px;width: 10%;margin: 0;padding-top: 0;">
+                                <label for="hargabarang">Aksi:</label>
+                                <button style="padding: 10px; background: #0000A0;color: white;outline: none; border: none;width: 50px; border-radius: 5px;">
+                                    <i class="fas fas fas fas fa-plus text-white-300"></i>
+                                </button>
+                            </div>
+                        </div>
+                    
+                        <div class="row" style="width: 100%;">
+                        <div class="column" style="padding: 20px;width: 30%;">
+                            <label for="berat">Berat Aktual:</label>
+                        </div>
+                        <div class="column" style="padding: 20px;width: 30%;">
+                            <label for="volume">Berat Volume:</label>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="input-group">
+                        <div class="row" style="width: 100%;">
+                            <div class="column" style="padding: 20px;width: 50%;">
+                            <h1 class="h3 mb-0 text-gray-800" style="font-size: 20px;">Catatan Pengiriman</h1>
+                                <textarea name="namapengirim" id="namapengirim" style="width: 100%;border: none;outline: none;height: 100%;" ></textarea>
+                            </div>
+                            </div>
+                        </div>
                     </div>
                 <div class="btns-group">
                     <a href="#" class="btn btn-prev">Previous</a>
                     <a href="#" class="btn btn-next">Next</a>
                 </div>
             </div>
-        
-            <div class="form-step">
-                <div class="input-group">
-                    <div class="row" style="width: 100%;">
-                        <div class="column" style="padding: 20px;width: 50%;margin: 0;padding-top: 0;">
-                            <label for="jumlahbox">Jumlah Per-Box</label>
-                            <input type="number" name="jumlahbox" id="jumlahbox" placeholder="Jumlah Per-Box" >
-                        </div>
-                        <div class="column" style="padding: 20px;width: 50%;margin: 0;padding-top: 0;">
-                            <label for="berat">Berat</label>
-                            <input type="number" name="berat" id="berat" placeholder="Berat (Kg)">
-                        </div>
-                        <div class="column" style="padding: 20px;width: 30%;margin: 0;padding-top: 0;">
-                            <label for="panjang">Panjang</label>
-                            <input type="number" name="panjang" id="panjang" placeholder="Panjang (cm)" >
-                        </div>
-                        <div class="column" style="padding: 20px;width: 30%;margin: 0;padding-top: 0;">
-                            <label for="lebar">Lebar</label>
-                            <input type="number" name="lebar" id="lebar" placeholder="Lebar (cm)">
-                        </div>
-                        <div class="column" style="padding: 20px;width: 30%;margin: 0;padding-top: 0;">
-                            <label for="tinggi">Tinggi</label>
-                            <input type="number" name="tinggi" id="tinggi" placeholder="Tinggi (cm)" >
-                        </div>
-                        <div class="column" style="padding: 20px;width: 10%;margin: 0;padding-top: 0;">
-                            <label for="hargabarang">Aksi:</label>
-                            <button style="padding: 10px; background: #0000A0;color: white;outline: none; border: none;width: 50px; border-radius: 5px;">
-                                <i class="fas fas fas fas fa-plus text-white-300"></i>
-                            </button>
-                        </div>
+                
                         <!-- <div class="column" style="padding: 20px;width: 30%;margin: 0;padding-top: 0;">
                         <label for="panjang">Panjang</label>
                         <input type="number" name="panjang" id="panjang" placeholder="Panjang (cm)" >
@@ -625,32 +636,11 @@
                             <i class="fas fas fas fas fa-trash-alt text-white-300"></i>
                         </button>
                     </div> -->
-                    </div>
-                    
-                    <div class="row" style="width: 100%;">
-                    <div class="column" style="padding: 20px;width: 30%;">
-                        <label for="berat">Berat Aktual:</label>
-                    </div>
-                    <div class="column" style="padding: 20px;width: 30%;">
-                        <label for="volume">Berat Volume:</label>
-                    </div>
-                    </div>
-                </div>
-                <div class="btns-group">
-                    <a href="#" class="btn btn-prev">Previous</a>
-                    <a href="#" class="btn btn-next">Next</a>
-                </div>
-            </div>
+                   
+              
         
             <div class="form-step">
-                <div class="input-group">
-                <div class="row" style="width: 100%;">
-                    <div class="column" style="padding: 20px;width: 50%;">
-                    <h1 class="h3 mb-0 text-gray-800" style="font-size: 20px;">Catatan Pengiriman</h1>
-                        <textarea name="namapengirim" id="namapengirim" style="width: 100%;border: none;outline: none;height: 100%;" ></textarea>
-                    </div>
-                    </div>
-                </div>
+               
                 <div class="btns-group">
                     <a href="#" class="btn btn-prev">Previous</a>
                     <input type="submit" value="Submit" class="btn"/>
