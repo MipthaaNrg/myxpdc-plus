@@ -292,7 +292,7 @@
                         <div class="progress" id="progress" ></div>
                         <div class="progress-step progress-step-active" data-title="Informasi Pengiriman" ></div>
                         <div class="progress-step" data-title="Informasi Barang"></div>
-                        <div class="progress-step" data-title="Review"></div>
+                        <div class="progress-step" data-title="Review Order"></div>
                     </div>
                     <!-- steps -->
                       <div class="form-step form-step-active">
@@ -317,7 +317,7 @@
                                           <!-- Modals Heading -->
                                             <div class="d-sm-flex align-items-center justify-content-between mb-1">
                                                 <h1 class="h5 mb-0 text-gray-800">Alamat</h1>
-                                                <a href="#" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm" style="margin-left: 65px;">Tambah Alamat</a>
+                                                <a href="daftar-alamat.html" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm" style="margin-left: 65px;">Tambah Alamat</a>
                                             </div>
                                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                                 <span aria-hidden="true">&times;</span>
@@ -358,8 +358,16 @@
                                 </div>
                             </div>
                         </div>
-                        <label for="namapengirim">Nama Pengirim</label>
+                        <div class="row">
+                            <div class="column" style="padding-left: 10px;">  
+                                <label for="namapengirim">Nama Pengirim</label>
                         <input type="text" name="namapengirim" id="namapengirim" placeholder="Nama Instansi/PT/CV/Tbk">
+                            </div>
+                            <div class="column" style="padding-left: 45px;right: 0;" >  
+                                <label for="picpengirim">PIC Pengirim (Optional)</label>
+                                <input type="text" name="picpengirim" id="picpengirim" placeholder="Nama Bpk/Ibu Pengirim">
+                            </div>
+                        </div>
                         <label for="teleponpengirim">Telepon Pengirim</label>
                         <input type="number" name="teleponpengirim" id="teleponpengirim" placeholder="Nomor Telepon Pengirim">
                         <label for="alamatpengirim">Alamat Pengirim</label>
@@ -371,9 +379,6 @@
                             <option>Tangerang</option>
                             <option>Bekasi</option>
                         </select>
-                        <label for="picpengirim">PIC Pengirim (Optional)</label>
-                        <input type="text" name="picpengirim" id="picpengirim" placeholder="Nama Bpk/Ibu Pengirim">
-                       
                     </div>
 
                     <div class="column" style="padding: 20px;width: 50%;">
@@ -395,7 +400,7 @@
                                     <!-- Modals Heading -->
                                     <div class="d-sm-flex align-items-center justify-content-between mb-1">
                                         <h1 class="h5 mb-0 text-gray-800">Alamat</h1>
-                                        <a href="#" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm" style="margin-left: 65px;">Tambah Alamat</a>
+                                        <a href="daftar-alamat.html" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm" style="margin-left: 65px;">Tambah Alamat</a>
                                     </div>
                                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                         <span aria-hidden="true">&times;</span>
@@ -436,8 +441,17 @@
                             </div>
                         </div>
                     </div>
-                    <label for="namapenerima">Nama Penerima</label>
+                    
+                    <div class="row">
+                        <div class="column" style="padding-left: 10px;">  
+                            <label for="namapenerima">Nama Penerima</label>
                     <input type="text" name="namapenerima" id="namapenerima" placeholder="Nama Instansi/PT/CV/Tbk">
+                        </div>
+                        <div class="column" style="padding-left: 45px;right: 0;" >  
+                            <label for="picpenerima">PIC Penerima (Optional)</label>
+                            <input type="text" name="picpenerima" id="picpenerima" placeholder="Nama Bpk/Ibu Penerima">
+                        </div>
+                    </div>
                     <label for="teleponpenerima">Telepon Penerima</label>
                     <input type="number" name="teleponpenerima" id="teleponpenerima" placeholder="Nomor Telepon Penerima">
                     <label for="alamatpenerima">Alamat Penerima</label>
@@ -449,9 +463,6 @@
                         <option>Tangerang</option>
                         <option>Bekasi</option>
                     </select>
-                    <label for="picpenerima">PIC Penerima (Optional)</label>
-                    <input type="text" name="picpenerima" id="picpenerima" placeholder="Nama Bpk/Ibu Penerima">
-                   
                     </div>
                     </div>
                 </div>
@@ -459,26 +470,33 @@
                     <a href="#" class="btn btn-next">Next</a>
                 </div>
             </div>
-            <div class="form-step">
-                <div class="input-group">
+            <div class="form-step" >
+                <div class="input-group" >
                 <div class="row" style="width: 100%;">
                     <div class="column" style="padding: 20px;width: 50%;">
                         <h1 class="h3 mb-0 text-gray-800" style="font-size: 20px;">Informasi Detail Barang</h1>
                         <label for="namabarang">Nama Barang</label>
                         <input type="text" name="namabarang" id="namabarang">
-                        <label for="asuransi">Asuransi</label>
-                        <select style="width: 100%; border-radius: 5px; outline: none;border: none;background: #DEDEDE;padding: 5px;color: #797979;">
-                            <option>--Pilih Asuransi--</option>
-                            <option>Ya</option>
-                            <option>Tidak</option>
-                        </select>
                         <label for="nomorreferensi">No Referensi (Optional)</label>
-                        <input type="text" name="nomorreferensi" id="nomorreferensi">
+                        <input type="text" name="nomorreferensi" id="nomorreferensi" >
                     </div>
                     <div class="column" style="padding: 45px;width: 50%;">
-                        <label for="hargabarang">Harga Barang</label>
-                        <input type="number" name="hargabarang" id="hargabarang">
-                        <label for="upload">Upload Dokumen</label>
+                        <div class="row" style="width: 100%;">
+                            <div class="column" style="width: 50%;">
+                                <label for="hargabarang">Harga Barang</label>
+                                <input type="number" name="hargabarang" id="hargabarang">
+                            </div>
+                            <div class="column" style="width: 40%;">
+                                <label for="asuransi" >Asuransi
+                                    <input type="checkbox" checked="checked" style="height: 25px;margin-top: 15px;">
+                                    <span class="checkmark"></span>
+                                  </label>
+                                  <label for="Packing" style="padding-left: 5px;">Packing
+                                    <input type="checkbox" checked="checked" style="height: 25px;margin-top: 15px;">
+                                  </label>
+                            </div>
+                            </div>
+                        <label for="upload">Upload Dokumen PO</label>
                         <div class="file-upload">
                             <div class="file-select">
                                 <div class="file-select-button" id="fileName">Choose File</div>
@@ -486,13 +504,13 @@
                                 <input type="file" name="chooseFile" id="chooseFile">
                             </div>
                             </div>
-                            <label for="syarat">Syarat dan Ketentuan</label>
-                            <br>
+                            <!-- <label for="syarat">Syarat dan Ketentuan</label>
+                            <br> -->
                         
                             <!-- Button trigger modal -->
-                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalLong">
+                            <!-- <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalLong">
                                 <i class="fas fas far far fa-file-alt text-white-500" style="font-size: 25px;"></i>
-                            </button>
+                            </button> -->
                             
                             <!--Modal syarat ketentuan-->
                             <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
@@ -562,48 +580,46 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
-
-                    <div class="input-group">
-                        <div class="row" style="width: 100%;">
-                            <div class="column" style="padding: 20px;width: 50%;margin: 0;padding-top: 0;">
+                        <div class="input-group" style="margin-top:0;padding-top:0;transform:translateY(-30px)">
+                        <div class="row" style="width: 100%;padding-left: 10px;">
+                            <div class="column" style="padding: 20px;width: 18%;margin: 0;padding-top: 0;">
                                 <label for="jumlahbox">Jumlah Per-Box</label>
-                                <input type="number" name="jumlahbox" id="jumlahbox" placeholder="Jumlah Per-Box" >
+                                <input type="number" name="jumlahbox" id="jumlahbox" placeholder="Box" >
                             </div>
-                            <div class="column" style="padding: 20px;width: 50%;margin: 0;padding-top: 0;">
+                            <div class="column" style="padding: 20px;width: 18%;margin: 0;padding-top: 0;">
                                 <label for="berat">Berat</label>
-                                <input type="number" name="berat" id="berat" placeholder="Berat (Kg)">
+                                <input type="number" name="berat" id="berat" placeholder="kg">
                             </div>
-                            <div class="column" style="padding: 20px;width: 30%;margin: 0;padding-top: 0;">
+                            <div class="column" style="padding: 20px;width: 18%;margin: 0;padding-top: 0;">
                                 <label for="panjang">Panjang</label>
-                                <input type="number" name="panjang" id="panjang" placeholder="Panjang (cm)" >
+                                <input type="number" name="panjang" id="panjang" placeholder="cm" >
                             </div>
-                            <div class="column" style="padding: 20px;width: 30%;margin: 0;padding-top: 0;">
+                            <div class="column" style="padding: 20px;width: 18%;margin: 0;padding-top: 0;">
                                 <label for="lebar">Lebar</label>
-                                <input type="number" name="lebar" id="lebar" placeholder="Lebar (cm)">
+                                <input type="number" name="lebar" id="lebar" placeholder="cm">
                             </div>
-                            <div class="column" style="padding: 20px;width: 30%;margin: 0;padding-top: 0;">
+                            <div class="column" style="padding: 20px;width: 18%;margin: 0;padding-top: 0;">
                                 <label for="tinggi">Tinggi</label>
-                                <input type="number" name="tinggi" id="tinggi" placeholder="Tinggi (cm)" >
+                                <input type="number" name="tinggi" id="tinggi" placeholder="cm" >
                             </div>
-                            <div class="column" style="padding: 20px;width: 10%;margin: 0;padding-top: 0;">
-                                <label for="hargabarang">Aksi:</label>
-                                <button style="padding: 10px; background: #0000A0;color: white;outline: none; border: none;width: 50px; border-radius: 5px;">
+                            <div class="column" style="padding: 15px;width: 10%;margin: 0;padding-top: 0;">
+                                <!-- <label for="hargabarang">Aksi:</label> -->
+                                <button style="padding: 10px;margin: 20px; background: #4e73df;color: white;outline: none; border: none;width: 50px; border-radius: 5px;">
                                     <i class="fas fas fas fas fa-plus text-white-300"></i>
                                 </button>
                             </div>
                         </div>
-                    
-                        <div class="row" style="width: 100%;">
-                        <div class="column" style="padding: 20px;width: 30%;">
+                        <div class="row" style="width: 100%;padding-left: 10px;margin-top: 0;padding-top:0;">
+                        <div class="column" style="padding: 20px;width: 30%;margin-top: 0;padding-top:0;">
                             <label for="berat">Berat Aktual:</label>
                         </div>
-                        <div class="column" style="padding: 20px;width: 30%;">
+                        <div class="column" style="padding: 20px;width: 30%;margin-top: 0;padding-top:0;">
                             <label for="volume">Berat Volume:</label>
                         </div>
                         </div>
                     </div>
-                    <div class="input-group">
+                </div>
+                    <div class="input-group" style="transform:translateY(-75px);margin-bottom: 0;padding-top: 0;">
                         <div class="row" style="width: 100%;">
                             <div class="column" style="padding: 20px;width: 50%;">
                             <h1 class="h3 mb-0 text-gray-800" style="font-size: 20px;">Catatan Pengiriman</h1>
@@ -636,11 +652,89 @@
                             <i class="fas fas fas fas fa-trash-alt text-white-300"></i>
                         </button>
                     </div> -->
-                   
-              
         
             <div class="form-step">
-               
+                <div class="row" style="margin-bottom: 10px;">
+                    <div class="card" style="width: 68%;">
+                        <div class="card-header">Review Order</div>
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="column" style="padding: 10px;width: 50%;margin: 0;padding-top: 0;">
+                                    <h6 class="h6 mb-0 text-gray-900">Pengirim</h6>
+                                    <h6 style="font-size: 14px;margin-bottom: 0;">PT. EKA JAYA</h6>
+                                    <h6 style="font-size: 14px;margin-bottom: 0;">Gudang 88A JL. Asem pendek Kec. Weru Kab. Cirebon Jawa Barat</h6>
+                                    <h6 style="font-size: 14px;margin-bottom: 0;">021677432</h6>
+
+                                </div>
+                                <div class="column" style="padding: 10px;width: 50%;margin: 0;padding-top: 0;">
+                                    <h6 class="h6 mb-0 text-gray-900">Penerima</h6>
+                                    <h6 style="font-size: 14px;margin-bottom: 0;">XPDC</h6>
+                                    <h6 style="font-size: 14px;margin-bottom: 0;">Pergudangan Aeropolis Technopark ASW F.21 , Neglasari, Tangerang, Banten</h6>
+                                    <h6 style="font-size: 14px;margin-bottom: 0;">021677432</h6>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="column" style="padding: 10px;width: 50%;margin: 0;padding-top: 0;">
+                                <h6 class="h6 mb-0 text-gray-900">Detail Barang</h6>
+                                <h6 style="font-size: 14px;margin-bottom: 0;">Furniture</h6>
+                                <h6 style="font-size: 14px;margin-bottom: 0;">Harga Barang: Rp. 12.000.000</h6>
+                                <h6 style="font-size: 14px;margin-bottom: 0;">Asuransi: Tidak</h6>
+                                </div>
+                            </div>
+                            <div class="table-responsive">
+                                <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                                    <thead>
+                                        <tr>
+                                            <th>Jumlah</th>
+                                            <th>Berat</th>
+                                            <th>Panjang</th>
+                                            <th>Lebar</th>
+                                            <th>Tinggi</th>
+                                            <th>Berat Aktual</th>
+                                            <th>Berat Volume</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>20 Box</td>
+                                            <td>500Kg</td>
+                                            <td>12cm</td>
+                                            <td>12cm</td>
+                                            <td>12cm</td>
+                                            <td>500Kg</td>
+                                            <td>500</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="column" style="padding: 20px;width: 50%;">
+                                <h1 class="h3 mb-0 text-gray-800" style="font-size: 20px;">Catatan Pengiriman</h1>
+                                    <textarea name="namapengirim" id="namapengirim" style="width: 100%;border: none;outline: none;height: 100%;" ></textarea>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card" style="margin-left: 10px;width: 30%;">
+                        <div class="card-header">Order Summary</div>
+                        <div class="card-body">
+                            <div class="row" style="border: 1px solid gray;padding: 5px;">
+                                <div class="column" style="padding: 10px;margin: 0;padding-top: 0;">
+                                    <h6 style="font-size: 14px;margin-bottom: 0;">Biaya Asuransi: </h6>
+                                    <h6 style="font-size: 14px;margin-bottom: 0;">Biaya Packing: </h6>
+                                    <h6 style="font-size: 14px;margin-bottom: 0;">Total: </h6>
+                                </div>
+                                <div class="column" style="padding: 10px;margin: 0;padding-top: 0;">
+                                    <h6 style="font-size: 14px;margin-bottom: 0;">0</h6>
+                                    <h6 style="font-size: 14px;margin-bottom: 0;">0</h6>
+                                    <h6 style="font-size: 14px;margin-bottom: 0;">Rp. 12.000.000</h6>
+                                </div>
+                            </div>
+                            <div class="row" style="padding: 5px;">
+                            <h6 style="font-size: 14px;margin-bottom: 0;">Estimasi Pengiriman: 3-5 hari</h6>
+                            <h6 style="font-size: 14px;margin-bottom: 0;">Estimasi Diterima: 22 Oktober 2022</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 <div class="btns-group">
                     <a href="#" class="btn btn-prev">Previous</a>
                     <input type="submit" value="Submit" class="btn"/>
