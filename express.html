@@ -361,17 +361,17 @@
                         <div class="row">
                             <div class="column" style="padding-left: 10px;">  
                                 <label for="namapengirim">Nama Pengirim</label>
-                        <input type="text" name="namapengirim" id="namapengirim" placeholder="Nama Instansi/PT/CV/Tbk">
+                                <input type="text" name="namapengirim" id="namapengirim" placeholder="Nama Instansi/PT/CV/Tbk" required="" autocomplete="off">
                             </div>
                             <div class="column" style="padding-left: 45px;right: 0;" >  
                                 <label for="picpengirim">PIC Pengirim (Optional)</label>
-                                <input type="text" name="picpengirim" id="picpengirim" placeholder="Nama Bpk/Ibu Pengirim">
+                                <input type="text" name="picpengirim" id="picpengirim" placeholder="Nama Bpk/Ibu Pengirim" required="" autocomplete="off">
                             </div>
                         </div>
                         <label for="teleponpengirim">Telepon Pengirim</label>
-                        <input type="number" name="teleponpengirim" id="teleponpengirim" placeholder="Nomor Telepon Pengirim">
+                        <input type="number" name="teleponpengirim" id="teleponpengirim" placeholder="Nomor Telepon Pengirim" required="" autocomplete="off">
                         <label for="alamatpengirim">Alamat Pengirim</label>
-                        <input type="text" name="alamatpengirim" id="alamatpengirim">
+                        <input type="text" name="alamatpengirim" id="alamatpengirim" required="" autocomplete="off">
                         <label for="lokasipengirim">Lokasi Pengirim</label>
                         <select style="width: 100%; border-radius: 5px; outline: none;border: none;background: #DEDEDE;padding: 5px;color: #797979;">
                             <option>--Pilih Lokasi--</option>
@@ -445,17 +445,17 @@
                     <div class="row">
                         <div class="column" style="padding-left: 10px;">  
                             <label for="namapenerima">Nama Penerima</label>
-                    <input type="text" name="namapenerima" id="namapenerima" placeholder="Nama Instansi/PT/CV/Tbk">
+                    <input type="text" name="namapenerima" id="namapenerima" placeholder="Nama Instansi/PT/CV/Tbk" required="" autocomplete="off">
                         </div>
                         <div class="column" style="padding-left: 45px;right: 0;" >  
                             <label for="picpenerima">PIC Penerima (Optional)</label>
-                            <input type="text" name="picpenerima" id="picpenerima" placeholder="Nama Bpk/Ibu Penerima">
+                            <input type="text" name="picpenerima" id="picpenerima" placeholder="Nama Bpk/Ibu Penerima" required="" autocomplete="off">
                         </div>
                     </div>
                     <label for="teleponpenerima">Telepon Penerima</label>
-                    <input type="number" name="teleponpenerima" id="teleponpenerima" placeholder="Nomor Telepon Penerima">
+                    <input type="number" name="teleponpenerima" id="teleponpenerima" placeholder="Nomor Telepon Penerima" required="" autocomplete="off">
                     <label for="alamatpenerima">Alamat Penerima</label>
-                    <input type="text" name="alamatpenerima" id="alamatpenerima">
+                    <input type="text" name="alamatpenerima" id="alamatpenerima" required="" autocomplete="off">
                     <label for="lokasipenerima">Lokasi Penerima</label>
                     <select style="width: 100%; border-radius: 5px; outline: none;border: none;background: #DEDEDE;padding: 5px;color: #797979;">
                         <option>--Pilih Lokasi--</option>
@@ -476,15 +476,15 @@
                     <div class="column" style="padding: 20px;width: 50%;">
                         <h1 class="h3 mb-0 text-gray-800" style="font-size: 20px;">Informasi Detail Barang</h1>
                         <label for="namabarang">Nama Barang</label>
-                        <input type="text" name="namabarang" id="namabarang">
+                        <input type="text" name="namabarang" id="namabarang" required="" autocomplete="off">
                         <label for="nomorreferensi">No Referensi (Optional)</label>
                         <input type="text" name="nomorreferensi" id="nomorreferensi" >
                     </div>
-                    <div class="column" style="padding: 45px;width: 50%;">
+                    <div class="column" style="padding:40px;width: 50%;">
                         <div class="row" style="width: 100%;">
                             <div class="column" style="width: 50%;">
                                 <label for="hargabarang">Harga Barang</label>
-                                <input type="number" name="hargabarang" id="hargabarang">
+                                <input type="number" name="hargabarang" id="hargabarang" required="" autocomplete="off">
                             </div>
                             <div class="column" style="width: 40%;">
                                 <label for="asuransi" >Asuransi
@@ -496,14 +496,12 @@
                                   </label>
                             </div>
                             </div>
-                        <label for="upload">Upload Dokumen PO</label>
-                        <div class="file-upload">
-                            <div class="file-select">
-                                <div class="file-select-button" id="fileName">Choose File</div>
-                                <div class="file-select-name" id="noFile">No file chosen...</div> 
-                                <input type="file" name="chooseFile" id="chooseFile">
+                            <div style="transform: translateX(-3%);margin-bottom: 10px;">
+                                <label>Upload Dokumen PO (Optional)</label><br>
+                                <input type="file" id="file-po" class="form-control border-light p-1" >
                             </div>
-                            </div>
+
+                           
                             <!-- <label for="syarat">Syarat dan Ketentuan</label>
                             <br> -->
                         
@@ -582,32 +580,56 @@
                         </div>
                         <div class="input-group" style="margin-top:0;padding-top:0;transform:translateY(-30px)">
                         <div class="row" style="width: 100%;padding-left: 10px;">
-                            <div class="column" style="padding: 20px;width: 18%;margin: 0;padding-top: 0;">
-                                <label for="jumlahbox">Jumlah Per-Box</label>
-                                <input type="number" name="jumlahbox" id="jumlahbox" placeholder="Box" >
-                            </div>
-                            <div class="column" style="padding: 20px;width: 18%;margin: 0;padding-top: 0;">
-                                <label for="berat">Berat</label>
-                                <input type="number" name="berat" id="berat" placeholder="kg">
-                            </div>
-                            <div class="column" style="padding: 20px;width: 18%;margin: 0;padding-top: 0;">
-                                <label for="panjang">Panjang</label>
-                                <input type="number" name="panjang" id="panjang" placeholder="cm" >
-                            </div>
-                            <div class="column" style="padding: 20px;width: 18%;margin: 0;padding-top: 0;">
-                                <label for="lebar">Lebar</label>
-                                <input type="number" name="lebar" id="lebar" placeholder="cm">
-                            </div>
-                            <div class="column" style="padding: 20px;width: 18%;margin: 0;padding-top: 0;">
-                                <label for="tinggi">Tinggi</label>
-                                <input type="number" name="tinggi" id="tinggi" placeholder="cm" >
-                            </div>
-                            <div class="column" style="padding: 15px;width: 10%;margin: 0;padding-top: 0;">
-                                <!-- <label for="hargabarang">Aksi:</label> -->
-                                <button style="padding: 10px;margin: 20px; background: #4e73df;color: white;outline: none; border: none;width: 50px; border-radius: 5px;">
-                                    <i class="fas fas fas fas fa-plus text-white-300"></i>
-                                </button>
-                            </div>
+                            <table class="table-items" id="items-manual">
+                                <tbody>
+                                    <tr >
+                                        <td style="padding-left: 15px;">Jumlah Box</td>
+                                        <td style="padding-left: 15px;">Berat Per-Box</td>
+                                        <td style="padding-left: 15px;">Panjang (cm)</td>
+                                        <td style="padding-left: 15px;">Lebar (cm)</td>
+                                        <td style="padding-left: 15px;">Tinggi (cm)</td>
+                                        <td style="padding-left: 15px;">Aksi</td>
+                                    </tr>
+                                    <tr>
+                                        <td style="padding-left: 10px;">
+                                            <div class="mx-1 my-2">
+                                                <input name="id[0]" id="id" type="hidden" value="0">
+                                                <input type="number" class="form-control border-light" id="qty" name="qty[0]" required="" placeholder="Box" onkeyup="cek_qty(this)">
+                                                <input name="total_qty[0]" type="hidden">
+                                            </div>
+                                        </td>
+                                        <td style="padding-left: 10px;">
+                                            <div class="mx-1">
+                                                <input type="number" class="form-control border-light" id="weight" name="weight[0]" required="" autocomplete="off" placeholder="kg" onkeyup="cek_berat(this)" >
+                                                <input name="total_berat[0]" type="hidden">
+                                            </div>
+                                        </td>
+                                        <td style="padding-left: 10px;">
+                                            <div class="mx-1">
+                                                <input type="number" class="form-control border-light" id="long" name="long[0]" required="" autocomplete="off" placeholder="cm" onkeyup="cek_panjang(this)" >
+                                                <input name="total_panjang[0]" type="hidden">
+                                            </div>
+                                        </td>
+                                        <td style="padding-left: 10px;">
+                                            <div class="mx-1">
+                                                <input type="number" class="form-control border-light" id="width" name="width[0]" required="" autocomplete="off" placeholder="cm" onkeyup="cek_lebar(this)" >
+                                                <input name="total_lebar[0]" type="hidden">
+                                            </div>
+                                        </td>
+                                        <td style="padding-left: 10px;">
+                                            <div class="mx-1">
+                                                <input type="number" class="form-control border-light" id="height" name="height[0]" required="" autocomplete="off" placeholder="cm" oninput="get_total(this,0)" >
+                                                <input name="total_tinggi[0]" type="hidden">
+                                            </div>
+                                        </td>
+                                        <td style="padding-left: 10px;">
+                                            <div>
+                                                <button class="btn btn-success my-1" onclick="addRow(this)">+</button>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
                         </div>
                         <div class="row" style="width: 100%;padding-left: 10px;margin-top: 0;padding-top:0;">
                         <div class="column" style="padding: 20px;width: 30%;margin-top: 0;padding-top:0;">
@@ -787,6 +809,146 @@ aria-hidden="true">
 </div>
 
 <!-- Bootstrap core JavaScript-->
+    <script>
+           function addRow(btn) { 
+        //Total Baris
+        const table = document.querySelector(".table-items");
+        const totalRowCount = table.rows.length;
+        const total_baris = totalRowCount-1;
+
+        $('.table-items > tbody:last-child').append(`
+            <tr>
+                <tr>
+                    <td style="padding-left: 10px;">
+                        <div class="mx-1 my-2">
+                            <input name="id[0]" id="id" type="hidden" value="0">
+                            <input type="number" class="form-control border-light" id="qty" name="qty[0]" required="" placeholder="Box" onkeyup="cek_qty(this)">
+                            <input name="total_qty[0]" type="hidden">
+                        </div>
+                    </td>
+                    <td style="padding-left: 10px;">
+                        <div class="mx-1">
+                            <input type="number" class="form-control border-light" id="weight" name="weight[0]" required="" autocomplete="off" placeholder="kg" onkeyup="cek_berat(this)" >
+                            <input name="total_berat[0]" type="hidden">
+                        </div>
+                    </td>
+                    <td style="padding-left: 10px;">
+                        <div class="mx-1">
+                            <input type="number" class="form-control border-light" id="long" name="long[0]" required="" autocomplete="off" placeholder="cm" onkeyup="cek_panjang(this)" >
+                            <input name="total_panjang[0]" type="hidden">
+                        </div>
+                    </td>
+                    <td style="padding-left: 10px;">
+                        <div class="mx-1">
+                            <input type="number" class="form-control border-light" id="width" name="width[0]" required="" autocomplete="off" placeholder="cm" onkeyup="cek_lebar(this)" >
+                            <input name="total_lebar[0]" type="hidden">
+                        </div>
+                    </td>
+                    <td style="padding-left: 10px;">
+                        <div class="mx-1">
+                            <input type="number" class="form-control border-light" id="height" name="height[0]" required="" autocomplete="off" placeholder="cm" oninput="get_total(this,0)" >
+                            <input name="total_tinggi[0]" type="hidden">
+                        </div>
+                    </td>
+                    <td style="padding-left: 10px;">
+                        <button type="button" class="btn btn-danger" onclick="deleterow(this,1)"><i class="fas fa-trash m-0"></i></button>
+                </td>
+            </tr>`
+            );
+    }
+
+    function deleterow(btn,btn_id) {
+        const table = document.querySelector(".table-items");
+        const totalRowCount = table.rows.length;
+        const total_baris = totalRowCount-2;
+        var volume_real = 0;
+        var actual_real = 0;
+
+        var displayValue = document.getElementById('items-manual').style.display;
+        //excel
+        if(displayValue == 'none'){
+            const table_manual = document.querySelector(".table-items-excel");
+            const totalRowCount_manual = table_manual.rows.length;
+            const total_baris_manual = totalRowCount_manual - 2;
+            if(total_baris_manual === 0){
+                $("#employee_table").hide();
+                $("#items-manual").show();
+                document.getElementById('qty').value = '';
+                document.getElementById('weight').value = '';
+                document.getElementById('height').value = '';
+                document.getElementById('long').value = '';
+                document.getElementById('width').value = '';
+                document.getElementById("id").setAttribute('name', 'id[0]');
+                document.getElementById("qty").setAttribute('name', 'qty[0]');
+                document.getElementById("weight").setAttribute('name', 'weight[0]');
+                document.getElementById("height").setAttribute('name', 'height[0]');
+                document.getElementById("long").setAttribute('name', 'long[0]');
+                document.getElementById("width").setAttribute('name', 'width[0]');
+            }
+            console.log(total_baris_manual);
+        }
+
+        console.log(total_baris);
+
+        var row_id = btn_id;
+
+        var row = $(btn).closest('tr');
+        var jumlah = $(row).find("input[name='qty["+row_id+"]']").val();
+        var berat = $(row).find("input[name='weight["+row_id+"]']").val();
+        var tinggi = $(row).find("input[name='height["+row_id+"]']").val();
+        var panjang = $(row).find("input[name='long["+row_id+"]']").val();
+        var lebar = $(row).find("input[name='width["+row_id+"]']").val();
+
+        var total_qty = document.getElementById('hidden-qty').value;
+        var total_berat = document.getElementById('hidden-berat').value;
+        var total_tinggi = document.getElementById('hidden-tinggi').value;
+        var total_panjang = document.getElementById('hidden-panjang').value;
+        var total_lebar = document.getElementById('hidden-lebar').value;
+
+        document.getElementById('hidden-qty').value = total_qty - jumlah;
+        document.getElementById('hidden-berat').value = total_berat - berat;
+        document.getElementById('hidden-tinggi').value = total_tinggi - tinggi;
+        document.getElementById('hidden-panjang').value = total_panjang - panjang;
+        document.getElementById('hidden-lebar').value = total_lebar - lebar;
+
+        var actual = (total_qty - jumlah) * (total_berat - berat);
+        var volume = (total_qty - jumlah) * ((total_panjang - panjang) * (total_lebar - lebar) * (total_tinggi - tinggi)) / 4000;
+        actual_real += jumlah * berat;
+        volume_real += jumlah * (panjang * lebar * tinggi) / 4000;
+
+
+        //console.log("-- QTY Hapus: "+jumlah);
+        //console.log("-- Berat Hapus: "+berat);
+        //console.log("-- Total QTY: "+(total_qty - jumlah));
+        //console.log("-- Total Berat: "+(total_berat - berat));
+
+        $.ajax({
+            type: "POST",
+            url: "https://xpdcargo.id/login/API/calculate_shipment",
+            data: {alamat_pengirim: $("#alamat-pengirim").val(), alamat_penerima:$("#alamat-penerima").val(), actual:actual, volume:volume},
+            dataType: "json",
+            success:function(response){
+                document.getElementById('berat_aktual').value = response.berat_actual+"Kg";
+                document.getElementById('berat_volume').value = response.berat_volume+"Kg";
+                //document.getElementById('total_harga').value = "Rp. "+addCommas(response.total_harga);
+            }
+        });
+
+        $(btn).closest("tr").remove();
+    }
+
+    </script>
+
+    <script>
+        $(".datatable").DataTable();
+        $('.file-upload-browse').on('click', function() {
+            var file = $(this).parent().parent().parent().find('.file-upload-default');
+            file.trigger('click');
+        });
+        $('.file-upload-default').on('change', function() {
+            $(this).parent().find('.form-control').val($(this).val().replace(/C:\\fakepath\\/i, ''));
+        });
+    </script>
 
     <script src="js/express.js"></script>
     <script src="vendor/jquery/jquery.min.js"></script>
